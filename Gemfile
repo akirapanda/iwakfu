@@ -1,10 +1,21 @@
-source 'https://rubygems.org'
+source 'http://ruby.taobao.org/'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.1'
+gem 'rails', '4.0.0'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+
+gem 'simple_form'
+gem 'bootstrap_helper', github: 'akirapanda/bootstrap-helper'
+gem "wice_grid", '3.2.1'
+
+gem 'nokogiri', "~> 1.5.6"
+
+# 上传组件
+gem 'carrierwave', '0.6.2'
+gem 'carrierwave-upyun', '0.1.5'
+gem 'mini_magick','3.3', require: false
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'

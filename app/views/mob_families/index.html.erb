@@ -1,0 +1,9 @@
+<%= grid(@mob_families_grid,  show_filters: :no) do |g|
+  g.column :name => 'ID', :attribute => 'id'
+
+  g.column :name => 'Name', :attribute => 'name'
+
+  g.column do |family|
+    link_to('Edit', edit_mob_family_path(family))
+  end
+end -%>

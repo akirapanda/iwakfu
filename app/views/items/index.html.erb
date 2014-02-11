@@ -1,0 +1,13 @@
+<%= grid(@items_grid,  show_filters: :no) do |g|
+  g.column :name => 'ID', :attribute => 'id'
+	g.column do |item|
+		 image_tag(item.icon)
+	end
+	
+  g.column :name => 'Name', :attribute => 'name'
+  
+
+  g.column do |item|
+    link_to('Edit', edit_item_path(item))
+  end
+end -%>

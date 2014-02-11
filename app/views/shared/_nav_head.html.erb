@@ -1,0 +1,45 @@
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="../" class="navbar-brand">iWakfu</a>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+		<div class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">装备<span class="caret"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="themes">
+            <li><a href="../default/">套装</a></li>
+            <li class="divider"></li>
+            <li><a href="../amelia/">装备</a></li>
+            <li><a href="../cerulean/">武器</a></li>
+            <li><a href="../cosmo/">容器</a></li>
+            <li><a href="../cyborg/">消耗品</a></li>
+            <li><a href="../flatly/">其他</a></li>
+          </ul>
+        </li>
+        <li>
+	
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">怪物<span class="caret"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="themes">
+						<li><%=link_to "种群",mob_families_path%></li>
+						<li><%=link_to "怪物",mobs_path%></li>
+						
+
+          </ul>
+		
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://wrapbootstrap.com/?ref=bsw" target="_blank">沃土中文数据库 V0.1</a></li>
+      </ul>
+
+    </div>
+	</div>
+</div>
