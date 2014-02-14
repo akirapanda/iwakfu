@@ -8,7 +8,10 @@ gem 'sqlite3'
 
 gem 'simple_form'
 gem 'bootstrap_helper', github: 'akirapanda/bootstrap-helper'
-gem "wice_grid", '3.2.1'
+
+gem 'will_paginate' ,'>=3.0.pre'
+gem "bootstrap-will_paginate", "~> 0.0.9"
+gem "wice_grid", '3.4.0'
 
 gem 'nokogiri', "~> 1.5.6"
 

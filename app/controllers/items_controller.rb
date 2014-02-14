@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
   def index
-    @items_grid = initialize_grid(Item.all,:per_page => 40)
+    @items_grid = initialize_grid(Item)
   end
   
   def show

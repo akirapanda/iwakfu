@@ -5,10 +5,14 @@ require "nokogiri"
 
 
 @basic_url = "http://wakfu-elements.com/items/view/"
-@id = "8046"
-@url = @basic_url + @id
+@id = 12
+@url = @basic_url + @id.to_s
+begin  
+  @html = open(@url)
+rescue Exception  
+  exit
+end
 
-@html = open(@url)
 doc = Nokogiri::HTML(@html)
 
 item = doc.css("div .itemWrapper")[0]

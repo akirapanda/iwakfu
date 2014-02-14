@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20140210062538) do
   create_table "items", force: true do |t|
     t.string   "icon"
     t.string   "name"
+    t.integer  "no"
     t.string   "slot"
     t.integer  "item_type_id"
     t.string   "item_type"

@@ -3,6 +3,7 @@ class CreateItems < ActiveRecord::Migration
     create_table :items do |t|
       t.string :icon
       t.string :name
+      t.integer :no
       t.string :slot
       t.integer :item_type_id
       t.string :item_type
