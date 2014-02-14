@@ -8,7 +8,7 @@ require "nokogiri"
 @items = Item.where("id > 0 and id <10")
 @items.each do |item|
   
-  if item.item_type.nil?
+  if true
     puts "update #{item.name}"
     @url = @basic_url + item.no.to_s
     begin  
@@ -22,6 +22,7 @@ require "nokogiri"
       level = 0
       if item_wrap.css(".itemLevel").size > 0
         level = item_wrap.css(".itemLevel")[0].content.strip!
+        level = level.delete("Level. ").to_i
       end
 
 
