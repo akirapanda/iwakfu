@@ -3,5 +3,7 @@ Iwakfu::Application.routes.draw do
   resources :items
   resources :mobs
   resources :mob_families
-  
+  namespace :admin do
+    resources :items
+  end
 end

@@ -2,14 +2,11 @@ require "open-uri"
 require "json"
 require "nokogiri"
 
-
 @basic_url = "http://wakfu-elements.com/items/view/"
 
-@items = Item.where("id > 0 and id <10")
+@items = Item.where(:no=>13882)
 @items.each do |item|
-  
   if true
-    puts "update #{item.name}"
     @url = @basic_url + item.no.to_s
     begin  
       @html = open(@url)
@@ -36,6 +33,10 @@ require "nokogiri"
       type = ""
       infos = item_wrap.css(".itemFacts").css("li")
       infos.each do |info|
+        if info.css("span").size < 1
+          next
+        end
+        
         if info.css("span")[0].content.include?"Type"  
           type = info.css("a")[0].content
         end
@@ -70,8 +71,9 @@ require "nokogiri"
       open(filepath,"wb"){|f|f.write(data)}
       
     rescue Exception  
-      puts "#{item.no} error!"
+       puts "#{item.no} error!"
     end
+    
   end
 end
 

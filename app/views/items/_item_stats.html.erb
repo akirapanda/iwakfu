@@ -1,0 +1,136 @@
+<div class="itemStatBox">
+	<div class="statTabs">
+		<ul class="nav nav-tabs" id="myTab">
+
+			<%if   @item.item_stats_effect.any?%>
+			<li class="active">
+				<a data-toggle="tab" href="#itemEffects">
+					效果
+				</a>
+			</li>
+			<%end%>
+			<%if   @item.item_stats_critical.any?%>
+			<li>
+				<a data-toggle="tab" href="#itemCritical">
+					暴击
+				</a>
+			</li>
+			<%end%>
+
+			
+		</ul>
+		
+		<div class="tab-content">
+
+			<div id="itemEffects" class="itemStatList tab-pane in active">
+				<ul class="statList">						
+					<%if @item.item_stats_effect_used.size > 0%>
+						<li>使用时:</li>
+					<%end%>
+					<%@item.item_stats_effect_used.each do |effect|%>
+						<li>
+							<%if effect.percent %>
+								<%if effect.value > 0%>
+									+
+								<%end%>
+								<%=effect.value.to_i%>%
+							<%else%>
+								<%if effect.value > 0%>
+									+
+								<%end%>
+								<%=effect.value.to_i%>
+							<%end%>
+							
+							 <%=effect.content%> 
+							<%if effect.air %>
+								<%= image_tag("/img/elements/smallAIR.png")%>
+							<%end%>
+							<%if effect.fire %>
+								<%= image_tag("/img/elements/smallFIRE.png")%>
+							<%end%>
+							<%if effect.earth %>
+								<%= image_tag("/img/elements/smallEARTH.png")%>
+							<%end%>
+							<%if effect.water %>
+								<%= image_tag("/img/elements/smallWATER.png")%>
+							<%end%>
+						</li>
+					<%end%>
+					
+					
+					<%if @item.item_stats_effect_equipped.size > 0%>
+						<li>装备时:</li>
+					<%end%>
+					
+					<%@item.item_stats_effect_equipped.each do |effect|%>
+						<li>
+							<%if effect.percent %>
+								<%if effect.value > 0%>
+									+
+								<%end%>
+								<%=effect.value.to_i%>%
+							<%else%>
+								<%if effect.value > 0%>
+									+
+								<%end%>
+								<%=effect.value.to_i%>
+							<%end%>
+							
+							 <%=effect.content%> 
+							<%if effect.air %>
+								<%= image_tag("/img/elements/smallAIR.png")%>
+							<%end%>
+							<%if effect.fire %>
+								<%= image_tag("/img/elements/smallFIRE.png")%>
+							<%end%>
+							<%if effect.earth %>
+								<%= image_tag("/img/elements/smallEARTH.png")%>
+							<%end%>
+							<%if effect.water %>
+								<%= image_tag("/img/elements/smallWATER.png")%>
+							<%end%>
+						</li>
+					<%end%>
+				</ul>
+			</div>
+			
+			<div id="itemCritical" class="itemStatList tab-pane">
+				<ul class="statList">
+					<li>使用时:</li>
+					
+					<%@item.item_stats_critical.each do |effect|%>
+						<li>
+							<%if effect.percent %>
+								<%if effect.value > 0%>
+									+
+								<%end%>
+								<%=effect.value.to_i%>%
+							<%else%>
+								<%if effect.value > 0%>
+									+
+								<%end%>
+								<%=effect.value.to_i%>
+							<%end%>
+							
+							 <%=effect.content%> 
+							<%if effect.air %>
+								<%= image_tag("/img/elements/smallAIR.png")%>
+							<%end%>
+							<%if effect.fire %>
+								<%= image_tag("/img/elements/smallFIRE.png")%>
+							<%end%>
+							<%if effect.earth %>
+								<%= image_tag("/img/elements/smallEARTH.png")%>
+							<%end%>
+							<%if effect.water %>
+								<%= image_tag("/img/elements/smallWATER.png")%>
+							<%end%>
+						</li>
+					<%end%>
+				</ul>
+			</div>
+			
+		</div>
+	</div>					
+
+</div>

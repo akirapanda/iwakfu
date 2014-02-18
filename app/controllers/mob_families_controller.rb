@@ -1,6 +1,6 @@
 class MobFamiliesController < ApplicationController
   def index
-    @mob_families_grid = initialize_grid(MobFamily.all,:per_page => 40)
+    @mob_families_grid = initialize_grid(MobFamily,:per_page => 40)
   end
   
   def show

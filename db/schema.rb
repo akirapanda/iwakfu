@@ -13,6 +13,19 @@
 
 ActiveRecord::Schema.define(version: 20140210062538) do
 
+  create_table "item_stats", force: true do |t|
+    t.integer "item_id"
+    t.string  "cate"
+    t.string  "stat_type"
+    t.string  "content"
+    t.decimal "value",     precision: 10, scale: 2, default: 0.0
+    t.boolean "percent",                            default: false
+    t.boolean "air",                                default: false
+    t.boolean "earth",                              default: false
+    t.boolean "water",                              default: false
+    t.boolean "fire",                               default: false
+  end
+
   create_table "items", force: true do |t|
     t.string   "icon"
     t.string   "name"
@@ -29,6 +42,7 @@ ActiveRecord::Schema.define(version: 20140210062538) do
     t.integer  "will_point"
     t.integer  "min_range"
     t.integer  "max_range"
+    t.boolean  "hidden",       default: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

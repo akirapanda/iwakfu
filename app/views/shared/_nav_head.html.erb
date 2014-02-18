@@ -9,28 +9,169 @@
 			<%= link_to "iWakfu" ,root_path,:class=>:brand %>
       <div class="nav-collapse collapse">
         <ul class="nav">
+					<li>
+					<%= link_to "所有道具",items_path %>
+						
+					</li>
+	        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">武器 <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+
+							<li><%=link_to "斧",items_path(:item_type=>'斧')%></li>
+							<li><%=link_to "魔杖",items_path(:item_type=>'魔杖')%></li>
+							<li><%=link_to "单手剑",items_path(:item_type=>'单手剑')%></li>
+							<li><%=link_to "铲",items_path(:item_type=>'铲')%></li>
+							<li><%=link_to "匕首",items_path(:item_type=>'匕首')%></li>
+							<li><%=link_to "单手杖",items_path(:item_type=>'单手杖')%></li>
+							<li><%=link_to "锤",items_path(:item_type=>'锤')%></li>
+							<li><%=link_to "针",items_path(:item_type=>'针')%></li>
+							<li><%=link_to "弓",items_path(:item_type=>'弓')%></li>
+							
+							<li><%=link_to "双手剑",items_path(:item_type=>'双手剑')%></li>
+							<li><%=link_to "双手杖",items_path(:item_type=>'双手杖')%></li>
+							<li><%=link_to "卡牌",items_path(:item_type=>'卡牌')%></li>
+          	</ul>
+          </li>
+
+	        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">装备 <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+
+							<li><%=link_to "戒指",items_path(:item_type=>'戒指')%></li>
+							<li><%=link_to "靴子",items_path(:item_type=>'靴子')%></li>
+							<li><%=link_to "项链",items_path(:item_type=>'项链')%></li>
+							<li><%=link_to "披风",items_path(:item_type=>'披风')%></li>
+							<li><%=link_to "腰带",items_path(:item_type=>'腰带')%></li>
+							<li><%=link_to "头盔",items_path(:item_type=>'头盔')%></li>
+							<li><%=link_to "胸甲",items_path(:item_type=>'胸甲')%></li>
+							<li><%=link_to "肩甲",items_path(:item_type=>'肩甲')%></li>
+							
+							<li><%=link_to "盾牌",items_path(:item_type=>'盾牌')%></li>
+
+
+            </ul>
+          </li>
+
+
+
+	        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">制造部件<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+							<li><%=link_to "烘焙",items_path(:item_type=>'烘焙')%></li>
+							<li><%=link_to "烹饪",items_path(:item_type=>'烹饪')%></li>
 	
-	        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">道具 <b class="caret"></b></a>
+							<li><%=link_to "钓鱼制造品",items_path(:item_type=>'钓鱼制造品')%></li>
+							<li><%=link_to "畜牧业制造物",items_path(:item_type=>'畜牧业制造物')%></li>
+							<li><%=link_to "厨师制作部件",items_path(:item_type=>'厨师制作部件')%></li>
+							<li><%=link_to "裁缝制作部件",items_path(:item_type=>'裁缝制作部件')%></li>
+							<li><%=link_to "近战武器制作部件",items_path(:item_type=>'近战武器制作部件')%></li>
+							<li><%=link_to "远程武器制作部件",items_path(:item_type=>'远程武器制作部件')%></li>
+							<li><%=link_to "魔法武器制作部件",items_path(:item_type=>'魔法武器制作部件')%></li>
+							<li><%=link_to "皮匠制作部件",items_path(:item_type=>'皮匠制作部件')%></li>								
+							<li><%=link_to "铠甲制作部件",items_path(:item_type=>'铠甲制作部件')%></li>
+							<li><%=link_to "珠宝制作部件",items_path(:item_type=>'珠宝制作部件')%></li>					
+							<li><%=link_to "烘焙制作部件",items_path(:item_type=>'烘焙制作部件')%></li>					
+							<li><%=link_to "工匠制作部件",items_path(:item_type=>'工匠制作部件')%></li>	
+							<li><%=link_to "草药学制造物",items_path(:item_type=>'草药学制造物')%></li>
+							<li><%=link_to "矿工的制造物",items_path(:item_type=>'矿工的制造物')%></li>
+							<li><%=link_to "伐木工制造物",items_path(:item_type=>'伐木工制造物')%></li>
+							<li><%=link_to "农夫的制造物",items_path(:item_type=>'农夫的制造物')%></li>				
+						</ul>
+					</li>
+					
+					<li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">采集 <b class="caret"></b></a>
             <ul class="dropdown-menu">
-	         	 <li><%= link_to "所有道具",items_path %></li>
-	            <li class="divider"></li>
-	            <li><a href="../amelia/">装备</a></li>
-	            <li><a href="../cerulean/">武器</a></li>
-	            <li><a href="../cosmo/">容器</a></li>
-	            <li><a href="../cyborg/">消耗品</a></li>
-	            <li><a href="../flatly/">其他</a></li>
-            </ul>
+							<li><%=link_to "矿工的采集物",items_path(:item_type=>'矿工的采集物')%></li>
+							<li><%=link_to "畜牧业采集物",items_path(:item_type=>'畜牧业采集物')%></li>
+							<li><%=link_to "伐木工采集物",items_path(:item_type=>'伐木工采集物')%></li>
+							<li><%=link_to "渔夫的采集物",items_path(:item_type=>'渔夫的采集物')%></li>
+							<li><%=link_to "农夫的采集物",items_path(:item_type=>'农夫的采集物')%></li>
+							<li><%=link_to "草药学采集物",items_path(:item_type=>'草药学采集物')%></li>
+						</ul>
+					</li>
+
+	        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">宠物 <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+							<li><%=link_to "宠物",items_path(:item_type=>'宠物')%></li>
+							<li><%=link_to "宠物装备",items_path(:item_type=>'宠物装备')%></li>					
+							<li><%=link_to "宠物食物",items_path(:item_type=>'宠物食物')%></li>					
+							<li><%=link_to "宠物染料",items_path(:item_type=>'宠物染料')%></li>
+							<li><%=link_to "宠物表情宝石",items_path(:item_type=>'宠物表情宝石')%></li>
+							
+							<li><%=link_to "宠物外形宝石",items_path(:item_type=>'宠物外形宝石')%></li>
+					  </ul>
           </li>
 
-
-	        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">怪物 <b class="caret"></b></a>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">庇护袋 <b class="caret"></b></a>
             <ul class="dropdown-menu">
-							<li><%=link_to "种群",mob_families_path%></li>
-							<li><%=link_to "怪物",mobs_path%></li>
-            </ul>
-          </li>
+							
+							<li><%=link_to "货架",items_path(:item_type=>'货架')%></li>
+							<li><%=link_to "庇护袋家具",items_path(:item_type=>'庇护袋家具')%></li>
+							<li><%=link_to "庇护袋装饰品",items_path(:item_type=>'庇护袋装饰品')%></li>
+							<li><%=link_to "庇护宝石碎片",items_path(:item_type=>'庇护宝石碎片')%></li>					
+							<li><%=link_to "酷洛大师",items_path(:item_type=>'酷洛大师')%></li>	
+							<li><%=link_to "建筑物装饰",items_path(:item_type=>'建筑物装饰')%></li>					
+							<li><%=link_to "花园装饰品",items_path(:item_type=>'花园装饰品')%></li>
+							<li><%=link_to "庇护宝石",items_path(:item_type=>'庇护宝石')%></li>
+							
+													
+						</ul>
+					</li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">其他 <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+							<li><%=link_to "掉落资源",items_path(:item_type=>'掉落资源')%></li>
+
+							<li><%=link_to "钥匙",items_path(:item_type=>'钥匙')%></li>
+
+							
+							
+							<li><%=link_to "种子",items_path(:item_type=>'种子')%></li>
+															
+								
+							<li><%=link_to "制造机",items_path(:item_type=>'制造机')%></li>
+								
+							
+							<li><%=link_to "海报",items_path(:item_type=>'海报')%></li>
+							<li><%=link_to "鱼饵",items_path(:item_type=>'鱼饵')%></li>
+							<li><%=link_to "杂项道具",items_path(:item_type=>'杂项道具')%></li>
+							<li><%=link_to "表情",items_path(:item_type=>'表情')%></li>	
+							<li><%=link_to "故事书",items_path(:item_type=>'故事书')%></li>
+							<li><%=link_to "服饰",items_path(:item_type=>'服饰')%></li>
+							<li><%=link_to "称号",items_path(:item_type=>'称号')%></li>
+								
+	
+								
+							<li><%=link_to "活动",items_path(:item_type=>'活动')%></li>
+							
+							<li><%=link_to "杂项道具",items_path(:item_type=>'杂项道具')%></li>
+							<li><%=link_to "动物掉落",items_path(:item_type=>'动物掉落')%></li>
+								
+							<li><%=link_to "杂项掉落",items_path(:item_type=>'杂项掉落')%></li>
+							<li><%=link_to "矿石掉落",items_path(:item_type=>'矿石掉落')%></li>
+							<li><%=link_to "植物掉落",items_path(:item_type=>'植物掉落')%></li>
+							<li><%=link_to "任务道具",items_path(:item_type=>'任务道具')%></li>
+
+								
+							<li><%=link_to "奖励",items_path(:item_type=>'奖励')%></li>					
+								
+								
+							<li><%=link_to "奖章",items_path(:item_type=>'奖章')%></li>					
+							<li><%=link_to "饰品盒",items_path(:item_type=>'饰品盒')%></li>					
+		
+							<li><%=link_to "时装",items_path(:item_type=>'时装')%></li>					
+							<li><%=link_to "徽章",items_path(:item_type=>'徽章')%></li>					
+							<li><%=link_to "符文粉末",items_path(:item_type=>'符文粉末')%></li>					
+							<li><%=link_to "符文",items_path(:item_type=>'符文')%></li
+							<li><%=link_to "背包",items_path(:item_type=>'背包')%></li>
+							
+							<li><%=link_to "资源",items_path(:item_type=>'资源')%></li>
+						</ul>
+					</li>
+
 
         </ul>
 	      <ul class="nav navbar-nav pull-right">

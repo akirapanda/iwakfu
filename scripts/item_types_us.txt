@@ -1,0 +1,89 @@
+120,Necklace
+103,Ring
+119,Boots
+132,Cloak
+133,Belt
+134,Helmet
+138,Epaulettes
+508,Clothes
+136,Breastplate
+370,Ring
+218,Bags
+101,Axe
+108,Wand
+110,One-handed Sword 
+111,Shovel
+112,Dagger
+113,One-handed Staff
+114,Hammer
+115,Hand
+117,Bow
+189,Shields
+223,Two-handed Sword
+253,Two-handed Staff
+254,Cards
+384,Sword
+425,Weapons: Archive
+607,Dagger
+226,Resources
+260,Dropped Resources
+266,Gastronomy
+281,Miner's Harvests
+282,Trapper's Harvests
+299,Bakery
+306,Lumberjack's Harvests
+308,Fisherman's Harvests
+309,Farmer's Harvests
+313,Herbalist's Harvests
+327,Lumberjack's Refinements
+393,Farmer's Refinements
+463,Herbalist's Refinements
+514,Miner's Refinements
+529,Miscellaneous Resources
+530,Animal Drop
+531,Miscellaneous Drop
+532,Ore Drop
+533,Plant Drop
+567,Fisherman's Refinements
+568,Trapper's Refinements
+569,Chef Components
+570,Tailor Components
+571,CC Weapons Master Compone
+572,Distance Weapons Master C
+573,Area Weapons Master Compo
+574,Leather Dealer Components
+575,Armorer Components
+576,Jeweler Components
+577,Baker Components
+578,Handyman Components
+294,Haven-Gems
+296,Display Windows
+415,Haven Bag Furniture
+416,Haven Bag Decorations
+447,Crafting Machines
+449,Trade Room Decoration
+515,Garden Room Decoration
+516,Dungeon Statue Items
+601,Haven-Gem Pieces
+317,Keys
+419,Seeds
+421,Face Gem
+422,Skin Gem
+471,Hooks
+472,Miscellaneous Items
+476,Emotes
+496,Background Book
+512,Titles
+524,Event
+551,Quest Items
+581,Pet equipment
+582,Pet
+594,Food
+595,Coloring
+597,Rewards
+600,Profession Booster
+602,Smithmagic
+603,Tokens
+604,Sets
+611,Mounts
+612,Krosmaster

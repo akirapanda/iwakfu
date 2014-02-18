@@ -1,9 +1,51 @@
-<div class="row">
-  <div class="span9">
-    Level 1 column
-    <div class="row">
-      <div class="span6">Level 2</div>
-      <div class="span3">Level 2</div>
-    </div>
-  </div>
+<div class="itemWrapper">
+	<h3><%=@item.name%></h3>
+		<div class="itemBox">
+			<div class="itemUpperName">
+				<span class="<%=@item.quanlity%>"><%=@item.name%></span>
+				
+			</div>
+			<div class="itemImgLarge">
+				<%=image_tag @item.icon%>
+			</div>
+			<div class="itemImgAttr">
+				<div class="clear"></div>
+			</div>
+			<div class="itemLevel">
+				等级 <%=@item.level%>
+			</div>
+			<div class="itemUsageRules">
+				<%if @item.action_point%>
+					<span><%=@item.action_point%><%=image_tag("/img/ap-text.png")%></span>
+				<%end%>
+				<%if @item.min_range%>
+					<span><%=@item.min_range%>-<%=@item.min_range%>
+					<%=image_tag("/img/range-text.png")%></span>
+				<%end%>
+			</div>
+			<div class="itemCapacity">
+			</div>
+			<div class="itemGems">
+						<%@item.slot.to_i.times do%>
+							<%=image_tag("/img/gemSquare.png")%>
+						<%end%>
+				</div>
+			<div class="clear"></div>
+			<div class="description">
+				<%=@item.content%>
+			</div>
+		
+			<%=render 'item_stats'%>
+
+			
+			<div class="clear"></div>	
+	</div>
+
+	<div id="itemInfoFacts">
+	<h3>物品信息</h3>
+		<ul class="itemFacts">
+			<li><span class="factTitle">First seen</span> in patch .307</li>
+			<li><span class="factTitle">类型</span> : <a href="/items/type/218"><%=@item.item_type%></a></li>
+		</ul>
+	</div>
 </div>

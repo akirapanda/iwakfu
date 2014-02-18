@@ -5,12 +5,10 @@ gem 'rails', '4.0.0'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
-
+gem 'mysql2'
 gem 'simple_form'
 gem 'bootstrap_helper', github: 'akirapanda/bootstrap-helper'
 
-gem 'will_paginate' ,'>=3.0.pre'
-gem "bootstrap-will_paginate", "~> 0.0.9"
 gem "wice_grid", '3.4.0'
 
 gem 'nokogiri', "~> 1.5.6"

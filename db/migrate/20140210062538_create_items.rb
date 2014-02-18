@@ -15,8 +15,23 @@ class CreateItems < ActiveRecord::Migration
       t.integer :move_point
       t.integer :will_point
       t.integer :min_range
-      t.integer  :max_range
+      t.integer :max_range
+      t.boolean :hidden,:default=>false
+      
       t.timestamps
+    end
+    
+    create_table :item_stats do |t|
+      t.integer :item_id
+      t.string :cate
+      t.string :stat_type
+      t.string :content
+      t.decimal :value,:default=>0, :precision => 10, :scale => 2  
+      t.boolean :percent,:default => false
+      t.boolean :air,:default=>false
+      t.boolean :earth,:default=>false
+      t.boolean :water,:default=>false
+      t.boolean :fire, :default=>false
     end
     
     create_table :mobs do |t|
