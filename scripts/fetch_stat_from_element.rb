@@ -5,7 +5,7 @@ require "nokogiri"
 
 @basic_url = "http://wakfu-elements.com/items/view/"
 
-@items = Item.where("no = 17760")
+@items = Item.where("item_type = '腰带'")
 @items.each do |item|
     puts "update #{item.name}"
     @url = @basic_url + item.no.to_s

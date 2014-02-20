@@ -15,7 +15,7 @@
 	
 
   g.column :name => '介绍', :attribute => 'content' do |item|
-		truncate(item.content)
+			render 'grid_item_stat',:@item=>item
   end
 
 

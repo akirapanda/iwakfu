@@ -1,0 +1,31 @@
+	<ul>
+		<%@item.item_stats_effect_equipped.each do |effect|%>
+			<li>
+				<%if effect.percent %>
+					<%if effect.value > 0%>
+						+
+					<%end%>
+					<%=effect.value.to_i%>%
+				<%else%>
+					<%if effect.value > 0%>
+						+
+					<%end%>
+					<%=effect.value.to_i%>
+				<%end%>
+				
+				 <%=effect.content%> 
+				<%if effect.air %>
+					<%= image_tag("/img/elements/smallAIR.png")%>
+				<%end%>
+				<%if effect.fire %>
+					<%= image_tag("/img/elements/smallFIRE.png")%>
+				<%end%>
+				<%if effect.earth %>
+					<%= image_tag("/img/elements/smallEARTH.png")%>
+				<%end%>
+				<%if effect.water %>
+					<%= image_tag("/img/elements/smallWATER.png")%>
+				<%end%>
+			</li>
+		<%end%>
+		</ul>
