@@ -5,5 +5,6 @@ Iwakfu::Application.routes.draw do
   resources :mob_families
   namespace :admin do
     resources :items
+    resources :item_types
   end
 end
