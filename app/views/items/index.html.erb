@@ -12,9 +12,8 @@
 	end
 	
 	g.column :name => '类型', :attribute => 'item_type', filter: false do |item|
-		item.item_type.chinese_name
+		item.item_type.chinese_name if item.item_type
 	end
-	
 
   g.column :name => '介绍', :attribute => 'content' do |item|
 			render 'grid_item_stat',:@item=>item
