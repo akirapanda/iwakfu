@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(version: 20140302131615) do
     t.boolean  "hidden",       default: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "item_set_id"
   end
 
   create_table "mob_families", force: true do |t|

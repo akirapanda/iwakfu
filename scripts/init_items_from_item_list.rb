@@ -9,8 +9,10 @@ File.open(filename, "r") do |file|
      item = Item.new
      item.no = no
      item.name = name
-     item.content = content
+     item.content = content.strip!
      item.save
+     
+     
    end
 end
 

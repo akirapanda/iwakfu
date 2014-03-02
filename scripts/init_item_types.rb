@@ -9,8 +9,15 @@ File.open(filename, "r") do |file|
      item_type = ItemType.new
      item_type.no = no
      item_type.chinese_name = chinese_name
-     item_type.english_name = english_name
+     item_type.english_name = english_name.strip!
      item_type.save
+     
+     
+     items = Item.where(:item_type_id => item_type.no)
+     items.each do |item|
+       item.item_type_id = item_type.id
+       item.save
+     end
    end
 end
 
