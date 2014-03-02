@@ -11,7 +11,9 @@
 	  "等级#{item.level}"
 	end
 	
-	g.column :name => '类型', :attribute => 'item_type', filter: false
+	g.column :name => '类型', :attribute => 'item_type', filter: false do |item|
+		item.item_type.chinese_name
+	end
 	
 
   g.column :name => '介绍', :attribute => 'content' do |item|
