@@ -6,7 +6,7 @@
 
 	g.column :name => '中文名称', :attribute=>'chinese_name'
 	g.column :name => '英文名称', :attribute=>'english_name'
-	g.column :name => '种类', :attribute => 'cate' 
+	g.column :name => '种类', :attribute => 'cate_name' 
   
   g.column do |item_type|
     link_to('Edit', edit_admin_item_type_path(item_type))

@@ -17,7 +17,7 @@
 		truncate(item.content)
   end
 
-	g.column :name => '类型', :attribute => 'item_type'
+	g.column :name => '类型', :attribute => 'item_type' 
 
   g.column do |item|
     link_to('Edit', edit_item_path(item))
