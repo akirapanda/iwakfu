@@ -1,10 +1,13 @@
 <%= grid(@item_types_grid) do |g|
-  g.column :name => 'ID', :attribute => 'id' 
+  g.column :name => 'ID', :attribute => 'id'  do  |item_type|
+		link_to item_type.id ,[:admin,item_type]
+	end
   g.column :name => '编号', :attribute => 'no' 
 
 	g.column :name => '中文名称', :attribute=>'chinese_name'
 	g.column :name => '英文名称', :attribute=>'english_name'
-	
+	g.column :name => '种类', :attribute => 'cate' 
+  
   g.column do |item_type|
     link_to('Edit', edit_admin_item_type_path(item_type))
   end

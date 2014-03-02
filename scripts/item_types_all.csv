@@ -1,90 +1,89 @@
-101,项链,Axe
-103,戒指,Ring
-108,魔杖,Wand
-110,单手剑,One-handed Sword 
-111,铲,Shovel
-112,匕首,Dagger
-113,单手杖,One-handed Staff
-114,锤,Hammer
-115,针,Hand
-117,弓,Bow
-119,靴子,Boots
-120,项链,Necklace
-132,披风,Cloak
-133,腰带,Belt
-134,头盔,Helmet
-136,胸甲,Breastplate
-138,肩甲,Epaulettes
-189,盾牌,Shields
-218,背包,Bags
-223,双手剑,Two-handed Sword
-226,资源,Resources
-253,双手杖,Two-handed Staff
-254,卡牌,Cards
-260,掉落资源,Dropped Resources
-266,烹饪,Gastronomy
-281,矿工的采集物,Miner's Harvests
-282,畜牧业采集物,Trapper's Harvests
-294,庇护宝石,Haven-Gems
-296,货架,Display Windows
-299,烘培,Bakery
-306,伐木工采集物,Lumberjack's Harvests
-308,渔夫的采集物,Fisherman's Harvests
-309,农夫的采集物,Farmer's Harvests
-313,草药学采集物,Herbalist's Harvests
-317,钥匙,Keys
-327,伐木工制造物,Lumberjack's Refinements
-370,戒指,Ring
-393,农夫的制造物,Farmer's Refinements
-415,庇护袋家具,Haven Bag Furniture
-416,庇护袋装饰品,Haven Bag Decorations
-419,种子,Seeds
-421,宠物表情宝石,Face Gem
-422,宠物外形宝石,Skin Gem
-425,武器资料,Weapons: Archive
-447,制造机,Crafting Machines
-449,海报,Trade Room Decoration
-463,草药学制造物,Herbalist's Refinements
-471,鱼饵,Hooks
-472,杂项道具,Miscellaneous Items
-476,表情,Emotes
-496,故事书,Background Book
-508,服饰,Clothes
-512,称号,Titles
-514,矿工的制造物,Miner's Refinements
-515,花园装饰品,Garden Room Decoration
-524,活动,Event
-529,杂项道具,Miscellaneous Resources
-530,动物掉落,Animal Drop
-531,杂项掉落,Miscellaneous Drop
-532,矿石掉落,Ore Drop
-533,植物掉落,Plant Drop
-551,任务道具,Quest Items
-567,钓鱼制造品,Fisherman's Refinements
-568,畜牧业制造物,Trapper's Refinements
-569,厨师制作部件,Chef Components
-570,裁缝制作部件,Tailor Components
-571,近战武器制作部件,CC Weapons Master Compone
-572,远程武器制作部件,Distance Weapons Master C
-573,魔法武器制作部件,Area Weapons Master Compo
-574,皮匠制作部件,Leather Dealer Components
-575,铠甲制作部件,Armorer Components
-576,珠宝制作部件,Jeweler Components
-577,烘焙制作部件,Baker Components
-578,工匠制作部件,Handyman Components
-581,宠物装备,Pet equipment
-582,宠物,Pet
-594,宠物食物,Food
-595,宠物染料,Coloring
-597,奖励,Rewards
-601,庇护宝石碎片,Haven-Gem Pieces
-603,奖章,Tokens
-604,套装,Sets
-606,饰品盒,Trinket Boxes
-611,坐骑,Mounts
-612,酷洛大师,Krosmaster
-647,时装,Costume
-646,徽章,Insignia
-652,建筑物装饰,Building Decoration
-682,符文粉末,Powder
-683,符文,Rune
+101,斧子,Axe,武器
+103,戒指,Ring,装备
+108,魔杖,Wand,武器
+110,单手剑,One-handed Sword,武器 
+111,铲,Shovel,武器
+112,匕首,Dagger,武器
+113,单手杖,One-handed Staff,武器
+114,锤,Hammer,武器
+115,针,Hand,武器
+117,弓,Bow,武器
+119,靴子,Boots,装备
+120,项链,Necklace,装备
+132,披风,Cloak,装备
+133,腰带,Belt,装备
+134,头盔,Helmet,装备
+136,胸甲,Breastplate,装备
+138,肩甲,Epaulettes,装备
+189,盾牌,Shields,装备
+218,背包,Bags,其他
+223,双手剑,Two-handed Sword,武器
+226,资源,Resources,其他
+253,双手杖,Two-handed Staff,武器
+254,卡牌,Cards,武器
+260,掉落资源,Dropped Resources,其他
+266,烹饪,Gastronomy,其他
+281,矿工的采集物,Miner's Harvests,其他
+282,畜牧业采集物,Trapper's Harvests,其他
+294,庇护宝石,Haven-Gems,其他
+296,货架,Display Windows,其他
+299,烘培,Bakery,其他
+306,伐木工采集物,Lumberjack's Harvests,其他
+308,渔夫的采集物,Fisherman's Harvests,其他
+309,农夫的采集物,Farmer's Harvests,其他
+313,草药学采集物,Herbalist's Harvests,其他
+317,钥匙,Keys,其他
+327,伐木工制造物,Lumberjack's Refinements,其他
+393,农夫的制造物,Farmer's Refinements,其他
+415,庇护袋家具,Haven Bag Furniture,其他
+416,庇护袋装饰品,Haven Bag Decorations,其他
+419,种子,Seeds,其他
+421,宠物表情宝石,Face Gem,其他
+422,宠物外形宝石,Skin Gem,其他
+425,武器资料,Weapons: Archive,其他
+447,制造机,Crafting Machines,其他
+449,海报,Trade Room Decoration,其他
+463,草药学制造物,Herbalist's Refinements,其他
+471,鱼饵,Hooks,其他
+472,杂项道具,Miscellaneous Items,其他
+476,表情,Emotes,其他
+496,故事书,Background Book,其他
+508,服饰,Clothes,其他
+512,称号,Titles,其他
+514,矿工的制造物,Miner's Refinements,其他
+515,花园装饰品,Garden Room Decoration,其他
+524,活动,Event,其他
+529,杂项道具,Miscellaneous Resources,其他
+530,动物掉落,Animal Drop,其他
+531,杂项掉落,Miscellaneous Drop,其他
+532,矿石掉落,Ore Drop,其他
+533,植物掉落,Plant Drop,其他
+551,任务道具,Quest Items,其他
+567,钓鱼制造品,Fisherman's Refinements,其他
+568,畜牧业制造物,Trapper's Refinements,其他
+569,厨师制作部件,Chef Components,其他
+570,裁缝制作部件,Tailor Components,其他
+571,近战武器制作部件,CC Weapons Master Compone,其他
+572,远程武器制作部件,Distance Weapons Master C,其他
+573,魔法武器制作部件,Area Weapons Master Compo,其他
+574,皮匠制作部件,Leather Dealer Components,其他
+575,铠甲制作部件,Armorer Components,其他
+576,珠宝制作部件,Jeweler Components,其他
+577,烘焙制作部件,Baker Components,其他
+578,工匠制作部件,Handyman Components,其他
+581,宠物装备,Pet equipment,其他
+582,宠物,Pet,其他
+594,宠物食物,Food,其他
+595,宠物染料,Coloring,其他
+597,奖励,Rewards,其他
+601,庇护宝石碎片,Haven-Gem Pieces,其他
+603,奖章,Tokens,其他
+604,套装,Sets,其他
+606,饰品盒,Trinket Boxes,其他
+611,坐骑,Mounts,其他
+612,酷洛大师,Krosmaster,其他
+647,时装,Costume,其他
+646,徽章,Insignia,其他
+652,建筑物装饰,Building Decoration,其他
+682,符文粉末,Powder,其他
+683,符文,Rune,其他

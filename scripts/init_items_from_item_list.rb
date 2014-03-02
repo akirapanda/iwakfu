@@ -11,8 +11,6 @@ File.open(filename, "r") do |file|
      item.name = name
      item.content = content.strip!
      item.save
-     
-     
    end
 end
 
