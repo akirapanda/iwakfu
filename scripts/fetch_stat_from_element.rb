@@ -5,7 +5,7 @@ require "nokogiri"
 
 @basic_url = "http://wakfu-elements.com/items/view/"
 
-@items = Item.where("id >= 1000 and id < 2000 and hidden = false")
+@items = Item.joins(:item_type).where("item_types.cate_name = '武器' and items.hidden = false")
 @items.each do |item|
     @url = @basic_url + item.no.to_s    
     begin  
