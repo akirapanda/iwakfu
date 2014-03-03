@@ -11,7 +11,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140302131615) do
+ActiveRecord::Schema.define(version: 20140303003312) do
+
+  create_table "item_set_stat", force: true do |t|
+    t.integer "piece"
+    t.text    "description"
+    t.string  "skill"
+    t.integer "skill_id"
+    t.string  "cate"
+    t.string  "stat_type"
+    t.string  "content"
+    t.decimal "value",       precision: 10, scale: 2, default: 0.0
+    t.boolean "percent",                              default: false
+    t.boolean "air",                                  default: false
+    t.boolean "earth",                                default: false
+    t.boolean "water",                                default: false
+    t.boolean "fire",                                 default: false
+    t.boolean "visiable",                             default: true
+  end
+
+  create_table "item_sets", force: true do |t|
+    t.string  "english_name"
+    t.string  "chinese_name"
+    t.integer "no"
+    t.integer "level"
+    t.integer "piece"
+  end
 
   create_table "item_stats", force: true do |t|
     t.integer "item_id"

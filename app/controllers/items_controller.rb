@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
   def index
-    @items = Item.where(:hidden=>false)
+    @items = Item.where(:hidden=>false).order("level asc")
     if params[:item_type].present?
       @items = @items.where(:item_type=>params[:item_type])
     end
