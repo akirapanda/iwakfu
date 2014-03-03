@@ -1,5 +1,6 @@
 Iwakfu::Application.routes.draw do
   root "home#index"
+  match 'search', to: 'home#search', via: :all
   resources :items
   resources :item_sets
   
