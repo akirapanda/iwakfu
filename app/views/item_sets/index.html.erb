@@ -1,0 +1,13 @@
+<%= grid(@item_sets_grid, show_filters: :when_filtered) do |g|
+
+
+  g.column :name => '名称', :attribute => 'chinese_name' do |set|
+	 link_to(set.chinese_name,set)
+	end
+	
+	g.column :name => '等级', :attribute => 'level' do |set|
+	  "等级#{set.level}"
+	end
+	
+	g.column :name => '组件数', :attribute => 'piece' 
+end -%>

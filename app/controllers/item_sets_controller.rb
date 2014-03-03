@@ -1,0 +1,10 @@
+class ItemSetsController < ApplicationController
+  def index
+    def index
+      @item_sets = ItemSet.order("level asc")
+      @item_sets_grid = initialize_grid(@item_sets,:per_page => 40)
+    end
+  end
+
+  
+end
