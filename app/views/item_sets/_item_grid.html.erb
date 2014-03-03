@@ -1,4 +1,4 @@
-<%= grid(@items_grid, show_filters: :when_filtered, hide_csv_button: true) do |g|
+<%= grid(@items_grid, show_filters: :no) do |g|
   g.column :name => '图片', :attribute => 'icon', filter: false do |item|
 		image_tag(item.icon)
 	end 

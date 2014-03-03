@@ -1,0 +1,1077 @@
+110,1,-1 max AP,false,false,false,false
+290,4,is under the influence of the  Father Kwismas's Spirit (Lvl. 1),false,false,false,false
+307,3,+5 Initiative,false,false,false,false
+307,4,+10 HP,false,false,false,false
+307,4,+5 Initiative,false,false,false,false
+387,8,+1 AP,false,false,false,false
+387,8,+20% Critical Hits,false,false,false,false
+387,8,+1 MP,false,false,false,false
+387,8,+3 Control,false,false,false,false
+387,8,+2 Range,false,false,false,false
+293,3,+6 Dodge,false,false,false,false
+293,4,+8 Initiative,false,false,false,false
+80,2,+5 Initiative,false,false,false,false
+80,3,+3%   Damage,true,false,false,false
+80,4,+5%   Damage,true,false,false,false
+81,2,+5 Initiative,false,false,false,false
+81,3,+3%   Damage,false,false,true,false
+81,4,+5%   Damage,false,false,true,false
+82,2,+5 Initiative,false,false,false,false
+82,3,+3%   Damage,false,true,false,false
+82,4,+5%   Damage,false,true,false,false
+83,2,+5 Initiative,false,false,false,false
+83,3,+3%   Damage,false,false,false,true
+83,4,+5%   Damage,false,false,false,true
+258,2,+2 Wisdom,false,false,false,false
+258,4,+4 Wisdom,false,false,false,false
+258,6,+6 Wisdom,false,false,false,false
+262,2,+1 Block,false,false,false,false
+262,4,+15 HP,false,false,false,false
+262,4,+2 Block,false,false,false,false
+264,2,+1 Block,false,false,false,false
+264,4,+5% Resist. ( ),true,true,true,true
+264,4,+2 Block,false,false,false,false
+265,2,+1 Block,false,false,false,false
+265,4,+5% Damage ( ),true,true,true,true
+265,4,+2 Block,false,false,false,false
+282,2,+1 Block,false,false,false,false
+282,4,+10 Initiative,false,false,false,false
+282,4,+2 Block,false,false,false,false
+315,2,+5 HP,false,false,false,false
+315,3,+5 Initiative,false,false,false,false
+315,4,+3 Wisdom,false,false,false,false
+319,3,+5 Lock,false,false,false,false
+319,4,+5 Lock,false,false,false,false
+319,4,+10 HP,false,false,false,false
+389,4,+2% Damage ( ),true,true,true,true
+267,2,+6 HP,false,false,false,false
+267,3,+5%   Damage,false,false,true,false
+267,4,+1 Lvl. to  spells,false,false,true,false
+268,2,+6 HP,false,false,false,false
+268,3,+5%   Damage,true,false,false,false
+268,4,+1 Lvl. to  spells,true,false,false,false
+269,2,+6 HP,false,false,false,false
+269,3,+5%   Damage,false,false,false,true
+269,4,+1 Lvl. to  spells,false,false,false,true
+270,2,+6 HP,false,false,false,false
+270,3,+5%   Damage,false,true,false,false
+270,4,+1 Lvl. to  spells,false,true,false,false
+331,2,+5 HP,false,false,false,false
+331,4,+7 HP,false,false,false,false
+331,6,+2 Strength,false,false,false,false
+331,6,+2 Chance,false,false,false,false
+331,6,+2 Agility,false,false,false,false
+331,6,+2 Intelligence,false,false,false,false
+294,2,+4 HP,false,false,false,false
+294,3,+8 HP,false,false,false,false
+317,2,+5 HP,false,false,false,false
+317,3,+5 Dodge,false,false,false,false
+317,4,+5% Damage ( ),true,true,true,true
+317,4,+3% Resist. ( ),true,true,true,true
+338,2,+2 HP,false,false,false,false
+338,4,+3 HP,false,false,false,false
+338,6,+1 Strength,false,false,false,false
+338,6,+1 Chance,false,false,false,false
+338,6,+1 Agility,false,false,false,false
+338,6,+1 Intelligence,false,false,false,false
+338,8,+10 HP,false,false,false,false
+372,2,+3 Initiative,false,false,false,false
+372,3,+5 Dodge,false,false,false,false
+295,2,+5 Lock,false,false,false,false
+295,3,+10 HP,false,false,false,false
+337,2,+5 HP,false,false,false,false
+337,3,+10 HP,false,false,false,false
+337,4,+5 HP,false,false,false,false
+337,4,+1% Damage ( ),true,true,true,true
+337,4,+1% Resist. ( ),true,true,true,true
+373,2,+15 HP,false,false,false,false
+373,4,+2%   Damage,false,false,true,false
+373,4,+2%   Damage,true,false,false,false
+373,5,+4%   Damage,false,false,true,false
+373,5,+4%   Damage,true,false,false,false
+373,6,+1 Range,false,false,false,false
+446,2,+8 HP,false,false,false,false
+446,3,+2 Wisdom,false,false,false,false
+446,4,+2 Wisdom,false,false,false,false
+446,4,+1% Critical Hits,false,false,false,false
+245,2,+15 HP,false,false,false,false
+245,3,+5% Damage ( ),true,true,true,true
+245,4,+1 Lvl. to  spells,false,true,false,false
+245,5,+1 Range,false,false,false,false
+296,2,+3 Lock,false,false,false,false
+296,2,+3 Dodge,false,false,false,false
+296,3,+15 HP,false,false,false,false
+334,2,+10 HP,false,false,false,false
+334,3,+4%   Damage,false,true,false,false
+334,4,+5 Lock,false,false,false,false
+334,5,+5 HP,false,false,false,false
+334,5,+6%   Damage,false,true,false,false
+41,2,+1%   Damage,true,false,false,false
+41,2,+1%   Damage,false,false,false,true
+41,4,+2%   Damage,true,false,false,false
+41,4,+2%   Damage,false,false,false,true
+41,6,+4%   Damage,true,false,false,false
+41,6,+4%   Damage,false,false,false,true
+41,8,+1 AP,false,false,false,false
+44,2,+2%   Damage,false,true,false,false
+44,2,+2%   Damage,false,false,true,false
+44,4,+3%   Damage,false,true,false,false
+44,4,+3%   Damage,false,false,true,false
+44,6,+5%   Damage,false,true,false,false
+44,6,+5%   Damage,false,false,true,false
+44,8,+1 MP,false,false,false,false
+246,2,+10 HP,false,false,false,false
+246,3,+3%   Damage,false,true,false,false
+246,4,+4 Dodge,false,false,false,false
+246,4,+4 Initiative,false,false,false,false
+246,5,+6%   Damage,false,true,false,false
+246,5,+2 Block,false,false,false,false
+426,2,+10 HP,false,false,false,false
+426,3,+3%   Damage,false,false,true,false
+426,4,+3 Prospecting,false,false,false,false
+426,4,+3% Heals,false,false,false,false
+426,5,+6%   Damage,false,false,true,false
+426,5,+2 Block,false,false,false,false
+427,2,+10 HP,false,false,false,false
+427,3,+3%   Damage,false,false,false,true
+427,4,+6 Lock,false,false,false,false
+427,5,+6%   Damage,false,false,false,true
+427,5,+2 Block,false,false,false,false
+428,2,+10 HP,false,false,false,false
+428,3,+3%   Damage,true,false,false,false
+428,4,+4% CMC Damage,false,false,false,false
+428,5,+6%   Damage,true,false,false,false
+428,5,+2 Block,false,false,false,false
+308,3,+3 Prospecting,false,false,false,false
+308,4,+3 Chance,false,false,false,false
+309,3,+2 Wisdom,false,false,false,false
+309,4,+2 Intelligence,false,false,false,false
+310,3,+10 Dodge,false,false,false,false
+310,4,+2 Agility,false,false,false,false
+311,3,+15 Lock,false,false,false,false
+311,4,+2 Strength,false,false,false,false
+314,2,+1%   Damage,false,false,true,false
+314,3,+1%   Damage,false,false,false,true
+314,4,+2%   Damage,true,false,false,false
+314,5,+2%   Damage,false,true,false,false
+314,6,+2% Damage ( ),true,true,true,true
+271,2,+10 HP,false,false,false,false
+271,3,+4 Initiative,false,false,false,false
+271,4,+4 Dodge,false,false,false,false
+240,2,+2% Damage ( ),true,true,true,true
+240,3,+1% Damage ( ),true,true,true,true
+240,4,+2% Damage ( ),true,true,true,true
+417,2,+8 Lock,false,false,false,false
+417,3,+2% Resist. ( ),true,true,true,true
+417,4,+10 HP,false,false,false,false
+417,5,+2% Damage ( ),true,true,true,true
+417,6,+1 MP,false,false,false,false
+318,3,+15 HP,false,false,false,false
+318,4,+15 HP,false,false,false,false
+318,4,+3% Damage ( ),true,true,true,true
+460,2,+7 Initiative,false,false,false,false
+460,3,+7 Lock,false,false,false,false
+460,4,+7 Dodge,false,false,false,false
+460,5,+7% Damage ( ),true,true,true,true
+460,6,+1 MP,false,false,false,false
+233,2,+20% Baking Speed,false,false,false,false
+316,2,+20 HP,false,false,false,false
+316,4,+20 HP,false,false,false,false
+316,4,+2 Block,false,false,false,false
+272,2,+3 Dodge,false,false,false,false
+272,4,+8 Dodge,false,false,false,false
+272,5,+5% Heals,false,false,false,false
+285,3,+5% to remove MP,false,false,false,false
+285,4,is under the influence of the  Pillar (Lvl. 1),false,false,false,false
+241,2,+5 HP,false,false,false,false
+241,3,+5 HP,false,false,false,false
+241,3,+1%   Damage,false,true,false,false
+241,4,+5 HP,false,false,false,false
+241,4,+2%   Damage,false,true,false,false
+241,5,+5 HP,false,false,false,false
+241,5,+2%   Damage,false,true,false,false
+241,5,+1 Wisdom,false,false,false,false
+242,2,+5 HP,false,false,false,false
+242,3,+5 HP,false,false,false,false
+242,3,+1%   Damage,false,false,false,true
+242,4,+5 HP,false,false,false,false
+242,4,+2%   Damage,false,false,false,true
+242,5,+5 HP,false,false,false,false
+242,5,+2%   Damage,false,false,false,true
+242,5,+1 Wisdom,false,false,false,false
+259,2,+5%   Damage,true,false,false,false
+259,3,+3 Wisdom,false,false,false,false
+259,4,is under the influence of the  Counter (Lvl. 1),false,false,false,false
+274,2,+5 HP,false,false,false,false
+274,3,+5 HP,false,false,false,false
+274,3,+1%   Damage,true,false,false,false
+274,4,+5 HP,false,false,false,false
+274,4,+2%   Damage,true,false,false,false
+274,5,+5 HP,false,false,false,false
+274,5,+2%   Damage,true,false,false,false
+274,5,+1 Wisdom,false,false,false,false
+276,2,+5 Lock,false,false,false,false
+276,3,+5%   Damage,false,false,false,true
+276,4,+5 Initiative,false,false,false,false
+276,4,+10 Lock,false,false,false,false
+283,2,+5 Dodge,false,false,false,false
+283,3,+5%   Damage,false,true,false,false
+283,4,+5 Initiative,false,false,false,false
+283,4,+10 Dodge,false,false,false,false
+288,2,+5 HP,false,false,false,false
+288,3,+5 HP,false,false,false,false
+288,3,+1%   Damage,false,false,true,false
+288,4,+5 HP,false,false,false,false
+288,4,+2%   Damage,false,false,true,false
+288,5,+5 HP,false,false,false,false
+288,5,+2%   Damage,false,false,true,false
+288,5,+1 Wisdom,false,false,false,false
+335,2,+5 Dodge,false,false,false,false
+335,3,+5%   Damage,false,false,true,false
+335,4,+5 Initiative,false,false,false,false
+335,4,+10 Dodge,false,false,false,false
+312,3,+15 HP,false,false,false,false
+312,4,+15 HP,false,false,false,false
+312,4,+2% Damage ( ),true,true,true,true
+312,4,+2% Resist. ( ),true,true,true,true
+461,2,+5 HP,false,false,false,false
+461,3,+10 HP,false,false,false,false
+461,4,+3% Damage ( ),true,true,true,true
+461,5,+1 AP,false,false,false,false
+289,2,+8%   Damage,false,false,false,true
+289,4,+8 Prospecting,false,false,false,false
+289,5,+3% Resist. to attacks from behind,false,false,false,false
+284,2,+2%   Damage,false,false,true,false
+284,3,+2%   Damage,false,false,true,false
+284,3,+7 HP,false,false,false,false
+284,3,-3% Damage ( ),true,false,false,false
+284,4,+3%   Damage,false,false,true,false
+284,4,+10 HP,false,false,false,false
+284,4,-2% Damage ( ),true,false,false,false
+284,5,+2%   Damage,false,false,true,false
+368,2,+10 HP,false,false,false,false
+368,3,+6%   Damage,true,false,false,false
+368,4,+10 HP,false,false,false,false
+368,4,+4%   Damage,true,false,false,false
+449,2,+10 HP,false,false,false,false
+449,3,+5% Critical Hit Damage,false,false,false,false
+449,4,+5% Critical Hit Damage,false,false,false,false
+449,4,+1% Critical Hits,false,false,false,false
+449,5,+3% Critical Hits,false,false,false,false
+449,6,+1 MP,false,false,false,false
+244,2,+2%   Damage,false,false,false,true
+244,2,+2%   Damage,false,false,true,false
+244,3,+3%   Damage,false,false,false,true
+244,3,+3%   Damage,false,false,true,false
+244,4,+5%   Damage,false,false,false,true
+244,4,+5%   Damage,false,false,true,false
+244,5,+1 Control,false,false,false,false
+244,6,+1 AP,false,false,false,false
+281,2,+15 HP,false,false,false,false
+281,3,+5 Initiative,false,false,false,false
+281,3,+5 Lock,false,false,false,false
+281,3,+5 Dodge,false,false,false,false
+376,2,+5 HP,false,false,false,false
+376,2,+2 Wisdom,false,false,false,false
+380,2,+1 Wisdom,false,false,false,false
+380,2,+5 Prospecting,false,false,false,false
+379,2,+5 Initiative,false,false,false,false
+379,2,+5 Prospecting,false,false,false,false
+243,2,+2%   Damage,true,false,false,false
+243,2,+2%   Damage,false,true,false,false
+243,3,+3%   Damage,true,false,false,false
+243,3,+3%   Damage,false,true,false,false
+243,4,+5%   Damage,true,false,false,false
+243,4,+5%   Damage,false,true,false,false
+243,5,+1 Control,false,false,false,false
+243,6,+1 MP,false,false,false,false
+297,2,+5 Dodge,false,false,false,false
+297,3,+4 Dodge,false,false,false,false
+297,3,+2%   Damage,true,false,false,false
+297,4,is under the influence of the  Chaferified (Lvl. 1),false,false,false,false
+297,4,+8%   Damage,false,true,false,false
+299,2,+5 Dodge,false,false,false,false
+299,3,+4 Dodge,false,false,false,false
+299,3,+2%   Damage,false,true,false,false
+299,4,+8%   Damage,false,true,false,false
+287,2,+12 HP,false,false,false,false
+287,3,+6% CMC Damage,false,false,false,false
+287,4,+7%   Damage,false,false,true,false
+347,2,+10 HP,false,false,false,false
+347,3,+5% Backstab Damage,false,false,false,false
+347,4,+7%   Damage,false,false,false,true
+347,4,+3%   Damage,false,true,false,false
+369,2,+15 HP,false,false,false,false
+369,2,+5 Prospecting,false,false,false,false
+369,3,+10 Prospecting,false,false,false,false
+390,2,+5 HP,false,false,false,false
+390,2,+5 Prospecting,false,false,false,false
+390,3,+10 Prospecting,false,false,false,false
+390,3,+10 HP,false,false,false,false
+462,2,+3% Damage ( ),true,true,true,true
+462,3,+1 AP,false,false,false,false
+298,2,+15 HP,false,false,false,false
+298,3,+25 Initiative,false,false,false,false
+298,4,+2% Resist. ( ),true,true,true,true
+424,2,+1 Lvl. to  spells,false,false,true,false
+424,2,+3% Resist. ( ),true,true,true,true
+424,3,+1 Lvl. to  spells,false,true,false,false
+424,3,+3% Damage ( ),true,true,true,true
+424,4,+1 Lvl. to  spells,false,false,false,true
+424,4,+3% Resist. ( ),true,true,true,true
+424,5,+1 Lvl. to  spells,true,false,false,false
+424,5,+3% Damage ( ),true,true,true,true
+424,6,+1 AP,false,false,false,false
+332,2,+10 HP,false,false,false,false
+332,2,+5 Initiative,false,false,false,false
+332,2,+5 Lock,false,false,false,false
+332,2,+3 Agility,false,false,false,false
+332,4,+20 HP,false,false,false,false
+332,4,+7 Lock,false,false,false,false
+332,4,+5 Agility,false,false,false,false
+332,6,+1 AP,false,false,false,false
+370,2,+25 HP,false,false,false,false
+370,3,+5 Dodge,false,false,false,false
+370,3,+4%   Damage,false,false,false,true
+370,4,+5 Dodge,false,false,false,false
+370,4,+8%   Damage,false,false,false,true
+300,2,+10 HP,false,false,false,false
+300,2,+5 Initiative,false,false,false,false
+300,2,+4 Dodge,false,false,false,false
+300,2,+3 Intelligence,false,false,false,false
+300,4,+20 HP,false,false,false,false
+300,4,+5 Dodge,false,false,false,false
+300,4,+5 Intelligence,false,false,false,false
+300,6,+1 AP,false,false,false,false
+302,2,+10 HP,false,false,false,false
+302,2,+5 Initiative,false,false,false,false
+302,2,+5 Lock,false,false,false,false
+302,2,+3 Strength,false,false,false,false
+302,4,+20 HP,false,false,false,false
+302,4,+7 Lock,false,false,false,false
+302,4,+5 Strength,false,false,false,false
+302,6,+1 AP,false,false,false,false
+333,2,+10 HP,false,false,false,false
+333,2,+5 Initiative,false,false,false,false
+333,2,+4 Dodge,false,false,false,false
+333,2,+3 Chance,false,false,false,false
+333,4,+20 HP,false,false,false,false
+333,4,+5 Dodge,false,false,false,false
+333,4,+5 Chance,false,false,false,false
+333,6,+1 AP,false,false,false,false
+238,2,+1% Critical Failures,false,false,false,false
+238,3,-1 max WP,false,false,false,false
+251,2,+1% Critical Hits,false,false,false,false
+251,3,+4%   Damage,false,false,false,true
+251,3,+4%   Damage,true,false,false,false
+251,4,+1 Range,false,false,false,false
+248,2,+13 Dodge,false,false,false,false
+248,4,+5% Damage ( ),true,true,true,true
+248,5,+5% Backstab Damage,false,false,false,false
+248,6,+5% CMC Damage,false,false,false,false
+291,2,+20 HP,false,false,false,false
+291,3,+10 Initiative,false,false,false,false
+291,4,+8% Damage ( ),true,true,true,true
+306,2,+29 HP,false,false,false,false
+306,4,+10 Dodge,false,false,false,false
+306,6,+10% Heals,false,false,false,false
+303,2,+10 Prospecting,false,false,false,false
+303,4,+1 MP,false,false,false,false
+219,2,+30 HP,false,false,false,false
+219,2,+10 Dodge,false,false,false,false
+219,3,+10 Initiative,false,false,false,false
+219,3,+10 Dodge,false,false,false,false
+219,4,+4%   Damage,false,true,false,false
+219,4,+4%   Damage,false,false,true,false
+219,4,+4 Wisdom,false,false,false,false
+219,4,+4 Initiative,false,false,false,false
+219,5,+6%   Damage,false,true,false,false
+219,5,+6%   Damage,false,false,true,false
+219,5,+6 Wisdom,false,false,false,false
+219,6,+1 MP,false,false,false,false
+266,2,+20% Chef Speed,false,false,false,false
+342,2,+10 HP,false,false,false,false
+342,3,+10 HP,false,false,false,false
+342,3,+5 Intelligence,false,false,false,false
+342,4,+10 HP,false,false,false,false
+342,4,+3 Intelligence,false,false,false,false
+342,4,+6 Lock,false,false,false,false
+342,5,+1 Range,false,false,false,false
+341,2,+10 HP,false,false,false,false
+341,3,+10 HP,false,false,false,false
+341,3,+5 Agility,false,false,false,false
+341,4,+10 HP,false,false,false,false
+341,4,+3 Agility,false,false,false,false
+341,4,+4 Dodge,false,false,false,false
+341,5,+1 Range,false,false,false,false
+260,2,+10 HP,false,false,false,false
+260,3,+10 HP,false,false,false,false
+260,3,+5 Strength,false,false,false,false
+260,4,+10 HP,false,false,false,false
+260,4,+3 Strength,false,false,false,false
+260,4,+3 Wisdom,false,false,false,false
+260,5,+1 Range,false,false,false,false
+401,2,+10 HP,false,false,false,false
+401,3,+10 HP,false,false,false,false
+401,3,+5 Chance,false,false,false,false
+401,4,+10 HP,false,false,false,false
+401,4,+5 Chance,false,false,false,false
+401,4,+3 Prospecting,false,false,false,false
+401,5,+1 Range,false,false,false,false
+247,2,+13 Dodge,false,false,false,false
+247,3,+6% Heals,false,false,false,false
+247,4,+1 Range,false,false,false,false
+305,3,+11%   Damage,false,false,true,false
+305,4,+2% Critical Hits,false,false,false,false
+343,2,+5 Lock,false,false,false,false
+343,2,+10 HP,false,false,false,false
+343,3,+10 Lock,false,false,false,false
+343,3,+10 HP,false,false,false,false
+343,3,+1 Block,false,false,false,false
+343,4,+10%   Damage,false,false,false,true
+343,4,+3 Block,false,false,false,false
+344,2,+5% Resist. ( ),true,true,true,true
+344,3,+1 Block,false,false,false,false
+344,4,+5% Resist. ( ),true,true,true,true
+344,4,+1 Block,false,false,false,false
+345,2,+5% Damage ( ),true,true,true,true
+345,3,+1% Critical Hits,false,false,false,false
+345,4,+5% Damage ( ),true,true,true,true
+345,4,+2% Critical Hits,false,false,false,false
+346,2,+10 Initiative,false,false,false,false
+346,3,+10 Dodge,false,false,false,false
+346,4,+10 Initiative,false,false,false,false
+346,4,+10 Dodge,false,false,false,false
+450,2,+10 HP,false,false,false,false
+450,3,+7% CMC Damage,false,false,false,false
+450,4,+1 Control,false,false,false,false
+450,5,+1 AP,false,false,false,false
+231,2,+5% Damage ( ),true,true,true,true
+231,3,+1% Critical Hits,false,false,false,false
+352,2,+40 HP,false,false,false,false
+352,3,+10%   Damage,false,false,false,true
+352,4,+17 Initiative,false,false,false,false
+339,2,+4%   Damage,false,false,true,false
+339,3,+4%   Damage,true,false,false,false
+339,4,+4%   Damage,false,false,true,false
+339,5,+4%   Damage,true,false,false,false
+339,6,+1 Lvl. to  spells,true,false,false,false
+339,7,+1 MP,false,false,false,false
+250,2,+35 HP,false,false,false,false
+250,3,+15 Lock,false,false,false,false
+250,4,+16%   Damage,false,false,false,true
+250,5,+4% Resist. ( ),true,true,true,true
+250,6,+3 Wisdom,false,false,false,false
+250,8,+1 AP,false,false,false,false
+249,2,+30 HP,false,false,false,false
+249,2,+5%   Damage,true,false,false,false
+249,3,+10%   Damage,true,false,false,false
+249,3,+10 Initiative,false,false,false,false
+406,2,+10 Initiative,false,false,false,false
+406,2,+1% Critical Hits,false,false,false,false
+406,3,+7% Resist. ( ),true,true,true,true
+406,3,+1% Critical Hits,false,false,false,false
+406,4,+1 AP,false,false,false,false
+445,2,+5% Damage ( ),true,true,true,true
+445,2,+10 HP,false,false,false,false
+445,3,+3 Wisdom,false,false,false,false
+445,4,+1 AP,false,false,false,false
+261,2,+6% Critical Hits,false,false,false,false
+405,2,+2 Block,false,false,false,false
+405,2,+5 Lock,false,false,false,false
+405,3,+10% Damage ( ),true,true,true,true
+405,3,+15 Lock,false,false,false,false
+405,4,+1 MP,false,false,false,false
+292,2,+22 HP,false,false,false,false
+292,3,+4 Prospecting,false,false,false,false
+292,4,+10%   Damage,false,false,false,true
+292,4,+6% Resist. ( ),true,true,true,true
+292,5,+1 AP,false,false,false,false
+348,2,+15 HP,false,false,false,false
+348,2,+2% Damage ( ),true,true,true,true
+348,3,+10 Initiative,false,false,false,false
+348,3,+1% Critical Hits,false,false,false,false
+348,4,+8% Damage ( ),true,true,true,true
+348,5,+5% Resist. ( ),true,true,true,true
+348,5,+2% Critical Hits,false,false,false,false
+348,6,+1 AP,false,false,false,false
+421,2,+10 Prospecting,false,false,false,false
+421,3,+10%   Damage,false,false,true,false
+421,4,+1 MP,false,false,false,false
+286,2,+7% Damage ( ),true,true,true,true
+286,3,is under the influence of the  Runaway (Lvl. 1),false,false,false,false
+358,2,+20 HP,false,false,false,false
+358,2,+10%   Damage,false,false,true,false
+358,3,+10 Initiative,false,false,false,false
+358,3,+25 HP,false,false,false,false
+358,3,+10%   Damage,false,false,true,false
+358,4,+1 MP,false,false,false,false
+407,2,+5%   Damage,false,true,false,false
+407,2,+5%   Damage,true,false,false,false
+407,2,+6% CMC Damage,false,false,false,false
+407,3,+5%   Damage,false,true,false,false
+407,3,+5%   Damage,true,false,false,false
+407,3,+10% CMC Damage,false,false,false,false
+407,4,+1 MP,false,false,false,false
+435,2,+10 HP,false,false,false,false
+435,3,+10%   Damage,false,false,false,true
+435,3,+10%   Damage,true,false,false,false
+435,4,+1 Lvl. to  spells,false,false,false,true
+435,5,+1 AP,false,false,false,false
+437,2,+25 HP,false,false,false,false
+437,3,+10 HP,false,false,false,false
+437,3,+1% Critical Hits,false,false,false,false
+437,3,+7% CMC Damage,false,false,false,false
+437,4,+25 HP,false,false,false,false
+437,4,+1% Critical Hits,false,false,false,false
+437,4,+13% CMC Damage,false,false,false,false
+437,5,+1 AP,false,false,false,false
+447,2,+10 HP,false,false,false,false
+447,3,+10%   Damage,false,true,false,false
+447,3,+10%   Damage,false,false,true,false
+447,4,+1 Lvl. to  spells,false,true,false,false
+447,5,+1 AP,false,false,false,false
+409,2,+20 HP,false,false,false,false
+409,2,+1% Critical Hits,false,false,false,false
+409,3,+15% Heals,false,false,false,false
+409,3,+2% Critical Hits,false,false,false,false
+409,4,+1 AP,false,false,false,false
+408,2,+20 HP,false,false,false,false
+408,2,+10 Lock,false,false,false,false
+408,3,+10%   Damage,false,false,true,false
+408,3,+10%   Damage,false,false,false,true
+408,4,+1 MP,false,false,false,false
+410,2,+17 Lock,false,false,false,false
+410,3,+17 Dodge,false,false,false,false
+410,3,+2 Block,false,false,false,false
+410,4,+1 AP,false,false,false,false
+236,2,+40 HP,false,false,false,false
+236,2,+15 Lock,false,false,false,false
+236,3,+20%   Damage,false,false,false,true
+351,2,+45 HP,false,false,false,false
+351,2,+5% Damage ( ),true,true,true,true
+351,3,+5% Damage ( ),true,true,true,true
+351,3,+5% Resist. ( ),true,true,true,true
+351,4,+1 AP,false,false,false,false
+273,2,+20 HP,false,false,false,false
+273,2,+6%   Damage,false,false,false,true
+273,3,+20 HP,false,false,false,false
+273,3,+1% Critical Hits,false,false,false,false
+273,4,+2% Critical Hits,false,false,false,false
+273,4,+6%   Damage,false,false,false,true
+419,2,+1 Block,false,false,false,false
+419,2,+25 HP,false,false,false,false
+419,3,+5%   Damage,false,true,false,false
+419,3,+5%   Damage,false,false,false,true
+419,3,+2 Block,false,false,false,false
+419,3,+30 HP,false,false,false,false
+419,4,+10%   Damage,false,true,false,false
+419,4,+10%   Damage,false,false,false,true
+419,4,+2 Block,false,false,false,false
+419,5,+1 Lvl. to  spells,false,false,false,true
+419,6,+1 AP,false,false,false,false
+420,2,+10 Dodge,false,false,false,false
+420,2,+5%   Damage,true,false,false,false
+420,2,+5%   Damage,false,true,false,false
+420,3,+15 Dodge,false,false,false,false
+420,3,+1% Critical Hits,false,false,false,false
+420,4,+1% Critical Hits,false,false,false,false
+420,4,+5%   Damage,false,true,false,false
+420,4,+5%   Damage,true,false,false,false
+420,5,+1 Range,false,false,false,false
+433,2,+10%   Damage,true,false,false,false
+433,2,+10%   Damage,false,false,true,false
+433,3,+1 Lvl. to  spells,false,false,true,false
+433,4,+10%   Damage,true,false,false,false
+433,4,+10%   Damage,false,false,true,false
+433,5,+1 Lvl. to  spells,false,false,true,false
+433,6,+1 AP,false,false,false,false
+432,2,+1% Critical Hits,false,false,false,false
+432,2,+5% Damage ( ),true,true,true,true
+432,2,+3% Resist. ( ),true,true,true,true
+432,3,+5% Damage ( ),true,true,true,true
+432,3,+3% Resist. ( ),true,true,true,true
+432,3,+2% Critical Hits,false,false,false,false
+432,4,+1 MP,false,false,false,false
+412,2,+40 HP,false,false,false,false
+412,3,+15 Prospecting,false,false,false,false
+412,4,+1 AP,false,false,false,false
+413,2,+16 Initiative,false,false,false,false
+413,2,+1 Block,false,false,false,false
+413,3,+20 Lock,false,false,false,false
+413,3,+1 Block,false,false,false,false
+413,4,+1 AP,false,false,false,false
+411,2,+20 Dodge,false,false,false,false
+411,2,+35 HP,false,false,false,false
+411,3,+2% Critical Hits,false,false,false,false
+411,4,+1 MP,false,false,false,false
+414,2,+15 Lock,false,false,false,false
+414,2,+30 HP,false,false,false,false
+414,3,+2% Critical Hits,false,false,false,false
+414,3,+3 Block,false,false,false,false
+414,4,+1 MP,false,false,false,false
+489,2,+1 AP,false,false,false,false
+349,2,+1% Critical Hits,false,false,false,false
+349,2,+1 Lvl. to  spells,false,true,false,false
+349,3,+14%   Damage,true,false,false,false
+349,3,+14%   Damage,false,true,false,false
+349,4,+1% Critical Hits,false,false,false,false
+349,4,+1 Lvl. to  spells,false,true,false,false
+349,5,+1 AP,false,false,false,false
+415,2,+1 Lvl. to  spells,false,true,false,false
+415,3,+1 Lvl. to  spells,false,true,false,false
+415,4,+1 AP,false,false,false,false
+451,3,+1 lvl. to elemental spells,false,false,false,false
+451,4,+1 AP,false,false,false,false
+452,2,+5 Prospecting,false,false,false,false
+452,2,+5% Damage ( ),true,true,true,true
+452,3,+6 Prospecting,false,false,false,false
+452,3,+5% Damage ( ),true,true,true,true
+452,4,+1 AP,false,false,false,false
+458,2,+18 Initiative,false,false,false,false
+458,2,+1% Critical Hits,false,false,false,false
+458,3,+1% Critical Hits,false,false,false,false
+458,3,+10%   Damage,false,false,true,false
+458,3,+10%   Damage,false,false,false,true
+458,4,+1 Range,false,false,false,false
+470,2,+17 Dodge,false,false,false,false
+470,2,+1% Critical Hits,false,false,false,false
+470,3,+1% Critical Hits,false,false,false,false
+470,3,+10%   Damage,false,false,true,false
+470,3,+10%   Damage,false,true,false,false
+470,4,+1 Range,false,false,false,false
+466,2,+10%   Damage,true,false,false,false
+466,2,+10%   Damage,false,true,false,false
+466,3,+1% Critical Hits,false,false,false,false
+466,3,+1 Lvl. to  spells,false,true,false,false
+466,4,+1 Range,false,false,false,false
+468,2,+6%   Damage,false,false,false,true
+468,2,+6%   Damage,true,false,false,false
+468,2,+2 Block,false,false,false,false
+468,3,+6%   Damage,false,false,false,true
+468,3,+6%   Damage,true,false,false,false
+468,3,+1 Lvl. to  spells,false,false,false,true
+468,4,+1 AP,false,false,false,false
+436,2,+20 HP,false,false,false,false
+436,2,+2 Block,false,false,false,false
+436,3,+10%   Damage,true,false,false,false
+436,3,+1 Lvl. to  spells,true,false,false,false
+436,4,+1 AP,false,false,false,false
+438,2,+15 HP,false,false,false,false
+438,2,+1% Critical Hits,false,false,false,false
+438,3,+2% Critical Hits,false,false,false,false
+438,3,+10%   Damage,false,true,false,false
+438,4,+1 AP,false,false,false,false
+448,2,+10 HP,false,false,false,false
+448,2,+1% Critical Hits,false,false,false,false
+448,3,+2% Critical Hits,false,false,false,false
+448,3,+10%   Damage,false,false,true,false
+448,4,+1 AP,false,false,false,false
+442,2,+5% Damage ( ),true,true,true,true
+442,2,+20 HP,false,false,false,false
+442,3,+5% Damage ( ),true,true,true,true
+442,3,+2% Critical Hits,false,false,false,false
+442,4,+1 AP,false,false,false,false
+235,2,+30 HP,false,false,false,false
+235,2,+1% Critical Hits,false,false,false,false
+235,3,+1% Critical Hits,false,false,false,false
+235,3,+10%   Damage,false,true,false,false
+235,4,+1 MP,false,false,false,false
+366,2,+1% Critical Hits,false,false,false,false
+366,2,+5% Resist. ( ),true,true,true,true
+366,3,+5% Resist. ( ),true,true,true,true
+366,3,+5%   Damage,false,false,false,true
+366,3,+5%   Damage,false,false,true,false
+366,3,+1% Critical Hits,false,false,false,false
+366,4,+5%   Damage,false,false,false,true
+366,4,+2% Critical Hits,false,false,false,false
+366,4,+5%   Damage,false,false,true,false
+366,5,+1 AP,false,false,false,false
+441,2,+20 HP,false,false,false,false
+441,2,+5%   Damage,true,false,false,false
+441,2,+5%   Damage,false,true,false,false
+441,3,+10 Lock,false,false,false,false
+441,3,+10 Initiative,false,false,false,false
+441,3,+26 HP,false,false,false,false
+441,4,+10 Lock,false,false,false,false
+441,4,+10 Initiative,false,false,false,false
+441,4,+5%   Damage,true,false,false,false
+441,4,+5%   Damage,false,true,false,false
+441,5,+1 Lvl. to  spells,true,false,false,false
+441,6,+1 AP,false,false,false,false
+490,2,+15 HP,false,false,false,false
+490,2,+2% Critical Hits,false,false,false,false
+353,2,+15 Initiative,false,false,false,false
+353,2,+5% Resist. ( ),true,true,true,true
+353,3,+5% Resist. ( ),true,true,true,true
+353,3,+14 Dodge,false,false,false,false
+353,3,+6%   Damage,false,false,false,true
+353,3,+6%   Damage,false,false,true,false
+353,4,+5% Heals,false,false,false,false
+353,4,+6%   Damage,false,false,false,true
+353,4,+6%   Damage,false,false,true,false
+353,5,+1 AP,false,false,false,false
+429,2,+1% Critical Hits,false,false,false,false
+429,2,+1 Lvl. to  spells,false,false,true,false
+429,3,+12%   Damage,false,false,true,false
+429,3,+12%   Damage,true,false,false,false
+429,3,+1% Critical Hits,false,false,false,false
+429,4,+1 Lvl. to  spells,true,false,false,false
+429,4,+2% Critical Hits,false,false,false,false
+429,5,+1 AP,false,false,false,false
+459,2,+10%   Damage,true,false,false,false
+459,3,+1% Critical Hits,false,false,false,false
+459,3,+1 Lvl. to  spells,true,false,false,false
+473,2,+5%   Damage,false,false,false,true
+473,2,+5 Lock,false,false,false,false
+473,3,+5%   Damage,false,false,false,true
+473,3,+1% Critical Hits,false,false,false,false
+469,2,+6% Heals,false,false,false,false
+469,2,+10 HP,false,false,false,false
+469,3,+10%   Damage,false,false,true,false
+469,3,+1 Lvl. to  spells,false,false,true,false
+467,2,+30 HP,false,false,false,false
+467,3,+10%   Damage,false,true,false,false
+360,2,+35 HP,false,false,false,false
+360,2,+1 Lvl. to  spells,true,false,false,false
+360,3,+8%   Damage,true,false,false,false
+360,3,+20 HP,false,false,false,false
+360,4,+1 MP,false,false,false,false
+361,2,+6 Initiative,false,false,false,false
+361,2,+6 Lock,false,false,false,false
+361,2,+1 Block,false,false,false,false
+361,3,+5%   Damage,true,false,false,false
+361,3,+1% Critical Hits,false,false,false,false
+361,3,+2 Block,false,false,false,false
+361,3,+10 Lock,false,false,false,false
+361,3,+10 Initiative,false,false,false,false
+361,3,+5%   Damage,false,true,false,false
+361,4,+1 Lvl. to  spells,true,false,false,false
+361,4,+5%   Damage,true,false,false,false
+361,4,+1% Critical Hits,false,false,false,false
+361,4,+5%   Damage,false,true,false,false
+361,5,+1 AP,false,false,false,false
+453,2,+15 Dodge,false,false,false,false
+453,2,+6% Resist. ( ),true,true,true,true
+453,3,+5%   Damage,false,true,false,false
+453,3,+5%   Damage,false,false,false,true
+453,3,+1% Critical Hits,false,false,false,false
+453,3,+6% Resist. ( ),true,true,true,true
+453,4,+6%   Damage,false,true,false,false
+453,4,+6%   Damage,false,false,false,true
+453,4,+5% Critical Hits,false,false,false,false
+453,5,+1 AP,false,false,false,false
+359,2,+1 Block,false,false,false,false
+359,2,+1% Critical Hits,false,false,false,false
+359,2,+7% Resist. ( ),true,true,true,true
+359,3,+7% Resist. ( ),true,true,true,true
+359,3,+6% Heals,false,false,false,false
+359,3,+6%   Damage,false,false,false,true
+359,3,+6%   Damage,false,false,true,false
+359,3,+1% Critical Hits,false,false,false,false
+359,3,+2 Block,false,false,false,false
+359,4,+6% Heals,false,false,false,false
+359,4,+6%   Damage,false,false,false,true
+359,4,+6%   Damage,false,false,true,false
+359,4,+2% Critical Hits,false,false,false,false
+359,4,+2 Block,false,false,false,false
+359,5,+1 AP,false,false,false,false
+371,2,+50 HP,false,false,false,false
+371,2,+2 Block,false,false,false,false
+371,3,+2 Block,false,false,false,false
+371,3,+1% Critical Hits,false,false,false,false
+371,3,+5% Resist. ( ),true,true,true,true
+371,4,+10%   Damage,false,false,false,true
+371,4,+2% Critical Hits,false,false,false,false
+371,4,+10% Resist. ( ),true,true,true,true
+371,5,+1 MP,false,false,false,false
+418,2,+1 Block,false,false,false,false
+418,2,+30 HP,false,false,false,false
+418,3,+2 Block,false,false,false,false
+418,3,+30 HP,false,false,false,false
+418,3,+10% Resist. ( ),true,true,true,true
+418,4,+1 AP,false,false,false,false
+434,2,+1% Critical Hits,false,false,false,false
+434,2,+13% Backstab Damage,false,false,false,false
+434,3,+2% Critical Hits,false,false,false,false
+434,3,+10% Critical Hit Damage,false,false,false,false
+434,3,+10% Damage ( ),true,true,true,true
+434,4,+1 MP,false,false,false,false
+474,2,+3 Block,false,false,false,false
+474,3,+10%   Damage,false,false,true,false
+474,3,+10%   Damage,true,false,false,false
+474,4,+1 Lvl. to  spells,false,false,true,false
+474,4,+5%   Damage,false,false,true,false
+474,4,+5%   Damage,true,false,false,false
+474,5,+1 Range,false,false,false,false
+494,2,+5 Prospecting,false,false,false,false
+494,2,+4% Resist. ( ),true,true,true,true
+494,3,+5 Prospecting,false,false,false,false
+494,3,+10%   Damage,false,false,true,false
+494,3,+4% Resist. ( ),true,true,true,true
+494,4,+1 MP,false,false,false,false
+515,2,+45 HP,false,false,false,false
+515,2,+5% Resist. ( ),true,true,true,true
+515,2,+14 Lock,false,false,false,false
+515,3,+7%   Damage,false,false,false,true
+515,3,+7%   Damage,true,false,false,false
+515,3,+2 Block,false,false,false,false
+515,4,+7%   Damage,false,false,false,true
+515,4,+7%   Damage,true,false,false,false
+515,4,+2 Block,false,false,false,false
+515,5,+1 AP,false,false,false,false
+439,2,+1 Block,false,false,false,false
+439,2,+5% Resist. ( ),true,true,true,true
+439,3,+6%   Damage,false,true,false,false
+439,3,+6%   Damage,false,false,true,false
+439,3,+1% Critical Hits,false,false,false,false
+439,3,+6% Resist. ( ),true,true,true,true
+439,3,+2 Block,false,false,false,false
+439,4,+6%   Damage,false,true,false,false
+439,4,+6%   Damage,false,false,true,false
+439,4,+2% Critical Hits,false,false,false,false
+439,5,+1 AP,false,false,false,false
+431,2,+14%   Damage,false,false,true,false
+431,3,+1 Range,false,false,false,false
+431,4,+1 MP,false,false,false,false
+397,2,+20 Initiative,false,false,false,false
+397,2,+2 Block,false,false,false,false
+397,2,+1% Critical Hits,false,false,false,false
+397,3,+10%   Damage,false,true,false,false
+397,3,+10%   Damage,false,false,false,true
+397,3,+2 Block,false,false,false,false
+397,3,+1% Critical Hits,false,false,false,false
+397,4,+1 AP,false,false,false,false
+454,2,+2 Block,false,false,false,false
+454,2,+5%   Damage,false,true,false,false
+454,2,+5% Resist. ( ),true,true,true,true
+454,3,+1 Lvl. to  spells,false,true,false,false
+454,3,+3 Block,false,false,false,false
+454,3,+5%   Damage,false,true,false,false
+454,3,+8% Resist. ( ),true,true,true,true
+454,4,+1 MP,false,false,false,false
+365,2,+8 Dodge,false,false,false,false
+365,2,+7% Resist. ( ),true,true,true,true
+365,3,+10%   Damage,false,false,true,false
+365,3,+5 Prospecting,false,false,false,false
+365,4,+1 MP,false,false,false,false
+367,2,+5%   Damage,true,false,false,false
+367,2,+5%   Damage,false,false,false,true
+367,2,+1% Critical Hits,false,false,false,false
+367,2,+6 Lock,false,false,false,false
+367,3,+5%   Damage,true,false,false,false
+367,3,+5%   Damage,false,false,false,true
+367,3,+2% Critical Hits,false,false,false,false
+367,3,+10 Lock,false,false,false,false
+367,4,+1 AP,false,false,false,false
+381,2,+6% Resist. ( ),true,true,true,true
+381,2,+5% Damage ( ),true,true,true,true
+381,2,+5 Prospecting,false,false,false,false
+381,3,+10 Prospecting,false,false,false,false
+381,3,+6% Resist. ( ),true,true,true,true
+381,3,+1% Critical Hits,false,false,false,false
+381,4,+10% Damage ( ),true,true,true,true
+381,4,+1% Critical Hits,false,false,false,false
+381,5,+1 AP,false,false,false,false
+475,2,+5 Dodge,false,false,false,false
+475,2,+9% CMC Damage,false,false,false,false
+475,3,+9% CMC Damage,false,false,false,false
+475,3,+10 Dodge,false,false,false,false
+475,3,+6%   Damage,true,false,false,false
+475,3,+6%   Damage,false,false,true,false
+475,4,+6%   Damage,true,false,false,false
+475,4,+6%   Damage,false,false,true,false
+475,4,+1 Lvl. to  spells,true,false,false,false
+475,5,+1 AP,false,false,false,false
+516,2,+1 Block,false,false,false,false
+516,2,+15 Dodge,false,false,false,false
+516,2,+1% Critical Hits,false,false,false,false
+516,2,+5%   Damage,true,false,false,false
+516,3,+1 Lvl. to  spells,true,false,false,false
+516,3,+2 Block,false,false,false,false
+516,3,+2% Critical Hits,false,false,false,false
+516,3,+5%   Damage,true,false,false,false
+516,4,+1 MP,false,false,false,false
+499,2,+15 Lock,false,false,false,false
+499,2,+5%   Damage,true,false,false,false
+499,3,+5%   Damage,true,false,false,false
+499,3,+1 Lvl. to  spells,true,false,false,false
+499,3,+15 Lock,false,false,false,false
+499,4,+1 AP,false,false,false,false
+440,2,+57 HP,false,false,false,false
+440,3,+2% Critical Hits,false,false,false,false
+440,3,+10%   Damage,false,false,false,true
+440,4,+1 MP,false,false,false,false
+394,2,+3 Block,false,false,false,false
+394,2,+1% Critical Hits,false,false,false,false
+394,2,+6%   Damage,true,false,false,false
+394,2,+6%   Damage,false,false,true,false
+394,3,+6%   Damage,false,false,true,false
+394,3,+6%   Damage,true,false,false,false
+394,3,+2% Critical Hits,false,false,false,false
+394,3,+4 Block,false,false,false,false
+394,3,+9% Heals,false,false,false,false
+394,4,+1 AP,false,false,false,false
+495,2,+20 Lock,false,false,false,false
+495,2,+2 Block,false,false,false,false
+495,2,+10% Resist. ( ),true,true,true,true
+495,3,+1 Lvl. to  spells,false,false,false,true
+495,3,+12%   Damage,false,false,false,true
+495,4,+1 AP,false,false,false,false
+234,2,+6%   Damage,false,true,false,false
+234,2,+6%   Damage,false,false,true,false
+234,2,+12 Dodge,false,false,false,false
+234,2,+1% Critical Hits,false,false,false,false
+234,2,+6% Resist. ( ),true,true,true,true
+234,3,+1% Critical Hits,false,false,false,false
+234,3,+15 Initiative,false,false,false,false
+234,3,+6%   Damage,false,false,true,false
+234,3,+6%   Damage,false,true,false,false
+234,3,+10% Resist. ( ),true,true,true,true
+234,4,+1 AP,false,false,false,false
+395,2,+30 HP,false,false,false,false
+395,2,+2 Block,false,false,false,false
+395,2,+10 Lock,false,false,false,false
+395,2,+5% Resist. ( ),true,true,true,true
+395,3,+2 Block,false,false,false,false
+395,3,+6% Resist. ( ),true,true,true,true
+395,3,+45 HP,false,false,false,false
+395,3,+15 Lock,false,false,false,false
+395,4,Applies  Canine Dodge,false,false,false,false
+416,2,+1 AP,false,false,false,false
+443,2,+40 HP,false,false,false,false
+443,2,+2% Critical Hits,false,false,false,false
+443,3,+1 lvl. to elemental spells,false,false,false,false
+443,4,+1 AP,false,false,false,false
+444,2,+40 HP,false,false,false,false
+444,2,+3 Block,false,false,false,false
+444,3,+1 lvl. to elemental spells,false,false,false,false
+444,4,+1 AP,false,false,false,false
+398,2,+55 HP,false,false,false,false
+398,2,+20 Lock,false,false,false,false
+398,3,+6% Resist. ( ),true,true,true,true
+398,3,+10%   Damage,false,false,true,false
+398,3,+10%   Damage,false,false,false,true
+398,3,+2 Block,false,false,false,false
+398,4,+6% Resist. ( ),true,true,true,true
+398,4,+11%   Damage,false,false,true,false
+398,4,+11%   Damage,false,false,false,true
+398,4,+2 Block,false,false,false,false
+398,5,+1 AP,false,false,false,false
+476,2,+10% Resist. ( ),true,true,true,true
+476,3,+1 Lvl. to  spells,false,true,false,false
+476,3,+14%   Damage,false,true,false,false
+392,2,+30 HP,false,false,false,false
+392,2,+5%   Damage,true,false,false,false
+392,2,+1 Block,false,false,false,false
+392,2,+5% Resist. ( ),true,true,true,true
+392,3,+5% Resist. ( ),true,true,true,true
+392,3,+2 Block,false,false,false,false
+392,3,+5%   Damage,true,false,false,false
+392,3,+42 HP,false,false,false,false
+392,3,+1 Lvl. to  spells,true,false,false,false
+392,4,+1 AP,false,false,false,false
+396,2,+10 Initiative,false,false,false,false
+396,2,+10 Dodge,false,false,false,false
+396,2,+10%   Damage,true,false,false,false
+396,2,+10%   Damage,false,true,false,false
+396,3,+1 Lvl. to  spells,false,true,false,false
+396,3,+15 Initiative,false,false,false,false
+396,3,+15 Dodge,false,false,false,false
+396,4,+1 AP,false,false,false,false
+496,2,+5% Resist. ( ),true,true,true,true
+496,3,+1% Critical Hits,false,false,false,false
+496,4,+1 Range,false,false,false,false
+501,2,+1% Critical Hits,false,false,false,false
+501,2,+6% Critical Hit Damage,false,false,false,false
+501,3,+1% Critical Hits,false,false,false,false
+501,3,+10% Critical Hit Damage,false,false,false,false
+501,4,+1 Lvl. to  spells,false,true,false,false
+501,4,+2% Critical Hits,false,false,false,false
+506,2,+20 Dodge,false,false,false,false
+506,2,+6% Backstab Damage,false,false,false,false
+506,3,+10% Backstab Damage,false,false,false,false
+506,3,+1% Critical Hits,false,false,false,false
+497,2,+12% Critical Hit Damage,false,false,false,false
+497,3,+11% Resist. ( ),true,true,true,true
+497,4,+2% Critical Hits,false,false,false,false
+504,2,+20 Initiative,false,false,false,false
+504,3,+1 Lvl. to  spells,false,false,true,false
+504,4,+2% Critical Hits,false,false,false,false
+393,2,+1 Block,false,false,false,false
+393,2,+5% Resist. ( ),true,true,true,true
+393,3,+1% Critical Hits,false,false,false,false
+393,3,+4%   Damage,false,false,false,true
+393,3,+4%   Damage,true,false,false,false
+393,3,+2 Block,false,false,false,false
+393,4,+2% Critical Hits,false,false,false,false
+393,4,+5%   Damage,false,false,false,true
+393,4,+5%   Damage,true,false,false,false
+393,4,+5% Resist. ( ),true,true,true,true
+498,2,+1% Critical Hits,false,false,false,false
+498,2,+10% Resist. ( ),true,true,true,true
+498,3,+1% Critical Hits,false,false,false,false
+498,3,+6%   Damage,false,true,false,false
+498,3,+6%   Damage,true,false,false,false
+498,4,+2% Critical Hits,false,false,false,false
+498,4,+1 Lvl. to  spells,false,true,false,false
+503,2,+30 HP,false,false,false,false
+503,2,+10 Lock,false,false,false,false
+503,3,+5% Resist. ( ),true,true,true,true
+503,3,+10 Lock,false,false,false,false
+503,4,+2 Lvl. to  spells,false,false,false,true
+503,4,+5% Resist. ( ),true,true,true,true
+403,2,+58 HP,false,false,false,false
+403,2,+17 Initiative,false,false,false,false
+403,2,+5%   Damage,false,false,true,false
+403,2,+5%   Damage,false,true,false,false
+403,3,+5% Resist. ( ),true,true,true,true
+403,3,+1 Block,false,false,false,false
+403,3,+5 Initiative,false,false,false,false
+403,3,+10 HP,false,false,false,false
+403,4,+5% Resist. ( ),true,true,true,true
+403,4,+5%   Damage,false,true,false,false
+403,4,+5%   Damage,false,false,true,false
+403,4,+1% Critical Hits,false,false,false,false
+403,4,+1 Block,false,false,false,false
+403,4,+10 HP,false,false,false,false
+403,5,+1 AP,false,false,false,false
+399,2,+46 HP,false,false,false,false
+399,2,+10 Initiative,false,false,false,false
+399,2,+10 Dodge,false,false,false,false
+399,2,+10% Resist. ( ),true,true,true,true
+399,3,+1% Critical Hits,false,false,false,false
+399,3,+2 Block,false,false,false,false
+399,3,+10 Dodge,false,false,false,false
+399,3,+10 Initiative,false,false,false,false
+399,4,+2 Block,false,false,false,false
+399,4,+10% Resist. ( ),true,true,true,true
+399,4,+2% Critical Hits,false,false,false,false
+399,5,+1 MP,false,false,false,false
+404,2,+20 HP,false,false,false,false
+404,2,+10 Initiative,false,false,false,false
+404,2,+5%   Damage,false,false,true,false
+404,2,+5%   Damage,false,true,false,false
+404,3,+6% Resist. ( ),true,true,true,true
+404,3,+10 Initiative,false,false,false,false
+404,3,+1 Block,false,false,false,false
+404,3,+5%   Damage,false,false,true,false
+404,3,+5%   Damage,false,true,false,false
+404,3,+10 HP,false,false,false,false
+404,4,+6% Resist. ( ),true,true,true,true
+404,4,+5%   Damage,false,true,false,false
+404,4,+5%   Damage,false,false,true,false
+404,4,+1% Critical Hits,false,false,false,false
+404,4,+1 Block,false,false,false,false
+404,4,+10 HP,false,false,false,false
+404,5,+1 AP,false,false,false,false
+505,2,+5% Resist. ( ),true,true,true,true
+505,2,+15 HP,false,false,false,false
+505,2,+5 Dodge,false,false,false,false
+505,3,+20 HP,false,false,false,false
+505,3,+5% Resist. ( ),true,true,true,true
+505,3,+10 Dodge,false,false,false,false
+505,4,+20 Dodge,false,false,false,false
+505,4,+5% Resist. ( ),true,true,true,true
+505,4,+1% Critical Hits,false,false,false,false
+505,4,+20 HP,false,false,false,false
