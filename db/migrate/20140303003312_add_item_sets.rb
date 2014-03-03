@@ -9,7 +9,9 @@ class AddItemSets < ActiveRecord::Migration
       t.timestamp
     end
     
-    create_table :item_set_stat do |t|
+    create_table :item_set_stats do |t|
+      t.integer :item_set_id
+      
       t.integer :piece
       t.text :description
       t.string :skill

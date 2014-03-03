@@ -1,6 +1,7 @@
-
+<%if stats.any?%>
+<h4><%=stats[0].piece%>件奖励</h4>
 <ul>
-	<%@item.item_stats_effect_equipped.each do |effect|%>
+	<%stats.each do |effect|%>
 		<li>
 			<%if effect.percent %>
 				<%if effect.value > 0%>
@@ -29,4 +30,5 @@
 			<%end%>
 		</li>
 	<%end%>
-	</ul>
+</ul>
+<%end%>
