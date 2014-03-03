@@ -21,7 +21,7 @@ File.open(filename, "r") do |file|
      end
      
      set_stat = ItemSetStat.new
-     
+     set_stat.cate = "bonus"
      set_stat.item_set_id = set.id
      set_stat.piece = piece
      set_stat.description = description
