@@ -10,7 +10,7 @@ File.open(filename, "r") do |file|
      fire = line.split(",")[3]
      air = line.split(",")[4]
      water = line.split(",")[5]
-     earth = line.split(",")[6]
+     earth = line.split(",")[6].strip
      
 
      set = ItemSet.where("no =?",set_no)[0]
