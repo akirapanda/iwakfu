@@ -3,7 +3,6 @@
 h4{margin:0px;padding:4px;}
 .dbg{background:url('../img/body-bg.png') top left repeat;}
 .clear{clear:both;}
-input:not([type="image"]){box-sizing:border-box;-moz-box-sizing:border-box;}
 h3{border-bottom:1px solid #ccc;font-variant:small-caps;font-size:2em;margin:0;margin-bottom:20px;}
 input.ismall{width:25px;}
 input.imedium{width:175px;}
@@ -288,12 +287,7 @@ img.tameable{position:relative;left:300px;top:2px;}
 .build-slot{width:47px;height:48px;margin:5px 0px 0px 5px;overflow:hidden;display:block;border-radius:5px;cursor:pointer;float:left;}
 .build-slot img{position:relative;top:4px;left:0px;}
 .build-warning{width:455px;height:15px;margin:20px 0px 0px 10px;overflow:hidden;float:left;display:none;}
-.b-input{background-color:#333;border:1px solid #232323;overflow:hidden;display:inline-block;line-height:24px;background-clip:padding-box;border-radius:5px;outline-color:#000000 !important;padding:0 8px 0 4px;color:#cccccc !important;}
-.b-input.short{line-height:20px;}
 .b-label{display:inline-block;padding:5px 10px 0 20px;}
-.b-input-large{width:600px;height:28px;}
-.b-input-medium{width:350px;height:28px;}
-.b-input-small{width:200px;height:28px;}
 .b-holder{display:inline-block;margin:10px 5px;}
 .oneHalf{width:48.5%;}
 .player-stats .one4{width:60px;}
