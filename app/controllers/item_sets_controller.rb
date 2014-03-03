@@ -6,5 +6,8 @@ class ItemSetsController < ApplicationController
     end
   end
 
-  
+  def show
+    @item_set = ItemSet.find(params[:id])
+    @items_grid = initialize_grid(@item_set.items,:per_page => 40)  
+  end
 end

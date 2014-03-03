@@ -1,0 +1,22 @@
+<%= grid(@items_grid, show_filters: :when_filtered, hide_csv_button: true) do |g|
+  g.column :name => '图片', :attribute => 'icon', filter: false do |item|
+		image_tag(item.icon)
+	end 
+
+  g.column :name => '名称', :attribute => 'name' do |item|
+	 link_to(item.name,item)
+	end
+	
+	g.column :name => '等级', :attribute => 'level' do |item|
+	  "等级#{item.level}"
+	end
+	
+	g.column :name => '类型', :attribute => 'item_type', filter: false do |item|
+		item.item_type.chinese_name if item.item_type
+	end
+
+  g.column :name => '介绍', :attribute => 'content' do |item|
+			render 'grid_item_stat',:@item=>item
+  end
+
+end -%>
