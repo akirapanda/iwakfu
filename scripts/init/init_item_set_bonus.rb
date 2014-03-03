@@ -30,16 +30,14 @@ File.open(filename, "r") do |file|
      set_stat.water = water
      set_stat.earth = earth
      
-     if description.split(' ').size >0 && description.split(' ').size < 4
-       set_stat.content = description.split(' ')[1]
+     set_stat.content = description.split(' ')[1]
 
-       if description.split(' ')[0].include?("%")
-         set_stat.percent = true
-       end
-
-       set_stat.value = description.split(' ')[0].to_i
-     
+     if description.split(' ')[0].include?("%")
+       set_stat.percent = true
      end
+
+     set_stat.value = description.split(' ')[0].delete('%').to_i
+     
      set_stat.save
    end
 end
