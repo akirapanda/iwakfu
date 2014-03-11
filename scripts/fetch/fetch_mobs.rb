@@ -5,7 +5,7 @@ require "nokogiri"
 
 @url = "http://www.wakfu-elements.com/bestiary/view/"
 
-@mobs = Mob.where("id >1 and id <3")
+@mobs = Mob.all
 
 @mobs.each do |mob|
   begin
