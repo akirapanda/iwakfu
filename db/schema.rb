@@ -11,9 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140303003312) do
+ActiveRecord::Schema.define(version: 20140311091639) do
 
-  create_table "item_set_stat", force: true do |t|
+  create_table "item_set_stats", force: true do |t|
     t.integer "piece"
     t.text    "description"
     t.string  "skill"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20140303003312) do
     t.boolean "water",                                default: false
     t.boolean "fire",                                 default: false
     t.boolean "visiable",                             default: true
+    t.integer "item_set_id"
   end
 
   create_table "item_sets", force: true do |t|
@@ -90,6 +91,8 @@ ActiveRecord::Schema.define(version: 20140303003312) do
     t.string   "icon"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "no"
+    t.string   "thumb"
   end
 
   create_table "mobs", force: true do |t|
@@ -116,6 +119,8 @@ ActiveRecord::Schema.define(version: 20140303003312) do
     t.boolean  "capture_flag",  default: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "no"
+    t.string   "thumb"
   end
 
 end

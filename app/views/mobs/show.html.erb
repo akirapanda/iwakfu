@@ -1,0 +1,64 @@
+<div id="npcs">
+		<h3><%=@mob.name%></h3> 
+		<div class="npc-image">
+			<%=image_tag(@mob.icon_url)%>
+			<div class="npc-cost">
+				<div title="ap points"><img src="/img/ap-text.png"/><%=@mob.ap%></div>
+				<div title="mp points"><img src="/img/mp-text.png"/><%=@mob.mp%></div>
+				<div title="Wakfu points"><img src="/img/wakfu-text.png"/><%=@mob.wp%>0</div>
+			</div>
+		</div>
+		
+		<div class="npc-stats">
+		<h4><font color="white"> 等级 <%=@mob.level%></font>
+				<%if @mob.capture_flag%>
+				 <img class="tameable" src="/img/tameable1.png"/>
+				<%else%>
+				 <img class="tameable" src="/img/tameable0.png"/>
+				<%end%>
+			</h4>
+			<div class="stats-col three4"><img src="/img/hp-text.png"/>生命值</div>
+			<div class="stats-col one4"><%=@mob.hp%></div>
+			
+			<div class="stats-col three4"><img src="/img/init-text.png"/>先手</div>
+			<div class="stats-col one4"><%=@mob.init%></div>
+			
+			<div class="stats-col three4"><img src="/img/lock-text.png"/>锁定</div>
+			<div class="stats-col one4"><%=@mob.lock%></div>
+			
+			<div class="stats-col three4"><img src="/img/dodge-text.png"/>闪避</div>
+			<div class="stats-col one4"><%=@mob.dodge%></div>
+			
+			<div class="stats-col three4"><img src="/img/block-text.png"/>锁定</div>
+			<div class="stats-col one4"><%=@mob.block%></div>
+			
+			<div class="stats-col three4"><img src="/img/crit-text.png"/>暴击</div>
+			<div class="stats-col one4"><%=@mob.crit%></div>
+			
+			
+			<div class="clear"></div>
+		</div>
+		<div class="npc-stats">
+		<h4><font color="white">伤害&抗性</font></h4>
+			<div class="stats-col three4"><img src="/img/earthDefense.png"/>地系抗性</div>
+			<div class="stats-col one4"><%=@mob.earth_resist%>%</div>
+			<div class="stats-col three4"><img src="/img/earthDamage.png" width="16px" height="16px"/>地系伤害</div>
+			<div class="stats-col one4"><%=@mob.earth_damage%>%</div>
+			
+			<div class="stats-col three4"><img src="/img/fireDefense.png"/>火系抗性</div>
+			<div class="stats-col one4"><%=@mob.fire_resist%>%</div>
+			<div class="stats-col three4"><img src="/img/fireDamage.png" width="16px" height="16px"/>火系伤害</div>
+			<div class="stats-col one4"><%=@mob.fire_damage%>%</div>
+			
+			<div class="stats-col three4"><img src="/img/waterDefense.png"/>水系抗性</div>
+			<div class="stats-col one4"><%=@mob.water_resist%>%</div>
+			<div class="stats-col three4"><img src="/img/waterDamage.png" width="16px" height="16px"/>水系伤害</div>
+			<div class="stats-col one4"><%=@mob.water_damage%>%</div>
+			
+			<div class="stats-col three4"><img src="/img/airDefense.png"/>风系抗性</div>
+			<div class="stats-col one4"><%=@mob.air_resist%>%</div>
+			<div class="stats-col three4"><img src="/img/airDamage.png" width="16px" height="16px"/>风地系伤害</div>
+			<div class="stats-col one4"><%=@mob.air_damage%>%</div>
+		</div>
+		
+</div>

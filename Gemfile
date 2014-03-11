@@ -13,7 +13,10 @@ gem 'mysql2'
 gem 'simple_form'
 gem 'bootstrap_helper', github: 'akirapanda/bootstrap-helper'
 
+#分页
 gem "wice_grid", '3.4.0'
+gem 'kaminari'
+gem 'kaminari-bootstrap', '~> 0.1.3'
 
 gem 'nokogiri', "~> 1.5.6"
 

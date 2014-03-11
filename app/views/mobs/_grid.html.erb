@@ -1,0 +1,26 @@
+<%= grid(@mobs_grid, show_filters: :when_filtered, hide_csv_button: true) do |g|
+  g.column :name => '图片', :attribute => 'icon', filter: false do |mob|
+		image_tag(mob.icon,:width=>"100")
+	end 
+
+  g.column :name => '名称', :attribute => 'name' do |mob|
+	 link_to(mob.name,mob)
+	end
+	
+	g.column :name => '等级', :attribute => 'level' do |mob|
+	  "等级#{mob.level}"
+	end
+	
+	g.column :name => '行动力', :attribute => 'ap' 
+	g.column :name => '移动力', :attribute => 'mp' 
+	g.column :name => '创生力', :attribute => 'wp' 
+	
+	g.column :name => '生命值', :attribute => 'hp' 
+	g.column :name => '地抗', :attribute => 'earth_resist' 
+	g.column :name => '火抗', :attribute => 'fire_resist' 
+	g.column :name => '水抗', :attribute => 'water_resist' 
+	g.column :name => '风抗', :attribute => 'air_resist' 
+
+
+
+end -%>
