@@ -19,4 +19,3 @@ class AddRecipeItem < ActiveRecord::Migration
     end
   end
 end
-FAULT CHARSET=utf8;
