@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140313072544) do
+ActiveRecord::Schema.define(version: 20140313101618) do
 
   create_table "drop_items", force: true do |t|
     t.integer "mob_id"
@@ -132,11 +132,24 @@ ActiveRecord::Schema.define(version: 20140313072544) do
     t.integer  "hidden",        limit: 1
   end
 
-  create_table "traper_items", force: true do |t|
+  create_table "recipe_items", force: true do |t|
+    t.integer "item_id"
+    t.integer "quantity"
+  end
+
+  create_table "recipes", force: true do |t|
+    t.integer "item_id"
+    t.string  "name"
+    t.string  "skill"
+    t.integer "level"
+  end
+
+  create_table "trapper_items", force: true do |t|
     t.integer "mob_id"
     t.integer "item_id"
     t.integer "level"
     t.string  "source"
+    t.string  "skill"
   end
 
 end

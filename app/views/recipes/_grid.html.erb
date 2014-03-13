@@ -1,0 +1,21 @@
+<%= grid(@recipes_grid, show_filters: :when_filtered, hide_csv_button: true) do |g|
+  g.column :name => '图片', :attribute => 'item_id', filter: false do |recipe|
+		image_tag(recipe.item.icon,:width=>"50")
+	end 
+
+  g.column :name => '名称', :attribute => 'name' do |recipe|
+	 link_to("#{recipe.item.name} x #{recipe.quantity}",recipe.item)
+	end
+	
+
+	g.column :name => '制作等级', :attribute => 'level' do |recipe|
+		"等级#{recipe.level}"
+	end
+  
+
+  g.column :name => '材料' do |recipe|
+		render "craft_items",:recipe=>recipe
+	end
+
+
+end -%>

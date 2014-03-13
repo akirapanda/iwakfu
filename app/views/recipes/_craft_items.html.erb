@@ -1,0 +1,7 @@
+<%recipe.recipe_items.each do |item|%>
+<div class="row-fluid" >
+<%=link_to item.item  do%>
+<%=image_tag(item.item.icon,:class=>"itemImgSmall",:width=>"30px")%><%= item.item.name%></a> x<%= item.quantity%>
+<%end%>
+</div>
+<%end%>

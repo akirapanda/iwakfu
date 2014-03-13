@@ -3,6 +3,7 @@ Iwakfu::Application.routes.draw do
   match 'search', to: 'home#search', via: :all
   resources :items
   resources :item_sets
+  resources :recipes
   
   resources :mobs
   resources :mob_families
