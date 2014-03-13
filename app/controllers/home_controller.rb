@@ -15,20 +15,17 @@ class HomeController < ApplicationController
     if params[:damage].present?
       params[:damage].each do |damage|
         if damage.include?"earth"
-          @items = @items.joins(:item_stats).where("item_stats.content = ? and earth = true","伤害").distinct
+          earth=true
         elsif damage.include?"fire"
-          @items = @items.joins(:item_stats).where("item_stats.content = ? and fire = true","伤害").distinct
-
+          fire=true
         elsif damage.include?"air"
-          @items = @items.joins(:item_stats).where("item_stats.content = ? and air = true","伤害").distinct
-
+          air=true
         elsif damage.include?"water"
-          @items = @items.joins(:item_stats).where("item_stats.content = ? and water = true","伤害").distinct
+          water=true
         end
+        @items = @items.joins(:item_stats).where("item_stats.content = ? and (earth = ? or fire =? or air=? or water=?)","伤害",earth,fire,air,water).distinct
+        
       end
-      
-
-      
     end
     
     @items_grid = initialize_grid(@items,:per_page => 40)
