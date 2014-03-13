@@ -56,6 +56,8 @@
 	<ul  class="nav nav-tabs">
 		<li ><a href="#comments" data-toggle="tab">评论</a></li>
 		<li class="active"><a href="#itemdrops" data-toggle="tab">怪物掉落</a></li>
+		<li ><a href="#trapper" data-toggle="tab">畜牧掉落</a></li>
+		
 	</ul>
  	<div id="myTabContent" class="tab-content">
       <div class="tab-pane fade " id="comments">
@@ -89,5 +91,33 @@
 					</tbody>
 				</table>
       </div>
+
+
+			 <div class="tab-pane fade " id="trapper">
+						<table class="table" >
+							<thead>
+								<th scope="col" class='item_icon round-tl'>图标</td>
+								<th scope="col" class='item_name'>道具名称</th>
+								<th scope="col" class='item_name'>要求技能</th>
+								<th scope="col" class='item_name'>要求等级</th>
+							</thead>
+							<tbody>
+								<%@item.trapper_items.each do |item|%>
+								<tr>
+									<td>
+										<%=link_to item.mob do%>
+
+										<%=image_tag item.mob.icon_url,:class=>"ihover itemImgLarge",:height=>"46",:width=>"100"%>
+
+										<%end%>
+									</td>
+									<td class="item_name"><%=link_to item.mob.name,item.mob%></td>
+									<td>畜牧</td>
+									<td>至少<%=item.level%>级</td>
+								</tr>
+								<%end%>
+							</tbody>
+						</table>
+	      </div>
    </div>
 </div>

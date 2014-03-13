@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140313055106) do
+ActiveRecord::Schema.define(version: 20140313072544) do
 
   create_table "drop_items", force: true do |t|
     t.integer "mob_id"
@@ -123,12 +123,20 @@ ActiveRecord::Schema.define(version: 20140313055106) do
     t.integer  "fire_damage"
     t.integer  "water_damage"
     t.integer  "air_damage"
-    t.boolean  "capture_flag",  default: false
+    t.boolean  "capture_flag",            default: false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "no"
     t.string   "thumb"
     t.integer  "level"
+    t.integer  "hidden",        limit: 1
+  end
+
+  create_table "traper_items", force: true do |t|
+    t.integer "mob_id"
+    t.integer "item_id"
+    t.integer "level"
+    t.string  "source"
   end
 
 end
