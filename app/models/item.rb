@@ -7,6 +7,8 @@ class Item < ActiveRecord::Base
   
   has_many :drop_items
   has_many :trapper_items
+  has_many :recipes
+  has_many :recipe_items
   
   belongs_to :item_type
   mount_uploader :icon, IconUploader

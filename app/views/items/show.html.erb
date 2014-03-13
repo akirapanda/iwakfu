@@ -57,6 +57,8 @@
 		<li ><a href="#comments" data-toggle="tab">评论</a></li>
 		<li class="active"><a href="#itemdrops" data-toggle="tab">怪物掉落</a></li>
 		<li ><a href="#trapper" data-toggle="tab">畜牧掉落</a></li>
+		<li ><a href="#recipe" data-toggle="tab">制作配方</a></li>
+		<li ><a href="#resource" data-toggle="tab">作为材料</a></li>
 		
 	</ul>
  	<div id="myTabContent" class="tab-content">
@@ -119,5 +121,78 @@
 							</tbody>
 						</table>
 	      </div>
+			 <div class="tab-pane fade " id="recipe">
+					<table class="table" >
+						<thead>
+							<th scope="col" class='item_icon round-tl'>图标</td>
+							<th scope="col" class='item_name'>道具名称</th>
+							<th scope="col" class='item_name'>要求技能</th>
+							<th scope="col" class='item_name'>材料</th>
+						</thead>
+						<tbody>
+							<%@item.recipes.each do |recipe|%>
+							<tr>
+								<td>
+									<%=link_to recipe.item do%>
+
+									<%=image_tag recipe.item.icon_url,:class=>"ihover itemImgLarge",:height=>"46",:width=>"50"%>
+
+									<%end%>
+								</td>
+								<td class="item_name"><%=link_to recipe.item.name,recipe.name%></td>
+								<td><%=recipe.skill%>:等级<%=recipe.level%></td>
+								<td>
+									<%recipe.recipe_items.each do |item|%>
+									<div class="row-fluid" >
+									<%=link_to item.item  do%>
+									<%=image_tag(item.item.icon,:class=>"itemImgSmall",:width=>"30px")%><%= item.item.name%></a> x<%= item.quantity%>
+									<%end%>
+									</div>
+									<%end%>
+								
+								</td>
+							</tr>
+							<%end%>
+						</tbody>
+					</table>
+			 </div>
+			 <div class="tab-pane fade " id="resource">
+								<table class="table" >
+									<thead>
+										<th scope="col" class='item_icon round-tl'>图标</td>
+										<th scope="col" class='item_name'>道具名称</th>
+										<th scope="col" class='item_name'>要求技能</th>
+										<th scope="col" class='item_name'>材料</th>
+									</thead>
+									<tbody>
+							<%@item.recipe_items.each do |recipe_item|%>
+							<%recipe=recipe_item.recipe%>
+							<tr>
+								<td>
+									<%=link_to recipe.item do%>
+
+									<%=image_tag recipe.item.icon_url,:class=>"ihover itemImgLarge",:height=>"46",:width=>"50"%>
+
+									<%end%>
+								</td>
+								<td class="item_name"><%=link_to recipe.item.name,recipe.name%></td>
+								<td><%=recipe.skill%>:等级<%=recipe.level%></td>
+								<td>
+									<%recipe.recipe_items.each do |item|%>
+									<div class="row-fluid" >
+									<%=link_to item.item  do%>
+									<%=image_tag(item.item.icon,:class=>"itemImgSmall",:width=>"30px")%><%= item.item.name%></a> x<%= item.quantity%>
+									<%end%>
+									</div>
+									<%end%>
+								
+								</td>
+							</tr>
+							<%end%>
+						</tbody>
+					</table>
+				
+				
+			 </div>
    </div>
 </div>

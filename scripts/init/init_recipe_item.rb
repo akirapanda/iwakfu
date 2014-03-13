@@ -15,7 +15,7 @@ File.open(filename, "r") do |file|
      @by_item = Item.where("no=?",by_item_no)[0]
 
      if @craft_item && @by_item
-        @recipe = Recipe.where("name = ?",name)[0]
+        @recipe = Recipe.where("name = ? and skill = ?",name,skill)[0]
         if @recipe.nil?
           @recipe = Recipe.new
           @recipe.item_id = @craft_item.id
