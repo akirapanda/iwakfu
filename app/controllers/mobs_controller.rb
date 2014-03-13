@@ -1,6 +1,6 @@
 class MobsController < ApplicationController
   def index
-    @mobs = Mob.order("level asc")
+    @mobs = Mob.where("hidden =?",false).order("level asc")
 
     
     @mobs_grid = initialize_grid(@mobs,:per_page => 40)
