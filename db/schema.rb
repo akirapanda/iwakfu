@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140311091639) do
+ActiveRecord::Schema.define(version: 20140313055106) do
+
+  create_table "drop_items", force: true do |t|
+    t.integer "mob_id"
+    t.integer "item_id"
+    t.decimal "rate",    precision: 10, scale: 2, default: 0.0
+    t.integer "lock",                             default: 0
+  end
 
   create_table "item_set_stats", force: true do |t|
     t.integer "piece"
@@ -121,6 +128,7 @@ ActiveRecord::Schema.define(version: 20140311091639) do
     t.datetime "updated_at"
     t.string   "no"
     t.string   "thumb"
+    t.integer  "level"
   end
 
 end

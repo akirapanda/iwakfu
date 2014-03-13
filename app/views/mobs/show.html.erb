@@ -62,3 +62,43 @@
 		</div>
 		
 </div>
+
+<div>
+	<ul  class="nav nav-tabs">
+		<li><a href="#comments" data-toggle="tab">评论</a></li>
+		<li  class="active"><a href="#itemdrops" data-toggle="tab">掉落道具</a></li>
+	</ul>
+ 	<div id="myTabContent" class="tab-content">
+      <div class="tab-pane fade " id="comments">
+
+      </div>
+      <div class="tab-pane fade in active" id="itemdrops">
+				<table class="table" >
+					<thead>
+						<th scope="col" class='item_icon round-tl'>图标</td>
+						<th scope="col" class='item_name'>道具名称</th>
+						<th scope="col" class='item_name'>掉率</th>
+						<th scope="col" class='item_name'>勘探锁</th>
+						<th scope="col" class='item_lvl'>道具等级</th>
+					</thead>
+					<tbody>
+						<%@mob.drop_items.each do |item|%>
+						<tr>
+							<td>
+								<%=link_to item.item do%>
+								
+								<%=image_tag item.item.icon_url,:class=>"ihover itemImgLarge",:height=>"46"%>
+
+								<%end%>
+							</td>
+							<td class="item_name"><%=link_to item.item.name,item.item%></td>
+							<td><%=item.rate%>%</td>
+							<td><%=item.lock%></td>
+							<td class="item_lvl">等级<%=item.item.level%></td>
+						</tr>
+						<%end%>
+					</tbody>
+				</table>
+      </div>
+   </div>
+</div>

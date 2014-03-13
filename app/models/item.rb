@@ -5,6 +5,7 @@ class Item < ActiveRecord::Base
   has_many :item_stats_effect_used,->{ where "stat_type = 'effect' and cate='use' "}, class_name:"ItemStat"
   has_many :item_stats_effect_equipped,->{ where "stat_type = 'effect' and cate= 'equipe' "}, class_name:"ItemStat"
   
+  has_many :drop_items
   
   belongs_to :item_type
   mount_uploader :icon, IconUploader

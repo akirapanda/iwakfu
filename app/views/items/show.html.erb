@@ -1,3 +1,4 @@
+<div class="row">
 <div class="itemWrapper">
 	<h3><%=@item.name%></h3>
 		<div class="itemBox">
@@ -38,7 +39,6 @@
 			<%=render 'item_stats'%>
 
 			
-			<div class="clear"></div>	
 	</div>
 
 	<div id="itemInfoFacts">
@@ -48,4 +48,46 @@
 			<li><span class="factTitle">类型</span> : <%=@item.item_type.chinese_name if @item.item_type%></li>
 		</ul>
 	</div>
+</div>
+
+</div>
+
+<div class="row">
+	<ul  class="nav nav-tabs">
+		<li ><a href="#comments" data-toggle="tab">评论</a></li>
+		<li class="active"><a href="#itemdrops" data-toggle="tab">怪物掉落</a></li>
+	</ul>
+ 	<div id="myTabContent" class="tab-content">
+      <div class="tab-pane fade " id="comments">
+
+      </div>
+      <div class="tab-pane fade in active" id="itemdrops">
+				<table class="table" >
+					<thead>
+						<th scope="col" class='item_icon round-tl'>图标</td>
+						<th scope="col" class='item_name'>怪物名称</th>
+						<th scope="col" class='item_lvl'>怪物等级</th>
+						
+						<th scope="col" class='item_name'>掉率</th>
+						<th scope="col" class='item_name'>勘探锁</th>
+					</thead>
+					<tbody>
+						<%@item.drop_items.each do |item|%>
+						<tr>
+							<td>
+								<%=link_to item.mob do%>
+								<%=image_tag item.mob.icon_url,:class=>"ihover itemImgLarge",:height=>"46",:width=>"100"%>
+								<%end%>
+							</td>
+							<td class="item_name"><%=link_to item.mob.name,item.mob%></td>
+							<td class="item_lvl">等级<%=item.mob.level%></td>
+							
+							<td><%=item.rate%>%</td>
+							<td><%=item.lock%></td>
+						</tr>
+						<%end%>
+					</tbody>
+				</table>
+      </div>
+   </div>
 </div>
