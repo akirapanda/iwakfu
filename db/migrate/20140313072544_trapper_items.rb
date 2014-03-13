@@ -4,6 +4,8 @@ class TrapperItems < ActiveRecord::Migration
       t.integer :mob_id
       t.integer :item_id
       t.integer :level
+      t.string :skill
+      
       t.string :source
       t.timestamp
     end
