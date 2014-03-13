@@ -5,4 +5,64 @@
 	  <input type="text" class="input-xxlarge search-query" name="item_name" placeholder="输入需要查找物品名称">
 	  <button type="submit" class="btn">查询</button>
 	</form>
+	
+	
+	<div class="accordion" id="accordion2">
+	  <div class="accordion-group">
+	    <div class="accordion-heading">
+	      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+	        高级查询
+	      </a>
+	    </div>
+	    <div id="collapseOne" class="accordion-body collapse ">
+	      <div class="accordion-inner">
+					<form action="/search"  class="form-horizontal">
+					  <div class="control-group">
+					    <label class="control-label" for="inputEmail">装备效果</label>
+					    <div class="controls">
+					     	<label class="checkbox inline">
+								  <input type="checkbox" id="inlineCheckbox1" name="attr[]" value="生命值"> 生命值
+								</label>
+								<label class="checkbox inline">
+								  <input type="checkbox" id="inlineCheckbox2" name="attr[]"  value="行动力"> 行动力
+								</label>
+								<label class="checkbox inline">
+								  <input type="checkbox" id="inlineCheckbox3" name="attr[]"  value="移动力"> 移动力
+								</label>
+								<label class="checkbox inline">
+								  <input type="checkbox" id="inlineCheckbox4" name="attr[]"  value="统帅"> 统帅
+								</label>
+					    </div>
+					  </div>
+					
+					
+					  <div class="control-group">
+					    <label class="control-label" for="inputEmail">属性伤害</label>
+					    <div class="controls">
+					     	<label class="checkbox inline">
+								  <input type="checkbox" id="inlineCheckbox1" name="damage[]" value="earth"> 地系
+								</label>
+								<label class="checkbox inline">
+								  <input type="checkbox" id="inlineCheckbox2" name="damage[]"  value="air"> 风系
+								</label>
+								<label class="checkbox inline">
+								  <input type="checkbox" id="inlineCheckbox3" name="damage[]"  value="fire"> 火系
+								</label>
+								<label class="checkbox inline">
+								  <input type="checkbox" id="inlineCheckbox4" name="damage[]"  value="water"> 水系
+								</label>
+					    </div>
+					  </div>
+					
+					  <div class="control-group">
+
+							  <button type="submit" class="btn">查询</button>
+					    </div>
+					  </div>
+					</form>
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
 </div>

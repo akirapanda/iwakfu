@@ -17,7 +17,9 @@
 		item.item_type.chinese_name if item.item_type
 	end
 
-
+  g.column :name => '介绍', :attribute => 'content' do |item|
+			render 'items/grid_item_stat',:@item=>item
+  end
 
 
 
