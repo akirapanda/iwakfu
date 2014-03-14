@@ -24,7 +24,7 @@ class ItemBuildsController < ApplicationController
   
   def add_item
     @item_build = current_build
-    @item = Item.find(params[:item_id])
+    @item = Item.includes(:item_detail).includes(:item_type).find(params[:item_id])
     @item_build.add_item(@item,params[:side])
     @item_build.save
   end

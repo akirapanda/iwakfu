@@ -103,6 +103,55 @@ class ItemBuild < ActiveRecord::Base
   end
   
   
+  def cal_bonus
+    set_and_pieces = []
+    
+    items_id = []
+    items_id << self.header.id if self.header
+    items_id << self.neck.id if self.neck
+    items_id << self.body.id if self.body
+    items_id << self.shoulder.id if self.shoulder
+    items_id << self.belt.id if self.belt
+    items_id << self.foot.id if self.foot
+    items_id << self.cloak.id if self.cloak
+    items_id << self.left_ring.id if self.left_ring
+    items_id << self.right_ring.id if self.right_ring
+    items_id << self.left_hand.id if self.left_hand
+    items_id << self.right_hand.id if self.right_hand
+    sets = []
+    sets << self.header.item_set.id if self.header
+    sets << self.neck.item_set.id if self.neck
+    sets << self.body.item_set.id if self.body
+    sets << self.shoulder.item_set.id if self.shoulder
+    sets << self.belt.item_set.id if self.belt
+    sets << self.foot.item_set.id if self.foot
+    sets << self.cloak.item_set.id if self.cloak
+    sets << self.left_ring.item_set.id if self.left_ring
+    sets << self.right_ring.item_set.id if self.right_ring
+    sets << self.left_hand.item_set.id if self.left_hand
+    sets << self.right_hand.item_set.id if self.right_hand
+    
+    
+    sets_id = sets.uniq
+    
+    sets_id.each do |set_id|
+      items = Item.where("item_set_id = ? ",set_id)
+      count = 0
+      items.each do |item|
+        if items_id.include?item.id
+          count = count + 1
+        end
+      end    
+      
+      set_and_piece = {}
+      set_and_piece[:set_id]=set_id
+      set_and_piece[:piece]=count
+      set_and_pieces<<set_and_piece
+    end
+    
+    puts set_and_pieces
+  end
+  
   def cal_stats
     set_zero
     self.add_item_stats(self.header)
@@ -117,6 +166,8 @@ class ItemBuild < ActiveRecord::Base
     self.add_item_stats(self.belt)
     self.add_item_stats(self.left_hand)
     self.add_item_stats(self.right_hand)
+    
+    cal_bonus
   end
   
   
