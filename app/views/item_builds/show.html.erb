@@ -126,7 +126,7 @@
 				<td>右手武器</td>
 				<td><%=image_tag(@item_build.right_hand.try(:icon))%>
 				</td>
-				<td><%=link_to @item_build.right_hand.try(:name),@item_build.right_hand%></td>
+				<td><%=link_to @item_build.right_hand.try(:name),@item_build.right_hand if @item_build.right_hand%></td>
 				<td><%=@item_build.right_hand.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.right_hand%></td>
 				<td><%=@item_build.right_hand.try(:item_set).try(:name)%></td>

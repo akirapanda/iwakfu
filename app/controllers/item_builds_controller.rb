@@ -29,7 +29,13 @@ class ItemBuildsController < ApplicationController
     @item_build.save
   end
   
-  def remove
+  def remove_item
+    @item_build = ItemBuild.find(params[:id])
+    if params[:part].present?
+      @item_build.remove_item(params[:part])
+    end
+    @item_build.save
+    redirect_to @item_build
     
   end
   

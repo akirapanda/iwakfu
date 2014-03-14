@@ -21,7 +21,35 @@ class ItemBuild < ActiveRecord::Base
     add(self.header) if self.header
   end
   
-
+  def remove_item(part)
+    case part
+      
+    when 'header'
+      self.header_id = nil
+    when 'neck'
+      self.neck_id = nil
+    when 'shoulder'
+      self.shoulder_id = nil
+    when 'body'
+      self.body_id = nil
+    when 'belt'
+      self.belt_id = nil
+    when 'foot'
+      self.foot_id = nil
+    when 'cloak'
+      self.cloak_id = nil
+    when 'left_ring'
+      self.left_ring_id = nil
+    when 'right_ring'
+      self.right_ring_id = nil
+    when 'left_hand'
+      self.left_hand_id = nil
+    when 'right_hand'
+      self.right_hand_id = nil
+    end
+    
+    cal_stats
+  end
   
   def add_item(item,side)
     if item.item_type.chinese_name.include?("头盔")
@@ -90,6 +118,8 @@ class ItemBuild < ActiveRecord::Base
     self.add_item_stats(self.left_hand)
     self.add_item_stats(self.right_hand)
   end
+  
+  
   
   def add_item_stats(item)    
     if item && item.item_detail
