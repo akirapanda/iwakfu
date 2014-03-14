@@ -18,11 +18,19 @@ class ItemBuildsController < ApplicationController
     
   end
   
+  def show
+    @item_build = ItemBuild.find(params[:id])
+  end
+  
   def add_item
     @item_build = current_build
     @item = Item.find(params[:item_id])
     @item_build.add_item(@item,params[:side])
     @item_build.save
+  end
+  
+  def remove
+    
   end
   
   def show_build

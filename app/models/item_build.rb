@@ -45,7 +45,6 @@ class ItemBuild < ActiveRecord::Base
     if item.item_type.chinese_name.include?("披风")
       self.cloak = item
     end
-    weapons=["斧","魔杖","单手剑","铲","匕首","单手杖","锤子","针","弓","双手剑","双手杖","卡牌","盾牌"]
     
     
     if item.item_type.chinese_name.include?("戒指")
@@ -59,8 +58,9 @@ class ItemBuild < ActiveRecord::Base
         self.right_ring = item
       end
     end
+    weapons=["斧","魔杖","单手剑","铲","匕首","单手杖","锤子","针","弓","双手剑","双手杖","卡牌","盾牌"]
     
-    if weapons.includes?(item.item_type.chinese_name)
+    if weapons.include?(item.item_type.chinese_name)
       if side
         if side =="left"
           self.left_hand = item
@@ -71,8 +71,24 @@ class ItemBuild < ActiveRecord::Base
         self.right_hand = item
       end
     end
+    cal_stats
+  end
+  
+  
+  def cal_stats
+    set_zero
+    self.add_item_stats(self.header)
+    self.add_item_stats(self.body)
+    self.add_item_stats(self.neck)
+    self.add_item_stats(self.shoulder)
+    self.add_item_stats(self.left_ring)
+    self.add_item_stats(self.right_ring)
     
-    
+    self.add_item_stats(self.foot)
+    self.add_item_stats(self.cloak)
+    self.add_item_stats(self.belt)
+    self.add_item_stats(self.left_hand)
+    self.add_item_stats(self.right_hand)
   end
   
   def add_item_stats(item)    
@@ -83,11 +99,11 @@ class ItemBuild < ActiveRecord::Base
       self.mp = self.mp + item_detail.mp.to_i
       self.wp = self.wp + item_detail.wp.to_i
       self.initiative = self.initiative + item_detail.initiative.to_i
-      self.dodge = self.wp + item_detail.dodge.to_i
-      self.lock = self.wp + item_detail.lock.to_i
-      self.backstab = self.wp + item_detail.backstab.to_i
-      self.critical = self.wp + item_detail.critical.to_i
-      self.block = self.wp + item_detail.block.to_i
+      self.dodge = self.dodge + item_detail.dodge.to_i
+      self.lock = self.lock + item_detail.lock.to_i
+      self.backstab = self.backstab + item_detail.backstab.to_i
+      self.critical = self.critical + item_detail.critical.to_i
+      self.block = self.block + item_detail.block.to_i
       self.control = self.control + item_detail.control.to_i
       self.cmc = self.cmc + item_detail.cmc.to_i
       self.will_power = self.will_power + item_detail.will_power.to_i

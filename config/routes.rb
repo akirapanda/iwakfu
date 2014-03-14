@@ -12,6 +12,7 @@ Iwakfu::Application.routes.draw do
     
     member do
       get 'add_item'
+      get 'remove_item'
     end
   end
   

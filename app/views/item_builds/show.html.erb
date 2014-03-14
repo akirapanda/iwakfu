@@ -1,0 +1,307 @@
+<div class='row'>
+
+	<div class="span7">
+		<table class="table">
+			<tr>
+				<td>部位</td>
+				<td>图片</td>
+				<td>名称</td>
+				<td>等级</td>
+				<td>属性</td>
+				<td>套装</td>
+				<td></td>
+				
+			</tr>
+			<tr>
+				<td>头部</td>
+				<td><%=image_tag(@item_build.header.try(:icon))%>
+				</td>
+				<td><%=link_to @item_build.header.try(:name),@item_build.header if @item_build.header%></td>
+				<td><%=@item_build.header.try(:level)%></td>
+				<td><%=render 'item_stat',:@item=>@item_build.header%></td>
+				<td><%=@item_build.header.try(:item_set).try(:name)%></td>
+				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:header)%></td>
+				
+			</tr>
+			<tr>
+				<td>颈部</td>
+				<td><%=image_tag(@item_build.neck.try(:icon))%>
+				</td>
+				<td><%=link_to @item_build.neck.try(:name),@item_build.neck if @item_build.neck%></td>
+				<td><%=@item_build.neck.try(:level)%></td>
+				<td><%=render 'item_stat',:@item=>@item_build.neck%></td>
+				<td><%=@item_build.neck.try(:item_set).try(:name)%></td>
+				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:neck)%></td>
+				
+			</tr>
+			<tr>
+				<td>肩膀</td>
+				<td><%=image_tag(@item_build.shoulder.try(:icon))%>
+				</td>
+				<td><%=link_to @item_build.shoulder.try(:name),@item_build.shoulder if @item_build.shoulder%></td>
+				<td><%=@item_build.shoulder.try(:level)%></td>
+				<td><%=render 'item_stat',:@item=>@item_build.shoulder%></td>
+				<td><%=@item_build.shoulder.try(:item_set).try(:name)%></td>
+				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:shoulder)%></td>
+				
+			</tr>
+			<tr>
+				<td>胸部</td>
+				<td><%=image_tag(@item_build.body.try(:icon))%>
+				</td>
+				<td><%=link_to @item_build.body.try(:name),@item_build.body if @item_build.body %></td>
+				<td><%=@item_build.body.try(:level)%></td>
+				<td><%=render 'item_stat',:@item=>@item_build.body%></td>
+				<td><%=@item_build.body.try(:item_set).try(:name)%></td>
+				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:body)%></td>
+				
+			</tr>
+			<tr>
+				<td>腰带</td>
+				<td><%=image_tag(@item_build.belt.try(:icon))%>
+				</td>
+				<td><%=link_to @item_build.belt.try(:name),@item_build.belt if @item_build.belt%></td>
+				<td><%=@item_build.belt.try(:level)%></td>
+				<td><%=render 'item_stat',:@item=>@item_build.belt%></td>
+				<td><%=@item_build.belt.try(:item_set).try(:name)%></td>
+				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:belt)%></td>
+				
+			</tr>
+			<tr>
+				<td>脚部</td>
+				<td><%=image_tag(@item_build.foot.try(:icon))%>
+				</td>
+				<td><%=link_to @item_build.foot.try(:name),@item_build.foot if @item_build.foot%></td>
+				<td><%=@item_build.foot.try(:level)%></td>
+				<td><%=render 'item_stat',:@item=>@item_build.foot%></td>
+				<td><%=@item_build.foot.try(:item_set).try(:name)%></td>
+				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:foot)%></td>
+				
+			</tr>
+			<tr>
+				<td>披风</td>
+				<td><%=image_tag(@item_build.cloak.try(:icon))%>
+				</td>
+				<td><%=link_to @item_build.cloak.try(:name),@item_build.cloak if @item_build.cloak%></td>
+				<td><%=@item_build.cloak.try(:level)%></td>
+				<td><%=render 'item_stat',:@item=>@item_build.cloak%></td>
+				<td><%=@item_build.cloak.try(:item_set).try(:name)%></td>
+				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:cloak)%></td>
+				
+			</tr>
+			<tr>
+				<td>左手戒指</td>
+				<td><%=image_tag(@item_build.left_ring.try(:icon))%>
+				</td>
+				<td><%=link_to @item_build.left_ring.try(:name),@item_build.left_ring if @item_build.left_ring%></td>
+				<td><%=@item_build.left_ring.try(:level)%></td>
+				<td><%=render 'item_stat',:@item=>@item_build.left_ring%></td>
+				<td><%=@item_build.left_ring.try(:item_set).try(:name)%></td>
+				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:left_ring)%></td>
+				
+			</tr>
+			<tr>
+				<td>右手戒指</td>
+				<td><%=image_tag(@item_build.right_ring.try(:icon))%>
+				</td>
+				<td><%=link_to @item_build.right_ring.try(:name),@item_build.right_ring if @item_build.right_ring%></td>
+				<td><%=@item_build.right_ring.try(:level)%></td>
+				<td><%=render 'item_stat',:@item=>@item_build.right_ring%></td>
+				<td><%=@item_build.right_ring.try(:item_set).try(:name)%></td>
+				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:right_ring)%></td>
+				
+			</tr>
+			<tr>
+				<td>左手武器</td>
+				<td><%=image_tag(@item_build.left_hand.try(:icon))%>
+				</td>
+				<td><%=link_to @item_build.left_hand.try(:name),@item_build.left_hand if @item_build.left_hand%></td>
+				<td><%=@item_build.left_hand.try(:level)%></td>
+				<td><%=render 'item_stat',:@item=>@item_build.left_hand%></td>
+				<td><%=@item_build.left_hand.try(:item_set).try(:name)%></td>
+				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:left_hand)%></td>
+				
+			</tr>
+			<tr>
+				<td>右手武器</td>
+				<td><%=image_tag(@item_build.right_hand.try(:icon))%>
+				</td>
+				<td><%=link_to @item_build.right_hand.try(:name),@item_build.right_hand%></td>
+				<td><%=@item_build.right_hand.try(:level)%></td>
+				<td><%=render 'item_stat',:@item=>@item_build.right_hand%></td>
+				<td><%=@item_build.right_hand.try(:item_set).try(:name)%></td>
+				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:right_hand)%></td>
+				
+			</tr>
+		</table>
+	</div>
+	
+	<div class="span4 offset1">
+	
+		<div class="row">
+			<h3>奖励属性</h3>
+			<div class="well">
+			 整理资料中	
+			</div>
+		</div>
+		
+		<div class="row">
+			<h3>装备属性</h3>
+			<ul class="no_dom">
+				<%if @item_build.hp != 0%>
+				<li>生命值:<%=@item_build.hp%></li>
+				<%end%>
+				<%if @item_build.ap != 0%>
+				<li>行动力:<%=@item_build.ap%></li>
+				<%end%>
+				<%if @item_build.mp != 0%>
+				<li>移动力:<%=@item_build.mp%></li>
+				<%end%>
+				<%if @item_build.mp != 0%>
+				<li>创生力:<%=@item_build.wp%></li>
+				<%end%>
+				
+				<%if @item_build.initiative != 0%>
+				<li>先手:<%=@item_build.initiative%></li>
+				<%end%>
+				<%if @item_build.dodge != 0%>
+				<li>闪避:<%=@item_build.dodge%></li>
+				<%end%>
+				<%if @item_build.lock != 0%>
+				<li>锁定:<%=@item_build.lock%></li>
+				<%end%>
+				<%if @item_build.backstab != 0%>
+				<li>背刺伤害:<%=@item_build.backstab%></li>
+				<%end%>
+
+				
+				<%if @item_build.critical != 0%>
+				<li>暴击几率:<%=@item_build.critical%>%</li>
+				<%end%>
+				<%if @item_build.block != 0%>
+				<li>格挡:<%=@item_build.block%></li>
+				<%end%>
+				<%if @item_build.control != 0%>
+				<li>统帅:<%=@item_build.control%></li>
+				<%end%>
+				
+				<%if @item_build.cmc != 0%>
+				<li>召唤物伤害:<%=@item_build.cmc%>%</li>
+				<%end%>
+				
+				<%if @item_build.will_power != 0%>
+				<li>意志力:<%=@item_build.will_power%></li>
+				<%end%>
+				
+				<%if @item_build.prospecting != 0%>
+				<li>洞察:<%=@item_build.prospecting%></li>
+				<%end%>
+				
+				<%if @item_build.perception != 0%>
+				<li>勘探:<%=@item_build.perception%></li>
+				<%end%>
+				
+				<%if @item_build.heals != 0%>
+				<li>治疗:<%=@item_build.heals%></li>
+				<%end%>
+				<%if @item_build.wisdom != 0%>
+				<li>悟性:<%=@item_build.wisdom%></li>
+				<%end%>
+				<%if @item_build.range != 0%>
+				<li>射程:<%=@item_build.range%></li>
+				<%end%>
+				
+				<%if @item_build.fire != 0%>
+				<li>智慧之火:<%=@item_build.fire%></li>
+				<%end%>
+				<%if @item_build.earth != 0%>
+				<li>稳固之地:<%=@item_build.earth%></li>
+				<%end%>
+				<%if @item_build.water != 0%>
+				<li>幸运之水:<%=@item_build.water%></li>
+				<%end%>
+				<%if @item_build.air != 0%>
+				<li>敏捷之风:<%=@item_build.air%></li>
+				<%end%>
+				
+	
+				
+				
+				<%if @item_build.remove_ap != 0%>
+				<li>剥夺行动力:<%=@item_build.remove_ap%>%</li>
+				<%end%>
+				
+				<%if @item_build.fire_damage != 0%>
+				<li>
+					<%= image_tag("/img/elements/smallFIRE.png")%>
+					火系伤害:<%=@item_build.fire_damage%>%</li>
+				<%end%>
+				
+				<%if @item_build.earth_damage != 0%>
+				<li>
+					<%= image_tag("/img/elements/smallEARTH.png")%>
+					地系伤害:<%=@item_build.earth_damage%>%</li>
+				<%end%>
+				
+				<%if @item_build.water_damage != 0%>
+				<li>
+					<%= image_tag("/img/elements/smallWATER.png")%>
+					水系伤害:<%=@item_build.water_damage%>%</li>
+				<%end%>
+				<%if @item_build.air_damage != 0%>
+				<li>
+					<%= image_tag("/img/elements/smallFIRE.png")%>
+					风系伤害:<%=@item_build.air_damage%>%</li>
+				<%end%>
+				
+				
+				<%if @item_build.fire_resist != 0%>
+				<li>
+					<%= image_tag("/img/elements/smallFIRE.png")%>
+					火系抵抗:<%=@item_build.fire_resist%>%</li>
+				<%end%>
+				
+				<%if @item_build.earth_resist != 0%>
+				<li>
+					<%= image_tag("/img/elements/smallEARTH.png")%>
+					地系抵抗:<%=@item_build.earth_resist%>%</li>
+				<%end%>
+				
+				<%if @item_build.water_resist != 0%>
+				<li>
+					<%= image_tag("/img/elements/smallWATER.png")%>
+					水系抵抗:<%=@item_build.water_resist%>%</li>
+				<%end%>
+				<%if @item_build.air_resist != 0%>
+				<li>
+					<%= image_tag("/img/elements/smallFIRE.png")%>
+					风系抵抗:<%=@item_build.air_resist%>%</li>
+				<%end%>
+
+
+				<%if @item_build.fire_skill != 0%>
+				<li>
+					<%= image_tag("/img/elements/smallFIRE.png")%>
+					火系技能等级:<%=@item_build.fire_skill%></li>
+				<%end%>
+				
+				<%if @item_build.earth_skill != 0%>
+				<li>
+					<%= image_tag("/img/elements/smallEARTH.png")%>
+					地系技能等级:<%=@item_build.earth_skill%></li>
+				<%end%>
+				
+				<%if @item_build.water_skill != 0%>
+				<li>
+					<%= image_tag("/img/elements/smallWATER.png")%>
+					水系技能等级:<%=@item_build.water_skill%></li>
+				<%end%>
+				<%if @item_build.air_skill != 0%>
+				<li>
+					<%= image_tag("/img/elements/smallFIRE.png")%>
+					风系技能等级:<%=@item_build.air_skill%></li>
+				<%end%>
+			</ul>
+		</div>
+	</div>
+</div>
