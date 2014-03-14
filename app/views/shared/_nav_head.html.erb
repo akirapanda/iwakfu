@@ -206,9 +206,18 @@
 -->
 
         </ul>
+
+
 	      <ul class="nav navbar-nav pull-right">
-					<li><%=link_to "沃土中文数据库 V0.1", root_path%></li>
-	      </ul>
+		
+					 <li class="dropdown">
+							<a class="dropdown-toggle" id="item_build_toggle" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+						    当前选择装备
+						    <b class="caret"></b>
+						  </a>
+							<%=render 'item_builds/build_menu',:item_build=>current_build%>
+
+				 </ul>
        
       </div><!--/.nav-collapse -->
     </div>

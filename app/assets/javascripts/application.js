@@ -15,4 +15,6 @@
 //= require turbolinks
 //= require bootstrap
 //= require wice_grid
+//= require chosen.jquery.min
+//= require chosen.proto.min
 //= require_tree .

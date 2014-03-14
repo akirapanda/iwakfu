@@ -1,0 +1,393 @@
+<div class="container">
+
+
+	<div class="row">
+		<form id="equitmenet" class="form-horizontal">
+			
+			<div class="span6">
+				<div class="control-group">
+				 <label class="control-label" for="inputEmail">头部</label>
+			    <div class="controls">
+						<%=select_tag "header_id", options_from_collection_for_select(@headers, "id", "short",:selected=>@item_build.header.try(:id) ),:class=>"chosen-select"%>
+					</div>
+				 </div>
+					<div class="control-group">
+					 <label class="control-label" for="inputEmail">肩部</label>
+				    <div class="controls">
+							<%=select_tag "shoulder_id", options_from_collection_for_select(@shoulders, "id", "short",:selected=>@item_build.shoulder.try(:id)) ,:class=>"chosen-select",include_blank: true %>
+						</div>
+					 </div>
+					<div class="control-group">
+					 <label class="control-label" for="inputEmail">颈部</label>
+				    <div class="controls">
+							<%=select_tag "neck_id", options_from_collection_for_select(@necks, "id", "short",:selected=>@item_build.neck.try(:id)) ,:class=>"chosen-select",include_blank: true %>
+						</div>
+					 </div>
+
+					<div class="control-group">
+					 <label class="control-label" for="inputEmail">胸部</label>
+				    <div class="controls">
+							<%=select_tag "body_id", options_from_collection_for_select(@bodys, "id", "short",:selected=>@item_build.body.try(:id)) ,:class=>"chosen-select",include_blank: true %>
+						</div>
+					 </div>
+					<div class="control-group">
+					 <label class="control-label" for="inputEmail">腰带</label>
+				    <div class="controls">
+							<%=select_tag "belt_id", options_from_collection_for_select(@belts, "id", "short") ,:class=>"chosen-select",include_blank: true %>
+						</div>
+					 </div>
+					<div class="control-group">
+					 <label class="control-label" for="inputEmail">鞋子</label>
+				    <div class="controls">
+							<%=select_tag "foot_id", options_from_collection_for_select(@foots, "id", "short") ,:class=>"chosen-select",include_blank: true %>
+						</div>
+					 </div>
+					<div class="control-group">
+					 <label class="control-label" for="inputEmail">披风</label>
+				    <div class="controls">
+							<%=select_tag "cloak_id", options_from_collection_for_select(@cloaks, "id", "short") ,:class=>"chosen-select",include_blank: true %>
+						</div>
+					 </div>
+			</div>
+			<div class="span6">
+				<div class="control-group">
+				 <label class="control-label" for="inputEmail">左戒指</label>
+			    <div class="controls">
+						<%=select_tag "left_ring_id", options_from_collection_for_select(@left_rings, "id", "short") ,:class=>"chosen-select",include_blank: true %>
+					</div>
+				 </div>
+				<div class="control-group">
+				 <label class="control-label" for="inputEmail">右戒指</label>
+			    <div class="controls">
+						<%=select_tag "right_ring_id", options_from_collection_for_select(@right_rings, "id", "short") ,:class=>"chosen-select",include_blank: true %>
+					</div>
+				 </div>
+				<div class="control-group">
+				 <label class="control-label" for="inputEmail">左手</label>
+			    <div class="controls">
+						<%=select_tag "left_hand_id", options_from_collection_for_select(@left_hands, "id", "short") ,include_blank: true ,:class=>"chosen-select"%>
+					</div>
+				 </div>
+				<div class="control-group">
+				 <label class="control-label" for="inputEmail">右手</label>
+			    <div class="controls">
+						<%=select_tag "right_hand_id", options_from_collection_for_select(@right_hands, "id", "short") ,:class=>"chosen-select",include_blank: true%>
+					</div>
+				 </div>
+			</div>
+		
+
+		</form>
+	</div>
+	<div class="row span6 offset3">
+		<button id="b01" >试试看</button>
+		
+	</div>
+
+
+
+			<div class="player-stats">
+			<h4><font color="white"> 伤害 &amp; 抗性</font></h4>
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/earthDefense.png"/>地系抗性</div>
+				<div class="stats-col one4"><span id="earth_resist" >0</span>%</div>
+				</div>
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/earthDamage.png" width="16px" height="16px"/>地系伤害</div>
+				<div class="stats-col one4"><span id="earth_damage">0</span>%</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/fireDefense.png"/>火系抗性</div>
+				<div class="stats-col one4"><span id="fire_resist">0</span>%</div>
+				</div>
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/fireDamage.png" width="16px" height="16px"/>火系伤害</div>
+				<div class="stats-col one4"><span id="fire_damage" >0</span>%</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/waterDefense.png"/>水系抗性</div>
+				<div class="stats-col one4"><span id="water_resist">0</span>%</div>
+				</div>
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/waterDamage.png" width="16px" height="16px"/>水系伤害</div>
+				<div class="stats-col one4"><span id="water_damage">0</span>%</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/airDefense.png"/>风系抗性</div>
+				<div class="stats-col one4"><span id="air_resist">0</span>%</div>
+				</div>
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/airDamage.png" width="16px" height="16px"/>风系伤害</div>
+				<div class="stats-col one4"><span id="air_damage">0</span>%</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/elements/smallAIR.png" /> 风系技能等级</div>
+				<div class="stats-col one4"><span id="air_spell"></span></div>
+				</div>
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/elements/smallWATER.png" /> 水系技能等级</div>
+				<div class="stats-col one4"><span id="water_spell"></span></div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/elements/smallEARTH.png" /> 地系技能等级</div>
+				<div class="stats-col one4"><span id="earth_spell"></span></div>
+				</div>
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/elements/smallFIRE.png"/> 火系技能等级</div>
+				<div class="stats-col one4"><span id="fire_spell"></span></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+			
+			
+			
+			<div class="player-stats statTotals" id="playerStatTotals">
+
+						<h4><font color="white"> 装备面板属性</font></h4>
+
+							<div class="player-stat-row">
+								<div class="stats-col three4"><img src="/img/hp-text.png"/>生命值</div>
+								<div class="stats-col one4" data-ability="hp">
+									<span class="abiText" id="hp">0</span>
+								</div>
+							</div>
+
+							<div class="player-stat-row">
+							<div class="stats-col three4"><img src="/img/ap-text.png"/>行动力</div>
+							<div class="stats-col one4" data-ability="ap">
+									<span class="abiText" id="ap">0</span>
+								</div>
+							</div>
+
+							<div class="player-stat-row">
+							<div class="stats-col three4"><img src="/img/mp-text.png"/>移动力</div>
+							<div class="stats-col one4" data-ability="mp">
+									<span class="abiText" id="mp">0</span>
+								</div>
+							</div>
+
+							<div class="player-stat-row">
+							<div class="stats-col three4"><img src="/img/wakfu-text.png"/>创生力</div>
+							<div class="stats-col one4" id="wp">0</div>
+							</div>
+
+							<div class="player-stat-row">
+							<div class="stats-col three4"><img src="/img/strength-text.png"/>稳固之地</div>
+							<div class="stats-col one4" data-ability="strength">
+								<span class="abiText" id="earth">0</span>
+							</div>
+							</div>
+
+							<div class="player-stat-row">
+							<div class="stats-col three4"><img src="/img/agi-text.png"/>敏捷之风</div>
+							<div class="stats-col one4" data-ability="agility">
+								<span class="abiText" id="air">0</span>
+							</div>
+
+							</div>
+
+							<div class="player-stat-row">
+							<div class="stats-col three4"><img src="/img/intelligence-text.png"/>智慧之火</div>
+							<div class="stats-col one4" data-ability="intelligence">
+								<span class="abiText" id="fire" >0</span>
+							</div>
+							</div>
+
+							<div class="player-stat-row">
+							<div class="stats-col three4"><img src="/img/chance-text.png"/>幸运之水</div>
+							<div class="stats-col one4" data-ability="chance">
+								<span class="abiText"  id="water">0</span>
+							</div>
+							</div>
+
+							<div class="player-stat-row">
+							<div class="stats-col three4"><img src="/img/init-text.png"/>先手</div>
+							<div class="stats-col one4" data-ability="ini">
+								<span class="abiText" id="initiative">0</span>
+							</div>
+							</div>
+
+							<div class="player-stat-row">
+							<div class="stats-col three4"><img src="/img/heals-text.png"/>治疗</div>
+							<div class="stats-col one4"><span id="heals"></span>%</div>
+							</div>
+
+							<div class="player-stat-row">
+							<div class="stats-col three4"><img src="/img/crit-text.png"/>暴击</div>
+							<div class="stats-col one4" data-ability="crit">
+								<span class="abiText" id="critical">0</span>
+							</div>
+							</div>
+
+							<div class="player-stat-row">
+							<div class="stats-col three4"><img src="/img/crit-dmg-text.png"/>暴击伤害奖励</div>
+							<div class="stats-col one4"><span data-bind="text: critDamage">0</span>%</div>
+							</div>
+
+							<div class="player-stat-row">
+							<div class="stats-col three4"><img src="/img/crit-fail-text.png"/>暴击抗性</div>
+							<div class="stats-col one4"><span data-bind="text: critfail">0</span>%</div>
+							</div>
+
+							<div class="player-stat-row">
+							<div class="stats-col three4"><img src="/img/backstab-text.png"/>背刺伤害</div>
+							<div class="stats-col one4" id="backstab" >0</div>
+							</div>
+
+							<div class="player-stat-row">
+							<div class="stats-col three4"><img src="/img/backstab-res-text.png"/>背刺抗性</div>
+							<div class="stats-col one4"><span data-bind="text: backstabRes">0</span>%</div>
+							</div>
+
+							<div class="player-stat-row">
+							<div class="stats-col three4"><img src="/img/dodge-text.png"/>闪避</div>
+							<div class="stats-col one4" data-ability="dodge">
+								<span class="abiText" id="dodge">0</span>
+							</div>
+							</div>
+
+							<div class="player-stat-row">
+							<div class="stats-col three4"><img src="/img/lock-text.png"/>锁定</div>
+							<div class="stats-col one4" data-ability="lock">
+								<span class="abiText" id="lock" >0</span>
+							</div>
+							</div>
+
+							<div class="player-stat-row">
+							<div class="stats-col three4"><img src="/img/block-text.png"/>格挡</div>
+							<div class="stats-col one4" data-ability="block">
+								<span class="abiText" id="block">0</span>
+							</div>
+							</div>
+
+							<div class="player-stat-row">
+							<div class="stats-col three4"><img src="/img/willpower-text.png"/>意志力</div>
+							<div class="stats-col one4" id="will_power">0</div>
+							</div>
+
+							<div class="player-stat-row">
+							<div class="stats-col three4"><img src="/img/range-b-text.png"/>射程</div>
+							<div class="stats-col one4" data-ability="range">
+								<span class="abiText" id="range">0</span>
+							</div>
+							</div>
+
+							<div class="player-stat-row">
+							<div class="stats-col three4"><img src="/img/leadership-text.png"/>统帅</div>
+							<div class="stats-col one4" id="control">0</div>					
+							</div>
+
+							<div class="player-stat-row">
+							<div class="stats-col three4"><img src="/img/summonDam-text.png"/>召唤物伤害</div>
+							<div class="stats-col one4"><span id="cmc">0</span>%</div>
+							</div>
+
+							<!--div class="player-stat-row">
+							<div class="stats-col three4"><img src="/img/mechanics-text.png"/>Mechanics</div>
+							<div class="stats-col one4" data-bind="text: mechanics">4</div>
+							</div>
+
+							<div class="player-stat-row">
+							<div class="stats-col three4"><img src="/img/mechanics-dam-text.png"/>Mechanical Damage</div>
+							<div class="stats-col one4"><span data-bind="text: mechanicsDam">4</span>%</div>
+							</div-->
+
+							<div class="player-stat-row">
+							<div class="stats-col three4"><img src="/img/wisdom-text.png"/>悟性</div>
+							<div class="stats-col one4"  id="wisdom">0</div>
+							</div>
+
+							<div class="player-stat-row">
+							<div class="stats-col three4"><img src="/img/pp-text.png"/>勘探</div>
+							<div class="stats-col one4" id="perception">0</div>
+							</div>
+
+							<div class="player-stat-row">
+							<div class="stats-col three4"><img src="/img/perception-text.png"/>洞察</div>
+							<div class="stats-col one4" id="prospecting">0</div>
+							</div>
+
+							<div class="player-stat-row">
+							<div class="stats-col three4"><img src="/img/kitSkill-text.png"/>Kit Skill</div>
+							<div class="stats-col one4" data-ability="kitskill">
+								<span class="abiMinus inactive">-</span>
+								<span class="abiText" data-bind="text: kitSkillTotal">4</span>
+								<span class="abiPlus active">+</span>
+							</div>
+							</div>	
+							<div class="clear"></div>
+						</div>
+						
+</div>
+<script>
+
+	$(document).ready(function(){
+		$(".chosen-select").chosen();
+	  function success(data){
+			$("#hp").html(data.hp);
+			
+			$("#ap").html(data.ap);
+			$("#mp").html(data.mp);
+			$("#wp").html(data.wp);
+			$("#air").html(data.air);
+			$("#earth").html(data.earth);
+			$("#water").html(data.water);
+			$("#fire").html(data.fire);
+			$("#initiative").html(data.initiative);
+			$("#heals").html(data.heals);
+			$("#critical").html(data.critical);
+			
+			$("#backstab").html(data.backstab);
+			$("#dodge").html(data.dodge);
+			$("#lock").html(data.lock);
+			$("#block").html(data.block);
+			$("#will_power").html(data.will_power);
+			$("#range").html(data.range);
+			$("#control").html(data.control);
+			$("#cmc").html(data.cmc);
+			$("#wisdom").html(data.wisdom);
+			$("#perception").html(data.perception);
+			$("#prospecting").html(data.prospecting);
+			
+			$("#fire_damage").html(data.fire_damage);
+			$("#earth_damage").html(data.earth_damage);
+			$("#air_damage").html(data.air_damage);
+			$("#water_damage").html(data.water_damage);
+			
+			$("#fire_resist").html(data.fire_damage);
+			$("#earth_resist").html(data.earth_resist);
+			$("#air_resist").html(data.air_resist);
+			$("#water_resist").html(data.water_resist);
+			
+			$("#fire_skill").html(data.fire_skill);
+			$("#earth_skill").html(data.earth_skill);
+			$("#air_skill").html(data.air_skill);
+			$("#water_skill").html(data.water_skill);
+			
+
+			
+	  }
+	
+	
+		$("#b01").click(function(){
+		 var url ="/item_builds/show_build";
+		 var data = $("#equitmenet").serialize();
+			$.ajax({
+			  type: 'GET',
+			  url: url,
+				data:data,
+			  success: success,
+			  dataType: 'json'
+			});
+			
+			
+			
+	  });
+	});
+</script>

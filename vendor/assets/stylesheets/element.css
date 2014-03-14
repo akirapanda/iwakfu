@@ -270,20 +270,20 @@ img.tameable{position:relative;left:300px;top:2px;}
 #pointsRemaining{margin-left:25px;}
 #pointsSpent{margin-left:70px;}
 .build-section{display:none;}
-.b-cape{background:url('/img/builder/slots2.png') -1px -1px no-repeat;}
-.b-head{background:url('/img/builder/slots2.png') -49px 0 no-repeat;}
-.b-shoulder{background:url('/img/builder/slots2.png') -98px 0 no-repeat;}
-.b-neck{background:url('/img/builder/slots2.png') 0px -50px no-repeat;}
-.b-lring{background:url('/img/builder/slots2.png') -49px -50px no-repeat;}
-.b-rring{background:url('/img/builder/slots2.png') -98px -49px no-repeat;}
-.b-lhand{background:url('/img/builder/slots2.png') 0px -99px no-repeat;}
-.b-rhand{background:url('/img/builder/slots2.png') -49px -99px no-repeat;}
-.b-nonweapon{background:url('/img/builder/slots2.png') -99px -99px no-repeat;}
-.b-chest{background:url('/img/builder/slots2.png') 0px -148px no-repeat;}
-.b-belt{background:url('/img/builder/slots2.png') -49px -148px no-repeat;}
-.b-feet{background:url('/img/builder/slots2.png') -99px -147px no-repeat;}
-.b-insignia{background:url('/img/builder/slots2.png') -49px -196px no-repeat;}
-.b-pet{background:url('/img/builder/slots2.png') -1px -196px no-repeat;}
+.b-cape{background:url('/img/slots2.png') -1px -1px no-repeat;}
+.b-head{background:url('/img/slots2.png') -49px 0 no-repeat;}
+.b-shoulder{background:url('/img/slots2.png') -98px 0 no-repeat;}
+.b-neck{background:url('/img/slots2.png') 0px -50px no-repeat;}
+.b-lring{background:url('/img/slots2.png') -49px -50px no-repeat;}
+.b-rring{background:url('/img/slots2.png') -98px -49px no-repeat;}
+.b-lhand{background:url('/img/slots2.png') 0px -99px no-repeat;}
+.b-rhand{background:url('/img/slots2.png') -49px -99px no-repeat;}
+.b-nonweapon{background:url('/img/slots2.png') -99px -99px no-repeat;}
+.b-chest{background:url('/img/slots2.png') 0px -148px no-repeat;}
+.b-belt{background:url('/img/slots2.png') -49px -148px no-repeat;}
+.b-feet{background:url('/img/slots2.png') -99px -147px no-repeat;}
+.b-insignia{background:url('/img/slots2.png') -49px -196px no-repeat;}
+.b-pet{background:url('/img/slots2.png') -1px -196px no-repeat;}
 .build-slot{width:47px;height:48px;margin:5px 0px 0px 5px;overflow:hidden;display:block;border-radius:5px;cursor:pointer;float:left;}
 .build-slot img{position:relative;top:4px;left:0px;}
 .build-warning{width:455px;height:15px;margin:20px 0px 0px 10px;overflow:hidden;float:left;display:none;}

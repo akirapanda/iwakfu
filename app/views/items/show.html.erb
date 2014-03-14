@@ -1,7 +1,8 @@
-<div class="row">
+<div class="row-fluid">
 <div class="itemWrapper">
 	<h3><%=@item.name%></h3>
-		<div class="itemBox">
+	
+		<div class="itemBox span6">
 			<div class="itemUpperName">
 				<span class="<%=@item.quanlity%>"><%=@item.name%></span>
 				
@@ -30,25 +31,26 @@
 						<%@item.slot.to_i.times do%>
 							<%=image_tag("/img/gemSquare.png")%>
 						<%end%>
-				</div>
+			</div>
 			<div class="clear"></div>
 			<div class="description">
 				<%=@item.content%>
 			</div>
-		
 			<%=render 'item_stats'%>
-
-			
 	</div>
-
+	<div class="span6">
 	<div id="itemInfoFacts">
 	<h3>物品信息</h3>
 		<ul class="itemFacts">
-			<li><span class="factTitle">First seen</span> in patch .307</li>
 			<li><span class="factTitle">类型</span> : <%=@item.item_type.chinese_name if @item.item_type%></li>
 		</ul>
+		<%= link_to '添加装备',add_item_item_build_path(current_build,:item_id =>@item),:remote=>true,:class=>"btn btn-primary"%>
+		
 	</div>
+	</div>
+	
 </div>
+
 
 </div>
 
