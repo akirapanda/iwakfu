@@ -11,13 +11,54 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140313101618) do
+ActiveRecord::Schema.define(version: 20140313233812) do
 
   create_table "drop_items", force: true do |t|
     t.integer "mob_id"
     t.integer "item_id"
     t.decimal "rate",    precision: 10, scale: 2, default: 0.0
     t.integer "lock",                             default: 0
+  end
+
+  create_table "item_details", force: true do |t|
+    t.integer  "item_id"
+    t.integer  "hp"
+    t.integer  "ap"
+    t.integer  "mp"
+    t.integer  "wp"
+    t.integer  "initiative"
+    t.integer  "dodge"
+    t.integer  "lock"
+    t.integer  "backstab"
+    t.integer  "critical"
+    t.integer  "block"
+    t.integer  "control"
+    t.integer  "cmc"
+    t.integer  "will_power"
+    t.integer  "prospecting"
+    t.integer  "perception"
+    t.integer  "heals"
+    t.integer  "wisdom"
+    t.integer  "range"
+    t.integer  "remove_ap"
+    t.integer  "fire_damage"
+    t.integer  "earth_damage"
+    t.integer  "water_damage"
+    t.integer  "air_damage"
+    t.integer  "fire_resist"
+    t.integer  "earth_resist"
+    t.integer  "water_resist"
+    t.integer  "air_resist"
+    t.integer  "fire_skill"
+    t.integer  "earth_skill"
+    t.integer  "water_skill"
+    t.integer  "air_skill"
+    t.integer  "fire"
+    t.integer  "water"
+    t.integer  "earth"
+    t.integer  "air"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "item_set_stats", force: true do |t|
@@ -123,18 +164,20 @@ ActiveRecord::Schema.define(version: 20140313101618) do
     t.integer  "fire_damage"
     t.integer  "water_damage"
     t.integer  "air_damage"
-    t.boolean  "capture_flag",            default: false
+    t.boolean  "capture_flag",  default: false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "no"
     t.string   "thumb"
     t.integer  "level"
-    t.integer  "hidden",        limit: 1
+    t.boolean  "hidden",        default: false
   end
 
   create_table "recipe_items", force: true do |t|
     t.integer "item_id"
+    t.integer "recipe_id"
     t.integer "quantity"
+    t.string  "skill"
   end
 
   create_table "recipes", force: true do |t|
@@ -142,14 +185,15 @@ ActiveRecord::Schema.define(version: 20140313101618) do
     t.string  "name"
     t.string  "skill"
     t.integer "level"
+    t.integer "quantity"
   end
 
   create_table "trapper_items", force: true do |t|
     t.integer "mob_id"
     t.integer "item_id"
     t.integer "level"
-    t.string  "source"
     t.string  "skill"
+    t.string  "source"
   end
 
 end

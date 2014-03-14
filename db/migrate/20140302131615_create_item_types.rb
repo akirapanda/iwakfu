@@ -7,6 +7,8 @@ class CreateItemTypes < ActiveRecord::Migration
       t.boolean :visiable
       t.text :note
       t.string :cate_name
+      t.timestamps
+      
     end
     
     add_column :items, :item_set_id,:integer

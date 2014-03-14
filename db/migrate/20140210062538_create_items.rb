@@ -32,6 +32,8 @@ class CreateItems < ActiveRecord::Migration
       t.boolean :earth,:default=>false
       t.boolean :water,:default=>false
       t.boolean :fire, :default=>false
+      t.timestamps
+      
     end
     
     create_table :mobs do |t|

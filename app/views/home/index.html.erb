@@ -1,11 +1,13 @@
 <h1 class="offset3">欢迎使用爱沃土中文数据库</h1>
 <br/>
 <div class="offset2 span8">
-	<form action="/search" class="form-search">
-	  <input type="text" class="input-xxlarge search-query" name="item_name" placeholder="输入需要查找物品名称">
-	  <button type="submit" class="btn">查询</button>
-	</form>
-	
+	<div class="row">
+		<%= search_form_for(@q,url: search_path,:html=>{:class=>"form-search"} ) do |f| %>
+			<%= f.text_field :item_name_cont,:placeholder=>"输入需要查找物品名称",:class=>"input-xxlarge search-query" %>	  
+		  <button type="submit" class="btn">查询</button>
+		<%end%>
+	</div>
+	<div class="row">
 	
 	<div class="accordion" id="accordion2">
 	  <div class="accordion-group">
@@ -16,53 +18,50 @@
 	    </div>
 	    <div id="collapseOne" class="accordion-body collapse ">
 	      <div class="accordion-inner">
-					<form action="/search"  class="form-horizontal">
+		
+					<%= search_form_for(@q,url: search_path,:html=>{:class=>"form-horizontal"} ) do |f| %>
 					  <div class="control-group">
 					    <label class="control-label" for="inputEmail">装备效果</label>
 					    <div class="controls">
 					     	<label class="checkbox inline">
-								  <input type="checkbox" id="inlineCheckbox1" name="attr[]" value="生命值"> 生命值
+								  <%= f.check_box :hp_present %>生命值
 								</label>
 								<label class="checkbox inline">
-								  <input type="checkbox" id="inlineCheckbox2" name="attr[]"  value="行动力"> 行动力
+								  <%= f.check_box :ap_present %>行动力
 								</label>
 								<label class="checkbox inline">
-								  <input type="checkbox" id="inlineCheckbox3" name="attr[]"  value="移动力"> 移动力
+								  <%= f.check_box :mp_present %>移动力
 								</label>
 								<label class="checkbox inline">
-								  <input type="checkbox" id="inlineCheckbox4" name="attr[]"  value="统帅"> 统帅
+								  <%= f.check_box :wp_present %>创生力
+								</label>
+								<label class="checkbox inline">
+								  <%= f.check_box :control_present %>统帅
 								</label>
 					    </div>
 					  </div>
-					
-					
 					  <div class="control-group">
-					    <label class="control-label" for="inputEmail">属性伤害</label>
+					    <label class="control-label" for="inputEmail">属性伤害加成</label>
 					    <div class="controls">
 					     	<label class="checkbox inline">
-								  <input type="checkbox" id="inlineCheckbox1" name="damage[]" value="earth"> 地系
+								  <%= f.check_box :earth_damage_present %>地系
 								</label>
 								<label class="checkbox inline">
-								  <input type="checkbox" id="inlineCheckbox2" name="damage[]"  value="air"> 风系
+								  <%= f.check_box :fire_damage_present %>火系
 								</label>
 								<label class="checkbox inline">
-								  <input type="checkbox" id="inlineCheckbox3" name="damage[]"  value="fire"> 火系
+								  <%= f.check_box :water_damage_present %>水系
 								</label>
 								<label class="checkbox inline">
-								  <input type="checkbox" id="inlineCheckbox4" name="damage[]"  value="water"> 水系
+								  <%= f.check_box :air_damage_present %>风系
 								</label>
 					    </div>
 					  </div>
-					
-					  <div class="control-group">
-
-							  <button type="submit" class="btn">查询</button>
-					    </div>
-					  </div>
-					</form>
-
+					  <%= f.submit "查询",:class=>"btn" %>
+					<% end %>
 	      </div>
 	    </div>
 	  </div>
+	</div>
 	</div>
 </div>

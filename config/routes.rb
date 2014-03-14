@@ -4,6 +4,7 @@ Iwakfu::Application.routes.draw do
   resources :items
   resources :item_sets
   resources :recipes
+  resources :item_details
   
   resources :mobs
   resources :mob_families

@@ -7,7 +7,7 @@ class TrapperItems < ActiveRecord::Migration
       t.string :skill
       
       t.string :source
-      t.timestamp
+      t.timestamps
     end
   end
 end

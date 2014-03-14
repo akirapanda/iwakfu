@@ -6,7 +6,7 @@ class AddRecipeItem < ActiveRecord::Migration
       t.string :skill
       t.integer :level
       t.integer :quantity
-      t.timestamp
+      t.timestamps
     end
     
     create_table :recipe_items do |t|
@@ -15,7 +15,7 @@ class AddRecipeItem < ActiveRecord::Migration
       
       t.integer :quantity
       t.string :skill
-      t.timestamp
+      t.timestamps
     end
   end
 end

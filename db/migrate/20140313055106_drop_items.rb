@@ -5,7 +5,7 @@ class DropItems < ActiveRecord::Migration
       t.integer :item_id
       t.decimal :rate,:default=>0, :precision => 10, :scale => 2  
       t.integer :lock,:default=>0
-      t.timestamp
+      t.timestamps
     end
   end
 end

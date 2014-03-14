@@ -6,7 +6,7 @@ class RecipesController < ApplicationController
       @recipes = @recipes.where("skill like ?","%"+params[:skill]+"%").order("level")
     end
     
-    @recipes_grid = initialize_grid(@recipes,:per_page => 40)
+    @recipes_grid = initialize_grid(@recipes,:per_page => 20)
   end
   
 

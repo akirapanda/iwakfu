@@ -24,3 +24,4 @@ update item_stats set content = '坚韧之地' where content ='Strength' ;
 update item_stats set content = '射程' where content ='Range' ;
 update item_stats set content = '技能等级' where content ='Lvl.' ;
 update item_stats set content = '敏捷之风' where content ='Agility' ;
+update item_stats set content = '剥夺行动力' where content ='of' ;

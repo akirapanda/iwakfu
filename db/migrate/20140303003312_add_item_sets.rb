@@ -6,7 +6,7 @@ class AddItemSets < ActiveRecord::Migration
       t.integer :no
       t.integer :level
       t.integer :piece
-      t.timestamp
+      t.timestamps
     end
     
     create_table :item_set_stats do |t|
@@ -26,6 +26,8 @@ class AddItemSets < ActiveRecord::Migration
       t.boolean :water,:default=>false
       t.boolean :fire, :default=>false
       t.boolean :visiable,:default =>true
+      t.timestamps
+      
     end
   end
 end
