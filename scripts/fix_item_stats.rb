@@ -2,7 +2,7 @@
 
 
 @item_stats.each do |stat|
-  content = @item_stat.description.split(" ")[2].strip.to_s
+  content = stat.description.split(" ")[2].strip.to_s
   case content
   when 'AP'
     stat.content = "行动力"
@@ -11,10 +11,13 @@
   when 'HP'
     stat.content = "生命值"
   end
-  
-  if stat.content == "of"
-    stat.content = "剥夺行动力"
-  end
+  stat.save
+end
+
+@item_stats  = ItemStat.where("content = ?","of")
+
+@item_stats.each do |stat|
+  stat.content = "剥夺行动力"
   stat.save
 end
 
