@@ -23,7 +23,7 @@ class ItemBuild < ActiveRecord::Base
   
 
   
-  def add_item(item)
+  def add_item(item,side)
     if item.item_type.chinese_name.include?("头盔")
       self.header = item
     end
@@ -45,11 +45,33 @@ class ItemBuild < ActiveRecord::Base
     if item.item_type.chinese_name.include?("披风")
       self.cloak = item
     end
+    weapons=["斧","魔杖","单手剑","铲","匕首","单手杖","锤子","针","弓","双手剑","双手杖","卡牌","盾牌"]
     
     
-    if item.item_type.chinese_name.include?("项链")
-      self.neck = item
+    if item.item_type.chinese_name.include?("戒指")
+      if side
+        if side=="left"
+          self.left_ring = item
+        else
+          self.right_ring = item
+        end
+      else
+        self.right_ring = item
+      end
     end
+    
+    if weapons.includes?(item.item_type.chinese_name)
+      if side
+        if side =="left"
+          self.left_hand = item
+        else
+          self.right_hand = item
+        end
+      else
+        self.right_hand = item
+      end
+    end
+    
     
   end
   

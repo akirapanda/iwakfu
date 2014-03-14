@@ -12,7 +12,7 @@ class ItemBuildsController < ApplicationController
     @cloaks = Item.where("item_type=?","披风")
     @belts = Item.where("item_type=?","腰带")
     
-    weapons=["斧","魔杖","单手剑","铲","匕首","单手杖","锤子","针","弓","双手剑","双手杖","卡牌"]
+    weapons=["斧","魔杖","单手剑","铲","匕首","单手杖","锤子","针","弓","双手剑","双手杖","卡牌","盾牌"]
     @left_hands = Item.where("item_type in (?)",weapons)
     @right_hands = Item.where("item_type in (?)",weapons)
     
@@ -21,7 +21,7 @@ class ItemBuildsController < ApplicationController
   def add_item
     @item_build = current_build
     @item = Item.find(params[:item_id])
-    @item_build.add_item(@item)
+    @item_build.add_item(@item,params[:side])
     @item_build.save
   end
   

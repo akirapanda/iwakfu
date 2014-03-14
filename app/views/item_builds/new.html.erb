@@ -33,19 +33,19 @@
 					<div class="control-group">
 					 <label class="control-label" for="inputEmail">腰带</label>
 				    <div class="controls">
-							<%=select_tag "belt_id", options_from_collection_for_select(@belts, "id", "short") ,:class=>"chosen-select",include_blank: true %>
+							<%=select_tag "belt_id", options_from_collection_for_select(@belts, "id", "short",:selected=>@item_build.belt.try(:id)) ,:class=>"chosen-select",include_blank: true %>
 						</div>
 					 </div>
 					<div class="control-group">
 					 <label class="control-label" for="inputEmail">鞋子</label>
 				    <div class="controls">
-							<%=select_tag "foot_id", options_from_collection_for_select(@foots, "id", "short") ,:class=>"chosen-select",include_blank: true %>
+							<%=select_tag "foot_id", options_from_collection_for_select(@foots, "id", "short",:selected=>@item_build.foot.try(:id)) ,:class=>"chosen-select",include_blank: true %>
 						</div>
 					 </div>
 					<div class="control-group">
 					 <label class="control-label" for="inputEmail">披风</label>
 				    <div class="controls">
-							<%=select_tag "cloak_id", options_from_collection_for_select(@cloaks, "id", "short") ,:class=>"chosen-select",include_blank: true %>
+							<%=select_tag "cloak_id", options_from_collection_for_select(@cloaks, "id", "short",:selected=>@item_build.cloak.try(:id)) ,:class=>"chosen-select",include_blank: true %>
 						</div>
 					 </div>
 			</div>
@@ -53,25 +53,25 @@
 				<div class="control-group">
 				 <label class="control-label" for="inputEmail">左戒指</label>
 			    <div class="controls">
-						<%=select_tag "left_ring_id", options_from_collection_for_select(@left_rings, "id", "short") ,:class=>"chosen-select",include_blank: true %>
+						<%=select_tag "left_ring_id", options_from_collection_for_select(@left_rings, "id", "short",:selected=>@item_build.left_ring.try(:id)) ,:class=>"chosen-select",include_blank: true %>
 					</div>
 				 </div>
 				<div class="control-group">
 				 <label class="control-label" for="inputEmail">右戒指</label>
 			    <div class="controls">
-						<%=select_tag "right_ring_id", options_from_collection_for_select(@right_rings, "id", "short") ,:class=>"chosen-select",include_blank: true %>
+						<%=select_tag "right_ring_id", options_from_collection_for_select(@right_rings, "id", "short",:selected=>@item_build.right_ring.try(:id)) ,:class=>"chosen-select",include_blank: true %>
 					</div>
 				 </div>
 				<div class="control-group">
 				 <label class="control-label" for="inputEmail">左手</label>
 			    <div class="controls">
-						<%=select_tag "left_hand_id", options_from_collection_for_select(@left_hands, "id", "short") ,include_blank: true ,:class=>"chosen-select"%>
+						<%=select_tag "left_hand_id", options_from_collection_for_select(@left_hands, "id", "short",:selected=>@item_build.left_hand.try(:id)) ,include_blank: true ,:class=>"chosen-select"%>
 					</div>
 				 </div>
 				<div class="control-group">
 				 <label class="control-label" for="inputEmail">右手</label>
 			    <div class="controls">
-						<%=select_tag "right_hand_id", options_from_collection_for_select(@right_hands, "id", "short") ,:class=>"chosen-select",include_blank: true%>
+						<%=select_tag "right_hand_id", options_from_collection_for_select(@right_hands, "id", "short",:selected=>@item_build.right_hand.try(:id)) ,:class=>"chosen-select",include_blank: true%>
 					</div>
 				 </div>
 			</div>
