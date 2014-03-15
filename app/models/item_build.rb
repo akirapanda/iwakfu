@@ -207,6 +207,10 @@ class ItemBuild < ActiveRecord::Base
     self.lock = self.lock + item_detail.lock.to_i
     self.backstab = self.backstab + item_detail.backstab.to_i
     self.critical = self.critical + item_detail.critical.to_i
+    self.crit_damage = self.crit_damage + item_detail.crit_damage.to_i
+    self.crit_fail = self.crit_fail + item_detail.crit_fail.to_i
+    
+    
     self.block = self.block + item_detail.block.to_i
     self.control = self.control + item_detail.control.to_i
     self.cmc = self.cmc + item_detail.cmc.to_i
@@ -246,6 +250,10 @@ class ItemBuild < ActiveRecord::Base
     self.lock = 0
     self.backstab = 0
     self.critical = 0
+    self.crit_damage = 0
+    
+    self.crit_fail = 0
+    
     self.block = 0
     self.control = 0
     self.cmc = 0 

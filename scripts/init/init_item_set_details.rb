@@ -56,8 +56,12 @@ item.item_set_stats.each do |stat|
     end
   when '背刺伤害'
     @detail.backstab = stat.value
-  when '暴击' 
+  when '暴击几率' 
     @detail.critical = stat.value
+  when '暴击伤害'
+    @detail.crit_damage = stat.value
+  when '暴击失手'
+    @detail.crit_fail = stat.value
   when '格挡' 
     @detail.block = stat.value
   when '行动力' 

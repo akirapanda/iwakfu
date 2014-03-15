@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140314051751) do
+ActiveRecord::Schema.define(version: 20140315161706) do
 
   create_table "drop_items", force: true do |t|
     t.integer "mob_id"
@@ -29,13 +29,14 @@ ActiveRecord::Schema.define(version: 20140314051751) do
 
   create_table "item_builds", force: true do |t|
     t.string   "name"
-    t.boolean  "publish",       default: true
+    t.boolean  "publish",       default: false
     t.integer  "header_id"
     t.integer  "shoulder_id"
     t.integer  "neck_id"
     t.integer  "left_ring_id"
     t.integer  "right_ring_id"
     t.integer  "body_id"
+    t.string   "author"
     t.integer  "foot_id"
     t.integer  "cloak_id"
     t.integer  "belt_id"
@@ -82,6 +83,7 @@ ActiveRecord::Schema.define(version: 20140314051751) do
     t.integer  "air",           default: 0
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "content"
   end
 
   create_table "item_details", force: true do |t|
@@ -123,6 +125,7 @@ ActiveRecord::Schema.define(version: 20140314051751) do
     t.integer  "air"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "crit_damage"
   end
 
   create_table "item_set_details", force: true do |t|
@@ -165,6 +168,8 @@ ActiveRecord::Schema.define(version: 20140314051751) do
     t.integer  "air",          default: 0
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "crit_damage"
+    t.integer  "crit_fail"
   end
 
   create_table "item_set_stats", force: true do |t|
