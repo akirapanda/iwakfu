@@ -32,7 +32,7 @@ class ItemBuildsController < ApplicationController
   end
   
   def edit
-    if current_build.id != params[:id].to_i
+    if current_build.id != params[:id].to_i && ! params[:admin].present?
       redirect_to items_path
     else
       @item_build = ItemBuild.find(params[:id])
