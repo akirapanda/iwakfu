@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140315161706) do
+ActiveRecord::Schema.define(version: 20140315172426) do
 
   create_table "drop_items", force: true do |t|
     t.integer "mob_id"
@@ -84,6 +84,8 @@ ActiveRecord::Schema.define(version: 20140315161706) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "content"
+    t.integer  "crit_fail"
+    t.integer  "crit_damage"
   end
 
   create_table "item_details", force: true do |t|
@@ -126,6 +128,7 @@ ActiveRecord::Schema.define(version: 20140315161706) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "crit_damage"
+    t.integer  "crit_fail"
   end
 
   create_table "item_set_details", force: true do |t|
@@ -168,8 +171,8 @@ ActiveRecord::Schema.define(version: 20140315161706) do
     t.integer  "air",          default: 0
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "crit_damage"
-    t.integer  "crit_fail"
+    t.integer  "crit_damage",  default: 0
+    t.integer  "crit_fail",    default: 0
   end
 
   create_table "item_set_stats", force: true do |t|
