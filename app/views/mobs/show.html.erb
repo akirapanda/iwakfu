@@ -87,13 +87,13 @@
 						<%@mob.drop_items.each do |item|%>
 						<tr>
 							<td>
-								<%=link_to item.item do%>
+								<%=link_to item.item  do%>
 								
 								<%=image_tag item.item.icon_url,:class=>"ihover itemImgLarge",:height=>"46"%>
 
 								<%end%>
 							</td>
-							<td class="item_name"><%=link_to item.item.name,item.item%></td>
+							<td class="item_name"><%=link_to item.item.name,item.item,:class=>item.item.quanlity%></td>
 							<td><%=item.rate%>%</td>
 							<td><%=item.lock%></td>
 							<td class="item_lvl">等级<%=item.item.level%></td>

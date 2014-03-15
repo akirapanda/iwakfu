@@ -147,7 +147,7 @@
 							<%@item.recipes.each do |recipe|%>
 							<tr>
 								<td>
-									<%=link_to recipe.item do%>
+									<%=link_to recipe.item,:class=>item.item.quanlity do%>
 
 									<%=image_tag recipe.item.icon_url,:class=>"ihover itemImgLarge",:height=>"46",:width=>"50"%>
 
@@ -158,7 +158,7 @@
 								<td>
 									<%recipe.recipe_items.each do |item|%>
 									<div class="row-fluid" >
-									<%=link_to item.item  do%>
+									<%=link_to item.item,:class=>item.item.quanlity  do%>
 									<%=image_tag(item.item.icon,:class=>"itemImgSmall",:width=>"30px")%><%= item.item.name%></a> x<%= item.quantity%>
 									<%end%>
 									</div>
@@ -189,14 +189,15 @@
 
 									<%end%>
 								</td>
-								<td class="item_name"><%=link_to recipe.item.name,recipe.name%></td>
+								<td class="item_name"><%=link_to recipe.item.name,recipe.item,:class=>recipe.item.quanlity%></td>
 								<td><%=recipe.skill%>:等级<%=recipe.level%></td>
 								<td>
 									<%recipe.recipe_items.each do |item|%>
 									<div class="row-fluid" >
-									<%=link_to item.item  do%>
+									<%=link_to item.item ,:class=>item.item.quanlity do%>
 									<%=image_tag(item.item.icon,:class=>"itemImgSmall",:width=>"30px")%><%= item.item.name%></a> x<%= item.quantity%>
 									<%end%>
+									
 									</div>
 									<%end%>
 								
