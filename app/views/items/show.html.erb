@@ -43,6 +43,9 @@
 	<h3>物品信息</h3>
 		<ul class="itemFacts">
 			<li><span class="factTitle">类型</span> : <%=@item.item_type.chinese_name if @item.item_type%></li>
+			<%if @item.item_set%>
+			<li><span class="factTitle">套装</span> : <%=link_to @item.item_set.chinese_name,@item.item_set%></li>
+			<%end%>
 		</ul>
 		
 		

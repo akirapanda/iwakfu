@@ -6,7 +6,7 @@
 	end 
 
   g.column :name => '名称', :attribute => 'name',:model=>"Item" do |item|
-	 link_to(item.item.name,item)
+	 link_to(item.item.name,item.item)
 	end
 	
 	g.column :name => '等级', :attribute => 'level',:model=>"Item" do |item|

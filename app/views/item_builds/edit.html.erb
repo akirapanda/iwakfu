@@ -1,9 +1,3 @@
-<div class="row span10 offset1">
-
-	<h2><%=@item_build.name%> <small>作者:<%=@item_build.author%> @<%=@item_build.updated_at%></h2>
-	<pre>简介:<%= @item_build.content.html_safe%></pre>
-		
-</div>
 <div class='row'>
 
 	<div class="span7">
@@ -15,6 +9,7 @@
 				<td>等级</td>
 				<td>属性</td>
 				<td>套装</td>
+				<td></td>
 				
 			</tr>
 			<tr>
@@ -25,6 +20,7 @@
 				<td><%=@item_build.header.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.header%></td>
 				<td><%=@item_build.header.try(:item_set).try(:name)%></td>
+				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:header)%></td>
 				
 			</tr>
 			<tr>
@@ -35,6 +31,7 @@
 				<td><%=@item_build.neck.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.neck%></td>
 				<td><%=@item_build.neck.try(:item_set).try(:name)%></td>
+				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:neck)%></td>
 				
 			</tr>
 			<tr>
@@ -45,6 +42,7 @@
 				<td><%=@item_build.shoulder.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.shoulder%></td>
 				<td><%=@item_build.shoulder.try(:item_set).try(:name)%></td>
+				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:shoulder)%></td>
 				
 			</tr>
 			<tr>
@@ -55,6 +53,7 @@
 				<td><%=@item_build.body.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.body%></td>
 				<td><%=@item_build.body.try(:item_set).try(:name)%></td>
+				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:body)%></td>
 				
 			</tr>
 			<tr>
@@ -65,6 +64,7 @@
 				<td><%=@item_build.belt.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.belt%></td>
 				<td><%=@item_build.belt.try(:item_set).try(:name)%></td>
+				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:belt)%></td>
 				
 			</tr>
 			<tr>
@@ -75,6 +75,7 @@
 				<td><%=@item_build.foot.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.foot%></td>
 				<td><%=@item_build.foot.try(:item_set).try(:name)%></td>
+				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:foot)%></td>
 				
 			</tr>
 			<tr>
@@ -85,6 +86,7 @@
 				<td><%=@item_build.cloak.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.cloak%></td>
 				<td><%=@item_build.cloak.try(:item_set).try(:name)%></td>
+				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:cloak)%></td>
 				
 			</tr>
 			<tr>
@@ -95,6 +97,7 @@
 				<td><%=@item_build.left_ring.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.left_ring%></td>
 				<td><%=@item_build.left_ring.try(:item_set).try(:name)%></td>
+				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:left_ring)%></td>
 				
 			</tr>
 			<tr>
@@ -105,6 +108,7 @@
 				<td><%=@item_build.right_ring.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.right_ring%></td>
 				<td><%=@item_build.right_ring.try(:item_set).try(:name)%></td>
+				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:right_ring)%></td>
 				
 			</tr>
 			<tr>
@@ -115,6 +119,7 @@
 				<td><%=@item_build.left_hand.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.left_hand%></td>
 				<td><%=@item_build.left_hand.try(:item_set).try(:name)%></td>
+				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:left_hand)%></td>
 				
 			</tr>
 			<tr>
@@ -125,6 +130,7 @@
 				<td><%=@item_build.right_hand.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.right_hand%></td>
 				<td><%=@item_build.right_hand.try(:item_set).try(:name)%></td>
+				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:right_hand)%></td>
 				
 			</tr>
 		</table>
@@ -142,7 +148,7 @@
 			</div>
 		</div>
 		
-		<div class="row">
+		<div class="row well">
 			<h3>装备属性(奖励后)</h3>
 			<ul class="no_dom">
 				<%if @item_build.hp != 0%>
@@ -299,6 +305,32 @@
 					风系技能等级:<%=@item_build.air_skill%></li>
 				<%end%>
 			</ul>
+		</div>
+		<div class="well">
+		<%=simple_form_for(@item_build ) do |f|%>
+		<legend>共享你的配装<legend>
+			 <div class="control-group">
+			    <label class="control-label" for="name">配装的名字</label>
+			    <div class="controls">
+						<%=f.input :name,:label=>false%>
+					</div>
+				</div>
+				<div class="control-group">
+			    <label class="control-label" for="inputEmail">您的称呼</label>
+			    <div class="controls">
+						<%=f.input :author,:label=>false%>
+					</div>
+				</div>
+				<div class="control-group">
+			    <label class="control-label" for="inputEmail">简单的介绍</label>
+			    <div class="controls">
+						<%=f.input :content,:rows=>5,:as=>:text,:label=>false%>
+					</div>
+				</div>
+
+
+			<%=f.submit "发布",:class=>"btn btn-primary"%>
+		<%end%>
 		</div>
 	</div>
 </div>

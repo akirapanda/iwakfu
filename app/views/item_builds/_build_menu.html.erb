@@ -12,6 +12,6 @@
 	<li><%=link_to "右手-#{item_build.right_hand.try(:name)}","#"%></li>
 
   <li class="divider"></li>
-	<li><%=link_to "查看当前装备总属性",item_build_path(current_build)%></li>
+	<li><%=link_to "查看当前装备总属性",edit_item_build_path(current_build)%></li>
 
 </ul>

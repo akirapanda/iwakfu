@@ -15,6 +15,10 @@ class ItemBuild < ActiveRecord::Base
   belongs_to :right_hand,:class_name => "Item", :foreign_key => "right_hand_id"
   
   
+  
+  has_many :item_build_bonus_items
+  has_many :item_set_details, through: :item_build_bonus_items
+  
 
   def add_set_bouns
     set_zero
@@ -100,6 +104,7 @@ class ItemBuild < ActiveRecord::Base
       end
     end
     cal_stats
+    
   end
   
   
@@ -133,6 +138,7 @@ class ItemBuild < ActiveRecord::Base
     
     
     sets_id = sets.uniq
+    self.item_build_bonus_items.destroy_all
     
     sets_id.each do |set_id|
       items = Item.where("item_set_id = ? ",set_id)
@@ -142,14 +148,22 @@ class ItemBuild < ActiveRecord::Base
           count = count + 1
         end
       end    
-      
       set_and_piece = {}
       set_and_piece[:set_id]=set_id
       set_and_piece[:piece]=count
       set_and_pieces<<set_and_piece
     end
     
-    puts set_and_pieces
+    set_and_pieces.each do |set_and_piece|
+       set_id = set_and_piece[:set_id]
+       piece = set_and_piece[:piece]
+       item_set_details = ItemSetDetail.where("item_set_id = ? and piece <= ?",set_id,piece)
+       
+       item_set_details.each do |detail|
+         self.item_set_details << detail
+         self.add_item_set_bonus_stat(detail)
+      end 
+    end
   end
   
   def cal_stats
@@ -170,51 +184,57 @@ class ItemBuild < ActiveRecord::Base
     cal_bonus
   end
   
-  
+  def add_item_set_bonus_stat(bonus_detail)
+    if bonus_detail
+      self.add_stat(bonus_detail)
+    end
+  end
   
   def add_item_stats(item)    
     if item && item.item_detail
       item_detail = item.item_detail
-      self.hp = self.hp + item_detail.hp.to_i
-      self.ap = self.ap + item_detail.ap.to_i
-      self.mp = self.mp + item_detail.mp.to_i
-      self.wp = self.wp + item_detail.wp.to_i
-      self.initiative = self.initiative + item_detail.initiative.to_i
-      self.dodge = self.dodge + item_detail.dodge.to_i
-      self.lock = self.lock + item_detail.lock.to_i
-      self.backstab = self.backstab + item_detail.backstab.to_i
-      self.critical = self.critical + item_detail.critical.to_i
-      self.block = self.block + item_detail.block.to_i
-      self.control = self.control + item_detail.control.to_i
-      self.cmc = self.cmc + item_detail.cmc.to_i
-      self.will_power = self.will_power + item_detail.will_power.to_i
-      self.prospecting = self.prospecting + item_detail.prospecting.to_i
-      self.perception = self.perception + item_detail.perception.to_i
-      self.heals = self.heals + item_detail.heals.to_i
-      self.wisdom = self.wisdom + item_detail.wisdom.to_i
-      self.range  = self.range + item_detail.range.to_i
-      self.remove_ap  = self.remove_ap + item_detail.remove_ap.to_i
-
-      self.fire_damage = self.fire_damage + item_detail.fire_damage.to_i
-      self.earth_damage = self.earth_damage + item_detail.earth_damage.to_i
-      self.water_damage = self.water_damage + item_detail.water_damage.to_i
-      self.air_damage = self.air_damage + item_detail.air_damage.to_i
-      self.fire_resist = self.fire_resist + item_detail.fire_resist.to_i
-      self.earth_resist = self.earth_resist + item_detail.earth_resist.to_i
-      self.water_resist = self.water_resist + item_detail.water_resist.to_i
-      self.air_resist = self.air_resist + item_detail.air_resist.to_i
-      self.fire_skill = self.fire_skill + item_detail.fire_skill.to_i
-      self.earth_skill = self.earth_skill + item_detail.earth_skill.to_i
-      self.water_skill = self.water_skill + item_detail.water_skill.to_i
-      self.air_skill = self.air_skill + item_detail.air_skill.to_i
-      self.fire = self.fire + item_detail.fire.to_i
-      self.water = self.water + item_detail.water.to_i
-      self.earth = self.earth + item_detail.earth.to_i
-      self.air = self.air + item_detail.air.to_i
+      self.add_stat(item_detail)
     end
   end
   
-  
+  def add_stat(item_detail)
+    self.hp = self.hp + item_detail.hp.to_i
+    self.ap = self.ap + item_detail.ap.to_i
+    self.mp = self.mp + item_detail.mp.to_i
+    self.wp = self.wp + item_detail.wp.to_i
+    self.initiative = self.initiative + item_detail.initiative.to_i
+    self.dodge = self.dodge + item_detail.dodge.to_i
+    self.lock = self.lock + item_detail.lock.to_i
+    self.backstab = self.backstab + item_detail.backstab.to_i
+    self.critical = self.critical + item_detail.critical.to_i
+    self.block = self.block + item_detail.block.to_i
+    self.control = self.control + item_detail.control.to_i
+    self.cmc = self.cmc + item_detail.cmc.to_i
+    self.will_power = self.will_power + item_detail.will_power.to_i
+    self.prospecting = self.prospecting + item_detail.prospecting.to_i
+    self.perception = self.perception + item_detail.perception.to_i
+    self.heals = self.heals + item_detail.heals.to_i
+    self.wisdom = self.wisdom + item_detail.wisdom.to_i
+    self.range  = self.range + item_detail.range.to_i
+    self.remove_ap  = self.remove_ap + item_detail.remove_ap.to_i
+
+    self.fire_damage = self.fire_damage + item_detail.fire_damage.to_i
+    self.earth_damage = self.earth_damage + item_detail.earth_damage.to_i
+    self.water_damage = self.water_damage + item_detail.water_damage.to_i
+    self.air_damage = self.air_damage + item_detail.air_damage.to_i
+    self.fire_resist = self.fire_resist + item_detail.fire_resist.to_i
+    self.earth_resist = self.earth_resist + item_detail.earth_resist.to_i
+    self.water_resist = self.water_resist + item_detail.water_resist.to_i
+    self.air_resist = self.air_resist + item_detail.air_resist.to_i
+    self.fire_skill = self.fire_skill + item_detail.fire_skill.to_i
+    self.earth_skill = self.earth_skill + item_detail.earth_skill.to_i
+    self.water_skill = self.water_skill + item_detail.water_skill.to_i
+    self.air_skill = self.air_skill + item_detail.air_skill.to_i
+    self.fire = self.fire + item_detail.fire.to_i
+    self.water = self.water + item_detail.water.to_i
+    self.earth = self.earth + item_detail.earth.to_i
+    self.air = self.air + item_detail.air.to_i
+  end
   
   def set_zero
     self.hp = 0

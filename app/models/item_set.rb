@@ -9,6 +9,7 @@ class ItemSet < ActiveRecord::Base
   has_many :item_set_stats_6,->{ where "piece = 6 and cate = 'bonus' "}, class_name:"ItemSetStat"
   has_many :item_set_stats_7,->{ where "piece = 7 and cate = 'bonus' "}, class_name:"ItemSetStat"
   has_many :item_set_stats_8,->{ where "piece = 8 and cate = 'bonus' "}, class_name:"ItemSetStat"
+  has_one :item_set_detail
   
   def total
     

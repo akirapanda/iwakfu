@@ -22,6 +22,35 @@ class ItemBuildsController < ApplicationController
     @item_build = ItemBuild.find(params[:id])
   end
   
+  
+  def index
+  
+    @item_builds = ItemBuild.where(:publish=>true)
+
+    @item_builds_grid = initialize_grid(@item_builds,:per_page => 20)
+    
+  end
+  
+  def edit
+    if current_build.id != params[:id].to_i
+      redirect_to items_path
+    else
+      @item_build = ItemBuild.find(params[:id])
+    end
+  end
+  
+  def update
+    @item_build = ItemBuild.find(params[:id])
+    
+      if @item_build.update(build_params)
+        session[:build_id]=nil
+        
+        redirect_to @item_build, notice: '发布配装表成功' 
+      else
+         render json: @item_build.errors, status: :unprocessable_entity
+      end
+  end
+  
   def add_item
     @item_build = current_build
     @item = Item.includes(:item_detail).includes(:item_type).find(params[:item_id])
@@ -107,4 +136,11 @@ class ItemBuildsController < ApplicationController
     render :json => @item_build
   end
   
+  private
+
+
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def build_params
+      params.require(:item_build).permit!
+    end
 end

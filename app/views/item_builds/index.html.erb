@@ -1,0 +1,17 @@
+<%= grid(@item_builds_grid, show_filters: :when_filtered, hide_csv_button: true) do |g|
+  g.column :name => '名称', :attribute => 'name' do |item|
+	 link_to(item.name,item)
+	end
+	
+	g.column :name => '简介', :attribute => 'content' do |item|
+		truncate item.content
+	end
+	
+	g.column :name => '作者', :attribute => 'author', filter: false do |item|
+		item.author
+	end
+
+  g.column :name => '更新日期', :attribute => 'updated_at', filter: false 
+
+
+end -%>
