@@ -44,7 +44,7 @@ class ItemBuildsController < ApplicationController
     
       if @item_build.update(build_params)
         session[:build_id]=nil
-        
+        @item_build.publish=true
         redirect_to @item_build, notice: '发布配装表成功' 
       else
          render json: @item_build.errors, status: :unprocessable_entity
