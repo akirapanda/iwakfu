@@ -5,7 +5,7 @@ class AddItemBuilds < ActiveRecord::Migration
       t.string :author
       t.text :content
       
-      t.boolean :publish,:default=>true
+      t.boolean :publish,:default=>false
       t.integer :header_id
       t.integer :shoulder_id
       t.integer :neck_id

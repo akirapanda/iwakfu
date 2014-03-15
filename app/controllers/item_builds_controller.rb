@@ -64,7 +64,7 @@ class ItemBuildsController < ApplicationController
       @item_build.remove_item(params[:part])
     end
     @item_build.save
-    redirect_to @item_build
+    redirect_to edit_item_build_path(@item_build)
     
   end
   
