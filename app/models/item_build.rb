@@ -90,7 +90,7 @@ class ItemBuild < ActiveRecord::Base
         self.right_ring = item
       end
     end
-    weapons=["斧","魔杖","单手剑","铲","匕首","单手杖","锤子","针","弓","双手剑","双手杖","卡牌","盾牌"]
+    weapons=["斧","斧子","魔杖","单手剑","铲","匕首","单手杖","锤子","针","弓","双手剑","双手杖","卡牌","盾牌"]
     
     if weapons.include?(item.item_type.chinese_name)
       if side
