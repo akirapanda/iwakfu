@@ -12,7 +12,7 @@ class ItemBuildsController < ApplicationController
     @cloaks = Item.where("item_type=?","披风")
     @belts = Item.where("item_type=?","腰带")
     
-    weapons=["斧","魔杖","单手剑","铲","匕首","单手杖","锤子","针","弓","双手剑","双手杖","卡牌","盾牌"]
+    weapons=["斧","斧子","魔杖","单手剑","铲","匕首","单手杖","锤子","针","弓","双手剑","双手杖","卡牌","盾牌"]
     @left_hands = Item.where("item_type in (?)",weapons)
     @right_hands = Item.where("item_type in (?)",weapons)
     
