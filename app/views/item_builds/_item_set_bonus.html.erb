@@ -30,6 +30,12 @@
 <%if item_detail.critical != 0%>
 <li>暴击几率:<%=item_detail.critical%>%</li>
 <%end%>
+<%if item_detail.crit_damange != 0%>
+<li>暴击伤害:<%=item_detail.crit_damange%>%</li>
+<%end%>
+<%if item_detail.critical != 0%>
+<li>失手:<%=item_detail.crit_fail%>%</li>
+<%end%>
 <%if item_detail.block != 0%>
 <li>格挡:<%=item_detail.block%></li>
 <%end%>
