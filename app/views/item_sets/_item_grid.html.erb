@@ -4,7 +4,7 @@
 	end 
 
   g.column :name => '名称', :attribute => 'name' do |item|
-	 link_to(item.name,item)
+	 link_to(item.name,item,:class=>:quanlity)
 	end
 	
 	g.column :name => '等级', :attribute => 'level' do |item|

@@ -1,15 +1,15 @@
 <ul class="dropdown-menu" id="item_build_menu" role="menu" aria-labelledby="dLabel">
-	<li><%=link_to "头部-#{item_build.header.try(:name)}","#"%></li>
-	<li><%=link_to "颈部-#{item_build.neck.try(:name)}","#"%></li>
-	<li><%=link_to "肩部-#{item_build.shoulder.try(:name)}","#"%></li>
-	<li><%=link_to "胸部-#{item_build.body.try(:name)}","#"%></li>
-	<li><%=link_to "腰带-#{item_build.belt.try(:name)}","#"%></li>
-	<li><%=link_to "脚部-#{item_build.foot.try(:name)}","#"%></li>
-	<li><%=link_to "披风-#{item_build.cloak.try(:name)}","#"%></li>
-	<li><%=link_to "左戒指-#{item_build.left_ring.try(:name)}","#"%></li>
-	<li><%=link_to "右戒指-#{item_build.right_ring.try(:name)}","#"%></li>
-	<li><%=link_to "左手-#{item_build.left_hand.try(:name)}","#"%></li>
-	<li><%=link_to "右手-#{item_build.right_hand.try(:name)}","#"%></li>
+	<li><%=link_to "头部-#{item_build.header.try(:name)}","#",:class=>item_build.header.try(:quanlity)%></li>
+	<li><%=link_to "颈部-#{item_build.neck.try(:name)}","#",:class=>item_build.neck.try(:neck)%></li>
+	<li><%=link_to "肩部-#{item_build.shoulder.try(:name)}","#",:class=>item_build.shoulder.try(:quanlity)%></li>
+	<li><%=link_to "胸部-#{item_build.body.try(:name)}","#",:class=>item_build.body.try(:quanlity)%></li>
+	<li><%=link_to "腰带-#{item_build.belt.try(:name)}","#",:class=>item_build.belt.try(:quanlity)%></li>
+	<li><%=link_to "脚部-#{item_build.foot.try(:name)}","#",:class=>item_build.foot.try(:quanlity)%></li>
+	<li><%=link_to "披风-#{item_build.cloak.try(:name)}","#",:class=>item_build.cloak.try(:quanlity)%></li>
+	<li><%=link_to "左戒指-#{item_build.left_ring.try(:name)}","#",:class=>item_build.left_ring.try(:quanlity)%></li>
+	<li><%=link_to "右戒指-#{item_build.right_ring.try(:name)}","#",:class=>item_build.right_ring.try(:quanlity)%></li>
+	<li><%=link_to "左手-#{item_build.left_hand.try(:name)}","#",:class=>item_build.left_hand.try(:quanlity)%></li>
+	<li><%=link_to "右手-#{item_build.right_hand.try(:name)}","#",:class=>item_build.right_hand.try(:quanlity)%></li>
 
   <li class="divider"></li>
 	<li><%=link_to "查看当前装备总属性",edit_item_build_path(current_build)%></li>

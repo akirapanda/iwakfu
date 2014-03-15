@@ -6,7 +6,7 @@
 </div>
 <div class='row'>
 
-	<div class="span7">
+	<div class="span6">
 		<table class="table">
 			<tr>
 				<td>部位</td>
@@ -21,7 +21,7 @@
 				<td>头部</td>
 				<td><%=image_tag(@item_build.header.try(:icon))%>
 				</td>
-				<td><%=link_to @item_build.header.try(:name),@item_build.header if @item_build.header%></td>
+				<td><%=link_to @item_build.header.try(:name),@item_build.header,:class=>@item_build.header.quanlity if @item_build.header%></td>
 				<td><%=@item_build.header.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.header%></td>
 				<td><%=@item_build.header.try(:item_set).try(:name)%></td>
@@ -31,7 +31,7 @@
 				<td>颈部</td>
 				<td><%=image_tag(@item_build.neck.try(:icon))%>
 				</td>
-				<td><%=link_to @item_build.neck.try(:name),@item_build.neck if @item_build.neck%></td>
+				<td><%=link_to @item_build.neck.try(:name),@item_build.neck,:class=>@item_build.neck.quanlity if @item_build.neck%></td>
 				<td><%=@item_build.neck.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.neck%></td>
 				<td><%=@item_build.neck.try(:item_set).try(:name)%></td>
@@ -41,7 +41,7 @@
 				<td>肩膀</td>
 				<td><%=image_tag(@item_build.shoulder.try(:icon))%>
 				</td>
-				<td><%=link_to @item_build.shoulder.try(:name),@item_build.shoulder if @item_build.shoulder%></td>
+				<td><%=link_to @item_build.shoulder.try(:name),@item_build.shoulder,:class=>@item_build.shoulder.quanlity if @item_build.shoulder%></td>
 				<td><%=@item_build.shoulder.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.shoulder%></td>
 				<td><%=@item_build.shoulder.try(:item_set).try(:name)%></td>
@@ -51,7 +51,7 @@
 				<td>胸部</td>
 				<td><%=image_tag(@item_build.body.try(:icon))%>
 				</td>
-				<td><%=link_to @item_build.body.try(:name),@item_build.body if @item_build.body %></td>
+				<td><%=link_to @item_build.body.try(:name),@item_build.body,:class=>@item_build.body.quanlity if @item_build.body %></td>
 				<td><%=@item_build.body.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.body%></td>
 				<td><%=@item_build.body.try(:item_set).try(:name)%></td>
@@ -61,7 +61,7 @@
 				<td>腰带</td>
 				<td><%=image_tag(@item_build.belt.try(:icon))%>
 				</td>
-				<td><%=link_to @item_build.belt.try(:name),@item_build.belt if @item_build.belt%></td>
+				<td><%=link_to @item_build.belt.try(:name),@item_build.belt,:class=>@item_build.belt.quanlity if @item_build.belt%></td>
 				<td><%=@item_build.belt.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.belt%></td>
 				<td><%=@item_build.belt.try(:item_set).try(:name)%></td>
@@ -71,7 +71,7 @@
 				<td>脚部</td>
 				<td><%=image_tag(@item_build.foot.try(:icon))%>
 				</td>
-				<td><%=link_to @item_build.foot.try(:name),@item_build.foot if @item_build.foot%></td>
+				<td><%=link_to @item_build.foot.try(:name),@item_build.foot,:class=>@item_build.foot.quanlity if @item_build.foot%></td>
 				<td><%=@item_build.foot.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.foot%></td>
 				<td><%=@item_build.foot.try(:item_set).try(:name)%></td>
@@ -81,7 +81,7 @@
 				<td>披风</td>
 				<td><%=image_tag(@item_build.cloak.try(:icon))%>
 				</td>
-				<td><%=link_to @item_build.cloak.try(:name),@item_build.cloak if @item_build.cloak%></td>
+				<td><%=link_to @item_build.cloak.try(:name),@item_build.cloak,:class=>@item_build.cloak.quanlity if @item_build.cloak%></td>
 				<td><%=@item_build.cloak.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.cloak%></td>
 				<td><%=@item_build.cloak.try(:item_set).try(:name)%></td>
@@ -91,7 +91,7 @@
 				<td>左手戒指</td>
 				<td><%=image_tag(@item_build.left_ring.try(:icon))%>
 				</td>
-				<td><%=link_to @item_build.left_ring.try(:name),@item_build.left_ring if @item_build.left_ring%></td>
+				<td><%=link_to @item_build.left_ring.try(:name),@item_build.left_ring,:class=>@item_build.left_ring.quanlity if @item_build.left_ring%></td>
 				<td><%=@item_build.left_ring.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.left_ring%></td>
 				<td><%=@item_build.left_ring.try(:item_set).try(:name)%></td>
@@ -101,7 +101,7 @@
 				<td>右手戒指</td>
 				<td><%=image_tag(@item_build.right_ring.try(:icon))%>
 				</td>
-				<td><%=link_to @item_build.right_ring.try(:name),@item_build.right_ring if @item_build.right_ring%></td>
+				<td><%=link_to @item_build.right_ring.try(:name),@item_build.right_ring,:class=>@item_build.right_ring.quanlity if @item_build.right_ring%></td>
 				<td><%=@item_build.right_ring.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.right_ring%></td>
 				<td><%=@item_build.right_ring.try(:item_set).try(:name)%></td>
@@ -111,7 +111,7 @@
 				<td>左手武器</td>
 				<td><%=image_tag(@item_build.left_hand.try(:icon))%>
 				</td>
-				<td><%=link_to @item_build.left_hand.try(:name),@item_build.left_hand if @item_build.left_hand%></td>
+				<td><%=link_to @item_build.left_hand.try(:name),@item_build.left_hand,:class=>@item_build.left_hand.quanlity if @item_build.left_hand%></td>
 				<td><%=@item_build.left_hand.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.left_hand%></td>
 				<td><%=@item_build.left_hand.try(:item_set).try(:name)%></td>
@@ -121,7 +121,7 @@
 				<td>右手武器</td>
 				<td><%=image_tag(@item_build.right_hand.try(:icon))%>
 				</td>
-				<td><%=link_to @item_build.right_hand.try(:name),@item_build.right_hand if @item_build.right_hand%></td>
+				<td><%=link_to @item_build.right_hand.try(:name),@item_build.right_hand,:class=>@item_build.right_hand.quanlity if @item_build.right_hand%></td>
 				<td><%=@item_build.right_hand.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.right_hand%></td>
 				<td><%=@item_build.right_hand.try(:item_set).try(:name)%></td>

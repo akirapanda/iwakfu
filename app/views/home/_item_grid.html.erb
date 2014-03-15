@@ -6,10 +6,10 @@
 	end 
 
   g.column :name => '名称', :attribute => 'name',:model=>"Item" do |item|
-	 link_to(item.item.name,item.item)
+	 link_to(item.item.name,item.item,:class=>item.item.quanlity)
 	end
 	
-	g.column :name => '等级', :attribute => 'level',:model=>"Item" do |item|
+	g.column :name => '等级', :attribute => 'level',:model=>"Item",filter_type: :range do |item|
 	  "等级#{item.item.level}"
 	end
 	
