@@ -9,7 +9,7 @@ class HomeController < ApplicationController
      @search = ItemDetail.search(params[:q])
      @item_details = @search.result(distinct: true)
 
-    @items_grid = initialize_grid(@item_details,:per_page => 20)
+    @items_grid = initialize_grid(@item_details,:include => [:item],:per_page => 20)
     
   end
   

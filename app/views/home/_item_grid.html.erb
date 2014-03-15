@@ -1,6 +1,6 @@
 
 <% if @items_grid%>
-<%= grid(@items_grid, show_filters: :when_filtered, hide_csv_button: true) do |g|
+<%= grid(@items_grid, show_filters: :false, hide_csv_button: true) do |g|
   g.column :name => '图片', :attribute => 'icon',:model=>"Item", filter: false do |item|
 		image_tag(item.item.icon)
 	end 
