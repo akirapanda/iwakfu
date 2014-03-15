@@ -23,11 +23,14 @@ item.item_set_stats.each do |stat|
   when '伤害' 
     if stat.fire 
       @detail.fire_damage = stat.value
-    elsif stat.water 
+    end
+    if stat.water 
       @detail.water_damage = stat.value
-    elsif stat.earth 
+    end
+    if stat.earth 
       @detail.earth_damage = stat.value
-    elsif stat.air
+    end
+    if stat.air
       @detail.air_damage = stat.value 
     end
   when '锁定' 
@@ -41,11 +44,14 @@ item.item_set_stats.each do |stat|
   when '抗性' 
     if stat.fire 
       @detail.fire_resist = stat.value
-    elsif stat.water 
+    end
+    if stat.water 
       @detail.water_resist = stat.value
-    elsif stat.earth 
+    end
+    if stat.earth 
       @detail.earth_resist = stat.value
-    elsif stat.air
+    end
+    if stat.air
       @detail.air_resist = stat.value 
     end
   when '背刺伤害'
@@ -86,11 +92,14 @@ item.item_set_stats.each do |stat|
   when '技能等级'
     if stat.fire 
       @detail.fire_skill = stat.value
-    elsif stat.water 
+    end
+    if stat.water 
       @detail.water_skill = stat.value
-    elsif stat.earth 
+    end
+    if stat.earth 
       @detail.earth_skill = stat.value
-    elsif stat.air
+    end
+    if stat.air
       @detail.air_skill = stat.value 
     end
   when '敏捷之风'   
@@ -100,7 +109,6 @@ item.item_set_stats.each do |stat|
     @detail.remove_ap = stat.value 
 
   end
-  
   @detail.save
   
 end
