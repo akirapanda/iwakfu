@@ -124,17 +124,17 @@ class ItemBuild < ActiveRecord::Base
     items_id << self.left_hand.id if self.left_hand
     items_id << self.right_hand.id if self.right_hand
     sets = []
-    sets << self.header.item_set.id if self.header
-    sets << self.neck.item_set.id if self.neck
-    sets << self.body.item_set.id if self.body
-    sets << self.shoulder.item_set.id if self.shoulder
-    sets << self.belt.item_set.id if self.belt
-    sets << self.foot.item_set.id if self.foot
-    sets << self.cloak.item_set.id if self.cloak
-    sets << self.left_ring.item_set.id if self.left_ring
-    sets << self.right_ring.item_set.id if self.right_ring
-    sets << self.left_hand.item_set.id if self.left_hand
-    sets << self.right_hand.item_set.id if self.right_hand
+    sets << self.header.item_set.id if self.header && self.header.item_set
+    sets << self.neck.item_set.id if self.neck && self.neck.item_set
+    sets << self.body.item_set.id if self.body && self.body.item_set
+    sets << self.shoulder.item_set.id if self.shoulder && self.shoulder.item_set
+    sets << self.belt.item_set.id if self.belt && self.belt.item_set
+    sets << self.foot.item_set.id if self.foot && self.foot.item_set
+    sets << self.cloak.item_set.id if self.cloak && self.cloak.item_set
+    sets << self.left_ring.item_set.id if self.left_ring && self.left_ring.item_set
+    sets << self.right_ring.item_set.id if self.right_ring && self.right_ring.item_set
+    sets << self.left_hand.item_set.id if self.left_hand && self.left_hand.item_set
+    sets << self.right_hand.item_set.id if self.right_hand && self.right_hand.item_set
     
     
     sets_id = sets.uniq
