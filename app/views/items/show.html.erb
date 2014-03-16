@@ -49,10 +49,10 @@
 		</ul>
 		
 		
-		<%if @item.item_type.chinese_name == "戒指" %>
+		<%if @item.item_type.try(:chinese_name) == "戒指" %>
 			<%= link_to '左手戒指',add_item_item_build_path(current_build,:item_id =>@item,:side=>:left),:remote=>true,:class=>"btn btn-primary"%>
 			<%= link_to '右手戒指',add_item_item_build_path(current_build,:item_id =>@item,:side=>:right),:remote=>true,:class=>"btn btn-primary"%>
-		<%elsif Item::WEAPONS.include?@item.item_type.chinese_name%>
+		<%elsif Item::WEAPONS.include?@item.item_type.try(:chinese_name)%>
 			<%= link_to '左手武器',add_item_item_build_path(current_build,:item_id =>@item,:side=>:left),:remote=>true,:class=>"btn btn-primary"%>
 			<%= link_to '右手武器',add_item_item_build_path(current_build,:item_id =>@item,:side=>:right),:remote=>true,:class=>"btn btn-primary"%>
 		<%else%>
