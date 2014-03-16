@@ -4,11 +4,11 @@ class HomeController < ApplicationController
   end
   
   def search
-     @items = Item.all
+     @items = Item.where(:hidden=>false)
      
      @search = ItemDetail.search(params[:q])
      @item_details = @search.result(distinct: true)
-
+     @item_details = @item_details.joins(:item).where("items.hidden = false")
     @items_grid = initialize_grid(@item_details,:include => [:item],:per_page => 20)
     
   end

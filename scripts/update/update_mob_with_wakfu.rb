@@ -7,8 +7,8 @@ File.open(filename, "r") do |file|
      if mob.nil?
        mob = Mob.new
        mob.no = no
-       mob.name = line.split(",")[1]
-       mob.level = 100
+       mob.name = line.split(",")[1].to_s
+       mob.level = line.split(",")[3].to_i
        mob.save
      else
        mob.hidden = false

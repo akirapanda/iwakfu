@@ -1,4 +1,4 @@
-@items = Item.all
+@items = Item.where(:hidden=>false)
 
 @items.each do |item|
 
