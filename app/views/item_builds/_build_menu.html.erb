@@ -1,6 +1,6 @@
 <ul class="dropdown-menu" id="item_build_menu" role="menu" aria-labelledby="dLabel">
 	<li><%=link_to "头部-#{item_build.header.try(:name)}","#",:class=>item_build.header.try(:quanlity)%></li>
-	<li><%=link_to "颈部-#{item_build.neck.try(:name)}","#",:class=>item_build.neck.try(:neck)%></li>
+	<li><%=link_to "颈部-#{item_build.neck.try(:name)}","#",:class=>item_build.neck.try(:neck).try(:quanlity)%></li>
 	<li><%=link_to "肩部-#{item_build.shoulder.try(:name)}","#",:class=>item_build.shoulder.try(:quanlity)%></li>
 	<li><%=link_to "胸部-#{item_build.body.try(:name)}","#",:class=>item_build.body.try(:quanlity)%></li>
 	<li><%=link_to "腰带-#{item_build.belt.try(:name)}","#",:class=>item_build.belt.try(:quanlity)%></li>
