@@ -13,7 +13,7 @@ class Item < ActiveRecord::Base
   belongs_to :item_set
   belongs_to :item_type
   mount_uploader :icon, IconUploader
-  
+  WEAPONS=["斧","斧子","锤","魔杖","单手剑","铲","匕首","单手杖","锤子","针","弓","双手剑","双手杖","卡牌","盾牌"]
   
   def short
     "#{name}[等级#{level}]"
