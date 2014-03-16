@@ -5,10 +5,10 @@ require "nokogiri"
 
 @url = "http://www.wakfu-elements.com/bestiary/view/"
 
-@mobs = Mob.all
+@mobs = Mob.where("id = ?",1225)
 
 @mobs.each do |mob|
-  begin
+  
     @html = open(@url+mob.no)
     doc = Nokogiri::HTML(@html)
     item_drops = doc.css("#itemdrops tbody tr")
@@ -21,8 +21,7 @@ require "nokogiri"
       puts "#{mob.no},#{item_no},#{rate},#{lock}"
     end
     
-  rescue Exception  
-  end
+
 
 end
 
