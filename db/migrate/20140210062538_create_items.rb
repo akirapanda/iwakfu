@@ -49,6 +49,7 @@ class CreateItems < ActiveRecord::Migration
       t.integer :dodge
       t.integer :block
       t.integer :crit
+      t.integer :perception
       t.integer :earth_resist
       t.integer :fire_resist
       t.integer :water_resist

@@ -1,17 +1,19 @@
-
 require "open-uri"
 require "json"
 require "nokogiri"
 require 'mechanize'
 
-@url = "http://www.wakfu.com/en/mmorpg/game-guide/bestiary/436-ultimate-bosses/42-magmog-gobbalrog"
 
+
+def fetch(no,url)
+  
+  @url = "http://www.wakfu.com"+url.to_s
+  
   agent = Mechanize.new
   @html = agent.get @url
   doc = Nokogiri::HTML(@html.body)
 
   table = doc.css("#table_list")
-
   
   if doc.css(".lifepoints")[0]
     life = doc.css(".lifepoints")[0].content.strip.to_i
@@ -63,7 +65,7 @@ require 'mechanize'
     capture_able = true
   end
   
-  puts "#{life},#{ap},#{mp},#{wp},#{init},#{lock},#{dodge},#{block},#{perception},#{crit},#{water_damage},#{water_resist},#{earth_damage},#{earth_resist},#{air_damage},#{air_resist},#{fire_damage},#{fire_resist},#{capture_able}"
+  puts "mob_info,#{no},#{life.to_i},#{ap.to_i},#{mp.to_i},#{wp.to_i},#{init.to_i},#{lock.to_i},#{dodge.to_i},#{block.to_i},#{perception.to_i},#{crit.to_i},#{water_damage.to_i},#{water_resist.to_i},#{earth_damage.to_i},#{earth_resist.to_i},#{air_damage.to_i},#{air_resist.to_i},#{fire_damage.to_i},#{fire_resist.to_i},#{capture_able}"
 
   list_items = doc.css(".list_item .item")
   drop_spans = doc.css(".list_item .subtitle")
@@ -87,7 +89,27 @@ require 'mechanize'
         prop_lock = drop_info.split("%")[1].delete("Prospecting: ").to_i
       end
       
-      puts "#{item_no},#{drop_info},#{drop_rate},#{prop_lock},#{item_level}"
+      puts "drop_into,#{no},#{item_no},#{drop_rate},#{prop_lock},#{item_level},#{drop_info}"
     end
   end
-  
+  sleep(3)
+end
+
+
+
+
+filename= "scripts/fetch/need_mob_list.csv"
+
+File.open(filename, "r") do |file| 
+   while line=file.gets
+     mob_no = line.split(",")[0]
+     mob_url = line.split(",")[4]
+     if mob_no && mob_url
+        fetch(mob_no,mob_url)
+     else
+       puts "error,#{mob_no}"
+     end
+     
+     
+  end
+end

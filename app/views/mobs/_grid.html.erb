@@ -20,7 +20,13 @@
 	g.column :name => '火抗', :attribute => 'fire_resist' 
 	g.column :name => '水抗', :attribute => 'water_resist' 
 	g.column :name => '风抗', :attribute => 'air_resist' 
-
+	g.column :name => '捕捉', :attribute => 'capture_flag' do |mob|
+		if mob.capture_flag
+			"可捕捉"
+		else
+			"不可捕捉"
+		end
+	end 
 
 
 end -%>
