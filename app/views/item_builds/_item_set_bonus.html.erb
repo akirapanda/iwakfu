@@ -82,12 +82,31 @@
 <li>敏捷之风:<%=item_detail.air%></li>
 <%end%>
 
-
-
-
 <%if item_detail.remove_ap != 0%>
 <li>剥夺行动力:<%=item_detail.remove_ap%>%</li>
 <%end%>
+
+<%if item_detail.crit_resist != 0%>
+<li>暴击抗性:<%=item_detail.crit_resist%>%</li>
+<%end%>
+
+
+<%if item_detail.ap_resist != 0%>
+<li>行动力损失抗性:<%=item_detail.ap_resist%>%</li>
+<%end%>
+
+<%if item_detail.mp_resist != 0%>
+<li>移动力损失抗性:<%=item_detail.mp_resist%>%</li>
+<%end%>
+
+<%if item_detail.back_resist != 0%>
+<li>背刺抗性:<%=item_detail.back_resist%>%</li>
+<%end%>
+<%if item_detail.heals_resist != 0%>
+<li>治疗抗性:<%=item_detail.heals_resist%>%</li>
+<%end%>
+
+
 
 <%if item_detail.fire_damage != 0%>
 <li>

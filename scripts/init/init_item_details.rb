@@ -1,12 +1,10 @@
 @items = Item.where(:hidden=>false)
 
 @items.each do |item|
-
 item.item_stats.each do |stat|
   if stat.cate == "use"
     next
   end
-  
   
   content = stat.content
   @detail = ItemDetail.where("item_id = ?",item.id)[0]
@@ -71,6 +69,8 @@ item.item_stats.each do |stat|
     @detail.wp = stat.value 
   when '统帅' 
     @detail.control = stat.value 
+  when '统帅' 
+    @detail.control = stat.value
   when '洞察' 
     @detail.perception = stat.value 
   when '意志' 
@@ -110,9 +110,19 @@ item.item_stats.each do |stat|
     
   when '剥夺行动力'   
     @detail.remove_ap = stat.value 
-
+  when '剥夺行动力'   
+    @detail.remove_ap = stat.value 
+  when '治疗抗性'   
+    @detail.heals_resist = stat.value 
+  when '暴击抗性'   
+    @detail.crit_resist = stat.value 
+  when '行动力损失抗性'   
+    @detail.ap_resist = stat.value 
+  when '背刺抗性'
+    @detail.back_resist = stat.value
+  when '行动力损失抗性'   
+    @detail.mp_resist = stat.value
   end
-  
   @detail.save
   
 end

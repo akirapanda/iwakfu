@@ -237,6 +237,12 @@ class ItemBuild < ActiveRecord::Base
     self.water = self.water + item_detail.water.to_i
     self.earth = self.earth + item_detail.earth.to_i
     self.air = self.air + item_detail.air.to_i
+    self.remove_ap = self.remove_ap + item_detail.remove_ap.to_i
+    self.crit_resist = self.crit_resist + item_detail.crit_resist.to_i
+    self.ap_resist = self.ap_resist + item_detail.ap_resist.to_i
+    self.mp_resist = self.mp_resist + item_detail.mp_resist.to_i
+    self.back_resist = self.back_resist + item_detail.back_resist.to_i
+    self.heals_resist = self.heals_resist + item_detail.heals_resist.to_i
   end
   
   def set_zero
@@ -280,5 +286,13 @@ class ItemBuild < ActiveRecord::Base
     self.water = 0
     self.earth = 0
     self.air = 0
+    
+    self.remove_ap = 0
+    self.crit_resist  = 0
+    self.ap_resist = 0
+    self.mp_resist = 0
+    self.back_resist  = 0
+    self.heals_resist  = 0
+    
   end
 end
