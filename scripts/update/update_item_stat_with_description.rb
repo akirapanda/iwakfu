@@ -131,7 +131,7 @@ filenames.each do |filename|
          item_stat.item_id = item.id
          item_stat.description = description
          item_stat.cate = "equipe"
-         item_stat.cate = "stat_type"
+         item_stat.stat_type = "effect"
          
          if fire == "true"
            item_stat.fire = true
