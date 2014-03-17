@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>iwakfu_dev</string>
+			<key>host</key>
+			<string>127.0.0.1</string>
+			<key>kcid</key>
+			<string>8687431687838861446</string>
+			<key>name</key>
+			<string>127.0.0.1</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPTCPIPConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>root</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8</string>
+			<key>contentFilter</key>
+			<dict/>
+			<key>contentPageNumber</key>
+			<integer>16</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGOjtYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK8QDwcIFRYXGBkfICEoLDA0OFUkbnVs
+			bNMJCgsMDRFWJGNsYXNzV05TLmtleXNaTlMub2JqZWN0c4AOow4P
+			EIACgAOABKMSExSABYAGgApUdHlwZVRyb3dzVGtleXNfECZTZWxl
+			Y3Rpb25EZXRhaWxUeXBlUHJpbWFyeUtleWVkRGV0YWlsc9MJCgsa
+			Gx2ACaEcgAehHoAIVTE2NTIxCdIiIyQlWiRjbGFzc25hbWVYJGNs
+			YXNzZXNfEBNOU011dGFibGVEaWN0aW9uYXJ5oyQmJ1xOU0RpY3Rp
+			b25hcnlYTlNPYmplY3TSCQspKoANoSuAC9IJLS4vWU5TLnN0cmlu
+			Z4AMUmlk0iIjMTJfEA9OU011dGFibGVTdHJpbmejMTMnWE5TU3Ry
+			aW5n0iIjNTZeTlNNdXRhYmxlQXJyYXmjNTcnV05TQXJyYXnSIiMm
+			OaImJ18QD05TS2V5ZWRBcmNoaXZlctE8PVRkYXRhgAEACAARABoA
+			IwAtADIANwBJAE8AVgBdAGUAcAByAHYAeAB6AHwAgACCAIQAhgCL
+			AJAAlQC+AMUAxwDJAMsAzQDPANUA1gDbAOYA7wEFAQkBFgEfASQB
+			JgEoASoBLwE5ATsBPgFDAVUBWQFiAWcBdgF6AYIBhwGKAZwBnwGk
+			AAAAAAAAAgEAAAAAAAAAPgAAAAAAAAAAAAAAAAAAAaY=
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 17096}, {907, 490}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>
+
+update items set item_type_id= 16 ,item_type= '胸甲'  where info = 'Breastplate'</string>
+			<key>table</key>
+			<string>item_stats</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>202</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>update item_stats set cate= 'equipe',stat_type= 'effect'  where cate = 'stat_type'</string>
+		<string>update items_stats set cate= 'equipe',stat_type= 'effect'  where cate = 'stat_type'</string>
+		<string>update set cate= 'equipe',stat_type= 'effect' items_stats where cate = 'stat_type'</string>
+		<string>select distinct info from items</string>
+		<string>select distince info from items</string>
+		<string>delete from items where items.no is null</string>
+		<string>delete items where items.no is null</string>
+		<string>delete items where no is null</string>
+		<string>update items set hidden =true</string>
+		<string>update mobs set hidden =true</string>
+		<string>select count(*) from items a ,item_types b where a.item_type_id = b.id and b.cate_name = "武器"</string>
+		<string>select count(*) from items a ,item_types b where a.item_type_id = b.id and b.cate_name = "装备"</string>
+		<string>select count(*) from items a ,item_types b where a.item_type_id = b.id and b.chinese_name = "装备"</string>
+		<string>select count(*) from items,item_types where items.item_type_id = item_type.id and item_types.chinese_name = "装备"</string>
+		<string>select count(*) from items,item_types where items.type_id = item_type.id and item_types.chinese_name = "装备"</string>
+		<string>select count(*) from items,item_types where items.type_id = item_type.id and item_type = "装备"</string>
+		<string>update item_set_stats set earth = true  where fire = true and water = true and air = true and earth = false</string>
+		<string>update item_set_stats set earth = true where where fire = true and water = true and air = true and earth = false</string>
+		<string>select * from item_set_stats where fire = true and water = true and air = true and earth = false</string>
+		<string>select * from item_stats where fire = true and water = true and air = true and earth = false</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.6.12</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
