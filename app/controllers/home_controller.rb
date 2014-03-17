@@ -8,7 +8,7 @@ class HomeController < ApplicationController
      
      @search = ItemDetail.search(params[:q])
      @item_details = @search.result(distinct: true)
-     @item_details = @item_details.joins(:item).where("items.hidden = false")
+     @item_details = @item_details.joins(:item).where("items.hidden = false").order("items.level asc")
     @items_grid = initialize_grid(@item_details,:include => [:item],:per_page => 20)
     
   end

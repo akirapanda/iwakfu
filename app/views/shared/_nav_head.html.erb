@@ -100,7 +100,7 @@
 								<li><%=link_to "查看自己当前的配装信息",edit_item_build_path(current_build)%> </li>
 								
 							</ul>
-					 </i>
+					 </li>
 <!--
 
 	        <li class="dropdown">
@@ -223,6 +223,10 @@
 -->
 
         </ul>
+				<%@search=ItemDetail.search(params[:q])%>
+				<%= search_form_for(@search,url: search_path,:html=>{:class=>"navbar-form pull-right"} ) do |f| %>
+					<%= f.text_field :item_name_cont,:placeholder=>"输入需要查找物品名称" %>	  
+				<%end%>
 
 
 	      <ul class="nav navbar-nav pull-right">
@@ -233,7 +237,7 @@
 						    <b class="caret"></b>
 						  </a>
 							<%=render 'item_builds/build_menu',:item_build=>current_build%>
-
+						</li>
 				 </ul>
        
       </div><!--/.nav-collapse -->

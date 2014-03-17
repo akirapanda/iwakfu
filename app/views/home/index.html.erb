@@ -21,6 +21,21 @@
 		
 					<%= search_form_for(@q,url: search_path,:html=>{:class=>"form-horizontal"} ) do |f| %>
 					  <div class="control-group">
+					    <label class="control-label" for="inputEmail">等级范围</label>
+					    <div class="controls">
+					     	<label class="checkbox inline">
+								  <%= f.text_field :item_level_gteq,:class=>"input-mini"%> 
+								</label>
+								~
+								<label class="checkbox inline">
+								  <%= f.text_field :item_level_lteq,:class=>"input-mini" %>
+								</label>
+
+					    </div>
+					  </div>
+					
+					
+					  <div class="control-group">
 					    <label class="control-label" for="inputEmail">装备效果</label>
 					    <div class="controls">
 					     	<label class="checkbox inline">
@@ -38,22 +53,61 @@
 								<label class="checkbox inline">
 								  <%= f.check_box :control_present %>统率
 								</label>
+								<label class="checkbox inline">
+								  <%= f.check_box :initiative_present %>先手
+								</label>
+								<label class="checkbox inline">
+								  <%= f.check_box :wisdom_present %>悟性
+								</label>
+								<label class="checkbox inline">
+								  <%= f.check_box :prospecting_present %>勘探
+								</label>
+					    </div>
+					  </div>
+					  <div class="control-group">
+					    <label class="control-label" for="inputEmail"></label>
+					    <div class="controls">
+					     	<label class="checkbox inline">
+								  <%= f.check_box :dodge_present %>闪避
+								</label>
+								<label class="checkbox inline">
+								  <%= f.check_box :lock_present %>锁定
+								</label>
+								<label class="checkbox inline">
+								  <%= f.check_box :backstab_present %>背刺
+								</label>
+								<label class="checkbox inline">
+								  <%= f.check_box :cmc_present %>召唤物伤害
+								</label>
+								<label class="checkbox inline">
+								  <%= f.check_box :crit_damage_present %>暴击伤害
+								</label>
+								<label class="checkbox inline">
+								  <%= f.check_box :critical_present %>暴击几率
+								</label>
+								<label class="checkbox inline">
+								  <%= f.check_box :heals_present %>治疗
+								</label>
+								<label class="checkbox inline">
+								  <%= f.check_box :block_present %>格挡
+								</label>
 					    </div>
 					  </div>
 					  <div class="control-group">
 					    <label class="control-label" for="inputEmail">属性伤害加成</label>
 					    <div class="controls">
 					     	<label class="checkbox inline">
-								  <%= f.check_box :earth_damage_present %>地系
+								  <%= f.check_box :earth_damage_present %><%= image_tag("/img/elements/smallEARTH.png")%>地系
 								</label>
 								<label class="checkbox inline">
-								  <%= f.check_box :fire_damage_present %>火系
+								  <%= f.check_box :fire_damage_present %><%= image_tag("/img/elements/smallFIRE.png")%>火系
 								</label>
 								<label class="checkbox inline">
-								  <%= f.check_box :water_damage_present %>水系
+								  <%= f.check_box :water_damage_present %><%= image_tag("/img/elements/smallWATER.png")%>水系
 								</label>
 								<label class="checkbox inline">
-								  <%= f.check_box :air_damage_present %>风系
+								  <%= f.check_box :air_damage_present %><%= image_tag("/img/elements/smallAIR.png")%>
+									风系
 								</label>
 					    </div>
 					  </div>
