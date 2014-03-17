@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140315172426) do
+ActiveRecord::Schema.define(version: 20140317083320) do
 
   create_table "drop_items", force: true do |t|
     t.integer "mob_id"
@@ -86,6 +86,11 @@ ActiveRecord::Schema.define(version: 20140315172426) do
     t.text     "content"
     t.integer  "crit_fail"
     t.integer  "crit_damage"
+    t.integer  "crit_resist",   default: 0
+    t.integer  "ap_resist",     default: 0
+    t.integer  "mp_resist"
+    t.integer  "back_resist",   default: 0
+    t.integer  "heals_resist",  default: 0
   end
 
   create_table "item_details", force: true do |t|
@@ -129,6 +134,11 @@ ActiveRecord::Schema.define(version: 20140315172426) do
     t.datetime "updated_at"
     t.integer  "crit_damage"
     t.integer  "crit_fail"
+    t.integer  "crit_resist"
+    t.integer  "ap_resist"
+    t.integer  "mp_resist"
+    t.integer  "back_resist"
+    t.integer  "heals_resist"
   end
 
   create_table "item_set_details", force: true do |t|
@@ -173,6 +183,11 @@ ActiveRecord::Schema.define(version: 20140315172426) do
     t.datetime "updated_at"
     t.integer  "crit_damage",  default: 0
     t.integer  "crit_fail",    default: 0
+    t.integer  "crit_resist",  default: 0
+    t.integer  "ap_resist",    default: 0
+    t.integer  "mp_resist",    default: 0
+    t.integer  "back_resist",  default: 0
+    t.integer  "heals_resist", default: 0
   end
 
   create_table "item_set_stats", force: true do |t|
@@ -285,6 +300,7 @@ ActiveRecord::Schema.define(version: 20140315172426) do
     t.string   "thumb"
     t.integer  "level"
     t.boolean  "hidden",        default: false
+    t.integer  "perception"
   end
 
   create_table "recipe_items", force: true do |t|
