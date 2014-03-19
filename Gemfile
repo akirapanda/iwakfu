@@ -19,6 +19,9 @@ gem 'kaminari'
 gem 'kaminari-bootstrap', '~> 0.1.3'
 
 gem 'nokogiri', "~> 1.5.6"
+#API
+gem 'grape'
+gem 'grape-entity'
 
 # 上传组件
 gem 'carrierwave', '0.6.2'

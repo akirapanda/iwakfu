@@ -1,4 +1,7 @@
 Iwakfu::Application.routes.draw do
+  mount Iwakfu::API => "/"
+  
+  
   root "home#index"
   match 'search', to: 'home#search', via: :all
   resources :items
