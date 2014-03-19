@@ -33,7 +33,7 @@ module Iwakfu
 
     resource :item_stats do
       post ":id" do
-        @stats = ItemStat.where("item_id=?",params[:id])
+        @stats = ItemStat.where("item_id=?",params[:id]).order("cate desc")
         
         present @stats
       end
