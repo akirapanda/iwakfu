@@ -5,8 +5,8 @@ class ItemDetail < ActiveRecord::Base
   def set_zero
     self.hp = 0
     self.ap = 0
-    self.mp = 0
-    self.wp = 0
+    self.mp = 0 
+    self.wp = 0 
     self.initiative = 0
     self.dodge = 0
     self.lock = 0

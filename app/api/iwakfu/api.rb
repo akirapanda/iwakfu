@@ -24,14 +24,19 @@ module Iwakfu
        end
        post ":id" do
          @item = ItemDetail.where("item_id=?",params[:id])[0]
-
+         
          present @item
        end
 
     end
     
 
-    
-    
+    resource :item_stats do
+      post ":id" do
+        @stats = ItemStat.where("item_id=?",params[:id])
+        
+        present @stats
+      end
+    end
   end
 end
