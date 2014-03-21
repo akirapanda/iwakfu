@@ -6,7 +6,7 @@ class HomeController < ApplicationController
   def search
      @q = Item.search(params[:q])
      @items = @q.result(distinct: true)
-     @items = @items.where(:hidden=>false)
+     @items = @items.where(:hidden=>false).order("level asc")
      @items_grid = initialize_grid(@items,:per_page => 20)
      
     render 'items/index'
