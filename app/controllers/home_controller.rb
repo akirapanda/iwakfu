@@ -1,16 +1,15 @@
 class HomeController < ApplicationController
   def index
-    @q = ItemDetail.search(params[:q])
+    @q = Item.search(params[:q])
   end
   
   def search
-     @items = Item.where(:hidden=>false)
+     @q = Item.search(params[:q])
+     @items = @q.result(distinct: true)
+     @items = @items.where(:hidden=>false)
+     @items_grid = initialize_grid(@items,:per_page => 20)
      
-     @search = ItemDetail.search(params[:q])
-     @item_details = @search.result(distinct: true)
-     @item_details = @item_details.joins(:item).where("items.hidden = false").order("items.level asc")
-    @items_grid = initialize_grid(@item_details,:include => [:item],:per_page => 20)
-    
+    render 'items/index'
   end
   
 end

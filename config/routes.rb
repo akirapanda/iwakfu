@@ -1,5 +1,4 @@
 Iwakfu::Application.routes.draw do
-  mount Iwakfu::API => "/"
   
   
   root "home#index"

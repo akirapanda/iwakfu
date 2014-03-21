@@ -223,9 +223,9 @@
 -->
 
         </ul>
-				<%@search=ItemDetail.search(params[:q])%>
+				<%@search=Item.search(params[:q])%>
 				<%= search_form_for(@search,url: search_path,:html=>{:class=>"navbar-form pull-right"} ) do |f| %>
-					<%= f.text_field :item_name_cont,:placeholder=>"输入需要查找物品名称" %>	  
+					<%= f.text_field :name_cont,:placeholder=>"输入需要查找物品名称" %>	  
 				<%end%>
 
 
