@@ -17,7 +17,7 @@ class Item < ActiveRecord::Base
   DOUDLE_HAND=["斧","斧子","锤","弓","锤子","双手剑","双手杖"]
   LEFT_HAND=["盾牌","匕首"]
   RIGHT_HAND=["卡牌","针","单手剑","魔杖","匕首","单手杖"]
-  QUANLITIES=["rare-green","rare-grey","rare-white","rare-orange","rare-yellow","rare-unknown"]
+  QUANLITIES=["rare-green","rare-grey","rare-white","rare-orange","rare-yellow","rare-purple","rare-unknown"]
   
   def short
     "#{name}[等级#{level}]"
