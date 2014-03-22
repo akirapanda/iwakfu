@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html <%= yield :ng_app%> >
 <head>
   <title>iWakfu</title>
 
@@ -14,7 +14,7 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => false %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body ng-controller="<%= yield :ng_controller%>">
 
 	<%= render "shared/nav_head"%>
 	

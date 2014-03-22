@@ -1,5 +1,5 @@
 Iwakfu::Application.routes.draw do
- # mount Iwakfu::API => "/"
+  mount Iwakfu::API => "/"
   
   
   root "home#index"
@@ -9,6 +9,8 @@ Iwakfu::Application.routes.draw do
   resources :recipes
   resources :item_details
   resources :build_shares
+  resources :characters
+  
   resources :item_builds do
     collection do
       get 'show_build'

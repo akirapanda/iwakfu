@@ -16,4 +16,5 @@
 //= require wice_grid
 //= require chosen.jquery.min
 //= require chosen.proto.min
+//= require angular.min
 //= require_tree .

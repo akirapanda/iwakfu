@@ -1,0 +1,289 @@
+<%= content_for :ng_app do %>
+	ng-app
+<% end %>
+<%= content_for :ng_controller do %>
+	MainCtrl
+<% end %>
+
+
+<div class="row">
+<h4>Damage &amp; Resists</h4>
+
+	<div class="player-stat-row">
+	<div class="stats-col three4"><img src="/img/bestiary/earthDefense.png"/>Earth Resist</div>
+	<div class="stats-col one4"><span data-bind="text: earthResTotal"></span>%</div>
+	</div>
+	<div class="player-stat-row">
+	<div class="stats-col three4"><img src="/img/bestiary/earthDamage.png" width="16px" height="16px"/>Earth Damage</div>
+	<div class="stats-col one4"><span data-bind="text: earthDamTotal"></span>%</div>
+	</div>
+	
+	<div class="player-stat-row">
+	<div class="stats-col three4"><img src="/img/bestiary/fireDefense.png"/>Fire Resist</div>
+	<div class="stats-col one4"><span data-bind="text: fireResTotal"></span>%</div>
+	</div>
+	<div class="player-stat-row">
+	<div class="stats-col three4"><img src="/img/bestiary/fireDamage.png" width="16px" height="16px"/>Fire Damage</div>
+	<div class="stats-col one4"><span data-bind="text:fireDamTotal"></span>%</div>
+	</div>
+	
+	<div class="player-stat-row">
+	<div class="stats-col three4"><img src="/img/bestiary/waterDefense.png"/>Water Resist</div>
+	<div class="stats-col one4"><span data-bind="text: waterResTotal"></span>%</div>
+	</div>
+	<div class="player-stat-row">
+	<div class="stats-col three4"><img src="/img/bestiary/waterDamage.png" width="16px" height="16px"/>Water Damage</div>
+	<div class="stats-col one4"><span data-bind="text: waterDamTotal"></span>%</div>
+	</div>
+	
+	<div class="player-stat-row">
+	<div class="stats-col three4"><img src="/img/bestiary/airDefense.png"/>Air Resist</div>
+	<div class="stats-col one4"><span data-bind="text: airResTotal"></span>%</div>
+	</div>
+	<div class="player-stat-row">
+	<div class="stats-col three4"><img src="/img/bestiary/airDamage.png" width="16px" height="16px"/>Air Damage</div>
+	<div class="stats-col one4"><span data-bind="text: airDamTotal"></span>%</div>
+	</div>
+	
+	<div class="player-stat-row">
+	<div class="stats-col three4"><img src="/img/elements/smallAIR.png" /> Spell Levels</div>
+	<div class="stats-col one4"><span data-bind="text: airSpell"></span></div>
+	</div>
+	<div class="player-stat-row">
+	<div class="stats-col three4"><img src="/img/elements/smallWATER.png" /> Spell Level</div>
+	<div class="stats-col one4"><span data-bind="text: waterSpell"></span></div>
+	</div>
+	
+	<div class="player-stat-row">
+	<div class="stats-col three4"><img src="/img/elements/smallEARTH.png" /> Spell Levels</div>
+	<div class="stats-col one4"><span data-bind="text: earthSpell"></span></div>
+	</div>
+	<div class="player-stat-row">
+	<div class="stats-col three4"><img src="/img/elements/smallFIRE.png"/> Spell Level</div>
+	<div class="stats-col one4"><span data-bind="text: fireSpell"></span></div>
+	</div>
+
+</div>
+
+<div class="row">
+
+			<h4>Equipped Items</h4>
+				<div id="equippedItemsSummary"></div>
+			</div>
+			<div class="helptext"><b>SHIFT + Click</b> to increase ability levels by 10</div>
+			<div class="player-stats statTotals" id="playerStatTotals">
+			
+			<h4>Level <span id="pLevel">1</span> - <span id="pClass">Feca</span> 
+				<span id="pointsSpent">Points Spent: <span id="pointsSpentTotal" data-bind="text: abiPointsSpent">0</span></span>
+				<span id="pointsRemaining">Points Remaining : <span id="pointsRemainingTotal" data-bind="text: abiPointsRemaining">0</span></span> <span style="float:right">Totals</span></h4>
+				
+				<div class="player-stat-row">
+					<div class="stats-col three4"><img src="/img/cost/hp-text.png"/>HP</div>
+					<div class="stats-col one4" data-ability="hp">
+						<span class="abiMinus inactive" ng-click="reduce_hp()">-</span>
+						<span class="abiText" data-bind="text: hpTotal">{{hp}}</span>
+						<span class="abiPlus active" ng-click="add_hp()">+</span>
+					</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/cost/ap-text.png"/>AP</div>
+				<div class="stats-col one4" data-ability="ap">
+						<span class="abiMinus inactive">-</span>
+						<span class="abiText" data-bind="text: apTotal">4</span>
+						<span class="abiPlus active">+</span>
+					</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/cost/mp-text.png"/>MP</div>
+				<div class="stats-col one4" data-ability="mp">
+						<span class="abiMinus inactive">-</span>
+						<span class="abiText" data-bind="text: mpTotal">4</span>
+						<span class="abiPlus active">+</span>
+					</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/cost/wakfu-text.png"/>WP</div>
+				<div class="stats-col one4" data-bind="text: wp">23</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/cost/strength-text.png"/>Strength</div>
+				<div class="stats-col one4" data-ability="strength">
+					<span class="abiMinus inactive">-</span>
+					<span class="abiText" data-bind="text: strengthTotal">4</span>
+					<span class="abiPlus active">+</span>
+				</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/cost/agi-text.png"/>Agility</div>
+				<div class="stats-col one4" data-ability="agility">
+					<span class="abiMinus inactive">-</span>
+					<span class="abiText" data-bind="text: agilityTotal">4</span>
+					<span class="abiPlus active">+</span>
+				</div>
+				
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/cost/intelligence-text.png"/>Intelligence</div>
+				<div class="stats-col one4" data-ability="intelligence">
+					<span class="abiMinus inactive">-</span>
+					<span class="abiText" data-bind="text: intelligenceTotal">4</span>
+					<span class="abiPlus active">+</span>
+				</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/cost/chance-text.png"/>Chance</div>
+				<div class="stats-col one4" data-ability="chance">
+					<span class="abiMinus inactive">-</span>
+					<span class="abiText" data-bind="text: chanceTotal">4</span>
+					<span class="abiPlus active">+</span>
+				</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/cost/init-text.png"/>Initiative</div>
+				<div class="stats-col one4" data-ability="ini">
+					<span class="abiMinus inactive">-</span>
+					<span class="abiText" data-bind="text: iniTotal">4</span>
+					<span class="abiPlus active">+</span>
+				</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/cost/heals-text.png"/>Heal</div>
+				<div class="stats-col one4"><span data-bind="text: heals"></span>%</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/cost/crit-text.png"/>Crit</div>
+				<div class="stats-col one4" data-ability="crit">
+					<span class="abiMinus inactive">-</span>
+					<span class="abiText" data-bind="text: critTotal">4</span>
+					<span class="abiPlus active">+</span>
+				</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/cost/crit-dmg-text.png"/>Crit Dmg Bonus</div>
+				<div class="stats-col one4"><span data-bind="text: critDamage">4</span>%</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/cost/crit-fail-text.png"/>Crit Failures</div>
+				<div class="stats-col one4"><span data-bind="text: critfail">4</span>%</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/cost/backstab-text.png"/>Backstab</div>
+				<div class="stats-col one4" data-bind="text: backstab">4</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/cost/backstab-res-text.png"/>Backstab Res.</div>
+				<div class="stats-col one4"><span data-bind="text: backstabRes">4</span>%</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/cost/dodge-text.png"/>Dodge</div>
+				<div class="stats-col one4" data-ability="dodge">
+					<span class="abiMinus inactive">-</span>
+					<span class="abiText" data-bind="text: dodgeTotal">4</span>
+					<span class="abiPlus active">+</span>
+				</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/cost/lock-text.png"/>Lock</div>
+				<div class="stats-col one4" data-ability="lock">
+					<span class="abiMinus inactive">-</span>
+					<span class="abiText" data-bind="text: lockTotal">4</span>
+					<span class="abiPlus active">+</span>
+				</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/cost/block-text.png"/>Block</div>
+				<div class="stats-col one4" data-ability="block">
+					<span class="abiMinus inactive">-</span>
+					<span class="abiText" data-bind="text: blockTotal">4</span>
+					<span class="abiPlus active">+</span>
+				</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/cost/willpower-text.png"/>Willpower</div>
+				<div class="stats-col one4" data-bind="text: willpower">4</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/cost/range-b-text.png"/>Range</div>
+				<div class="stats-col one4" data-ability="range">
+					<span class="abiMinus inactive">-</span>
+					<span class="abiText" data-bind="text: rangeTotal">4</span>
+					<span class="abiPlus active">+</span>
+				</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/cost/leadership-text.png"/>Leadership</div>
+				<div class="stats-col one4" data-bind="text: leadership">4</div>					
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/cost/summonDam-text.png"/>Summons Damage</div>
+				<div class="stats-col one4"><span data-bind="text: summonDam">4</span>%</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/cost/mechanics-text.png"/>Mechanics</div>
+				<div class="stats-col one4" data-bind="text: mechanics">4</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/cost/mechanics-dam-text.png"/>Mechanical Damage</div>
+				<div class="stats-col one4"><span data-bind="text: mechanicsDam">4</span>%</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/cost/wisdom-text.png"/>Wisdom</div>
+				<div class="stats-col one4"  data-bind="text: wisdom">4</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/cost/pp-text.png"/>Prospecting</div>
+				<div class="stats-col one4" data-bind="text: pp">4</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/cost/perception-text.png"/>Perception</div>
+				<div class="stats-col one4" data-bind="text: perception">4</div>
+				</div>
+				
+				<div class="player-stat-row">
+				<div class="stats-col three4"><img src="/img/cost/kitSkill-text.png"/>Kit Skill</div>
+				<div class="stats-col one4" data-ability="kitskill">
+					<span class="abiMinus inactive">-</span>
+					<span class="abiText" data-bind="text: kitSkillTotal">4</span>
+					<span class="abiPlus active">+</span>
+				</div>
+				</div>
+				</div>
+				
+				<script>
+				function MainCtrl($scope) {
+				  $scope.hp = 0;
+					$scope.add_hp = function() {
+			        $scope.hp++ ;
+			    }
+					$scope.reduce_hp = function() {
+			        $scope.hp-- ;
+			    }
+				}
+	
+				</script>
