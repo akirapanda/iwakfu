@@ -1,0 +1,14 @@
+<%=simple_form_for([:admin,@item],:html=>{:class=>"form-horizontal"}) do |f|%>
+
+	<%=f.input :name%>
+	<%=f.input :no%>
+	<%=f.input :slot%>
+	<%=f.input :item_type_id%>
+	<%=f.input :item_type_id,collection: ItemType.all,:input_html=>{:class=>"input-xlarge"},label_method: :chinese_name, value_method: :id%>
+	<%=f.input :level%>
+	<%=f.input :quanlity,:collection=>Item::QUANLITIES%>
+	<%=f.input :hidden%>
+	
+	<%=f.submit "提交",:class=>"btn btn-info "%>
+  
+<%end%>

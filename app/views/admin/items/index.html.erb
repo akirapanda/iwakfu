@@ -1,25 +1,24 @@
-<%= grid(@item_types_grid) do |g|
+<%= grid(@items_grid) do |g|
   g.column :name => 'ID', :attribute => 'id' 
   g.column :name => '编号', :attribute => 'no' 
   
-	g.column :name => '图片', :attribute => 'icon' do |item|
+	g.column :name => '图片', :attribute => 'icon', filter: false do |item|
 		image_tag(item.icon)
 	end 
 
-	
   g.column :name => '名称', :attribute => 'name' do |item|
-	 link_to(item.name,item)
+	 link_to(item.name,item,:class=>item.quanlity)
 	end
-  g.column :name => '等级', :attribute => 'level' do |item|
+	
+	g.column :name => '等级', :attribute => 'level',filter_type: :range do |item|
 	  "等级#{item.level}"
 	end
-  g.column :name => '介绍', :attribute => 'content' do |item|
-		truncate(item.content)
-  end
-
-	g.column :name => '类型', :attribute => 'item_type' 
+	
+	g.column :name => '类型', :attribute => 'item_type', filter: false do |item|
+		item.item_type.chinese_name if item.item_type
+	end
 
   g.column do |item|
-    link_to('Edit', edit_item_path(item))
+    link_to('编辑', edit_admin_item_path(item))
   end
 end -%>
