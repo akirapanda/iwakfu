@@ -5,7 +5,7 @@
 
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-  <meta name="keywords" content="沃土,wakfu,沃土攻略，沃土中文" />
+  <meta name="keywords" content="沃土,wakfu,沃土攻略,沃土中文,沃土数据库" />
   <meta name="description" content="沃土,wakfu,沃土中文资讯,沃土攻略" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="baidu_union_verify" content="eba127ae2883cd84f33bc7c9db97591b">
@@ -18,23 +18,37 @@
 
 	<%= render "shared/nav_head"%>
 	
-
+	<!-- 广告位：横幅-->
 	<div class="container">
 		<div class="row">
 			<div class="pull-right">
-			<script type="text/javascript"><!--
-			google_ad_client = "ca-pub-8585667998434575";
-			/* banner */
-			google_ad_slot = "2131431609";
-			google_ad_width = 468;
-			google_ad_height = 60;
-			//-->
-			</script>
-			<script type="text/javascript"
-			src="//pagead2.googlesyndication.com/pagead/show_ads.js">
-			</script>
+				<script type="text/javascript"><!--
+				google_ad_client = "ca-pub-8585667998434575";
+				/* large banner */
+				google_ad_slot = "9114484800";
+				google_ad_width = 728;
+				google_ad_height = 90;
+				//-->
+				</script>
+				<script type="text/javascript"
+				src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+				</script>
 			</div>
 		</div>
+		
+		
+		<%if notice%>
+		<div class="alert alert-info fade in">
+			<a class="close" data-dismiss='alert' href="#">x</a>
+			<p id="notice"><%= notice %></p>
+		</div>
+		<%end%>
+		<%if alert%>
+		<div class="alert alert-block alert-error">
+			<a class="close" data-dismiss='alert' href="#">x</a>
+			<p id="notice"><%= alert %></p>
+		</div>
+		<%end%>
 		<%= yield %>
 	</div>
   <div id="footer">

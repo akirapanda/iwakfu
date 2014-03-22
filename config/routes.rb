@@ -1,5 +1,4 @@
 Iwakfu::Application.routes.draw do
-  mount Iwakfu::API => "/"
   
   
   root "home#index"
@@ -8,14 +7,20 @@ Iwakfu::Application.routes.draw do
   resources :item_sets
   resources :recipes
   resources :item_details
+  resources :build_shares
   resources :item_builds do
     collection do
       get 'show_build'
+      get 'search'
+      post 'search'
+      
     end
     
     member do
       get 'add_item'
       get 'remove_item'
+      get 'share'
+      post 'create_share'
     end
   end
   

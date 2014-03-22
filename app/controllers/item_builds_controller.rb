@@ -22,11 +22,29 @@ class ItemBuildsController < ApplicationController
   end
   
   
+  def share
+
+  end
+  
+  def search
+    
+     @q = ItemBuild.search(params[:q])
+     @item_builds = @q.result(distinct: true)
+     @item_builds = @item_builds.where(:publish=>true).order("updated_at desc")
+     @item_builds_grid = initialize_grid(@item_builds,:per_page => 20)
+    render 'item_builds/index'
+  end
+  
+  def create_share
+    
+  end
+  
   def index
   
-    @item_builds = ItemBuild.where(:publish=>true)
+    @item_builds = ItemBuild.where(:publish=>true).order("updated_at desc")
 
     @item_builds_grid = initialize_grid(@item_builds,:per_page => 20)
+    @q = ItemBuild.search(params[:q])
     
   end
   

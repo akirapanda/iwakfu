@@ -11,7 +11,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140317083320) do
+ActiveRecord::Schema.define(version: 20140321154149) do
+
+  create_table "build_shares", force: true do |t|
+    t.integer  "item_build_id"
+    t.string   "name"
+    t.text     "content"
+    t.boolean  "fire"
+    t.boolean  "air"
+    t.boolean  "water"
+    t.boolean  "earth"
+    t.boolean  "dps"
+    t.boolean  "tank"
+    t.boolean  "heal"
+    t.boolean  "ect"
+    t.boolean  "qishi"
+    t.boolean  "kuangzhan"
+    t.boolean  "zhiliao"
+    t.boolean  "zhaohuan"
+    t.boolean  "zhiwu"
+    t.boolean  "xiongmao"
+    t.boolean  "gongjian"
+    t.boolean  "cike"
+    t.boolean  "shijian"
+    t.integer  "min_level"
+    t.integer  "max_level"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "drop_items", force: true do |t|
     t.integer "mob_id"

@@ -1,7 +1,7 @@
 <div class="row span10 offset1">
 
-	<h2><%=@item_build.name%> <small>作者:<%=@item_build.author%> @<%=@item_build.updated_at%></h2>
-	<pre>简介:<%= @item_build.content.try(:html_safe)%></pre>
+	<h2><%=@item_build.build_share.try(:name)%> <small>作者:<%=@item_build.build_share.try(:author)%> @<%=@item_build.updated_at%></h2>
+	<pre>简介:<%= @item_build.build_share.try(:content).try(:html_safe)%></pre>
 		
 </div>
 <div class='row'>

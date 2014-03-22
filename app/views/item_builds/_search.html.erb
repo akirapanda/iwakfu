@@ -1,0 +1,106 @@
+<div class="accordion" id="accordion2">
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+        高级查询
+      </a>
+    </div>
+    <div id="collapseOne" class="accordion-body collapse ">
+      <div class="accordion-inner">
+
+
+	<%= search_form_for(@q,url: search_item_builds_path,:html=>{:class=>"form-horizontal"} ) do |f| %>
+	  <div class="control-group">
+	    <label class="control-label" for="inputEmail">等级范围</label>
+	    <div class="controls">
+	     	<label class="checkbox inline">
+				  <%= f.text_field :max_level_gteq,:class=>"input-mini"%> 
+				</label>
+				~
+				<label class="checkbox inline">
+				  <%= f.text_field :max_level_lteq,:class=>"input-mini" %>
+				</label>
+	    </div>
+	  </div>
+	
+	
+		 <div class="control-group">
+		    <label class="control-label" for="inputEmail">属性标签</label>
+		    <div class="controls">
+		     	<label class="checkbox inline">
+					  <%= f.check_box :build_share_earth_present %>地
+					</label>
+					<label class="checkbox inline">
+					  <%= f.check_box :build_share_fire_present %>火
+					</label>
+					<label class="checkbox inline">
+					  <%= f.check_box :build_share_air_present %>风
+					</label>
+					<label class="checkbox inline">
+					  <%= f.check_box :build_share_water_present %>水
+					</label>
+		    </div>
+		  </div>
+		 <div class="control-group">
+		    <label class="control-label" for="inputEmail">职业标签</label>
+		    <div class="controls">
+		     	<label class="checkbox inline">
+					  <%= f.check_box :build_share_qishi_present %>骑士
+					</label>
+					<label class="checkbox inline">
+					  <%= f.check_box :build_share_kuangzhan_present %>狂战
+					</label>
+					<label class="checkbox inline">
+					  <%= f.check_box :build_share_cike_present %>刺客
+					</label>
+					<label class="checkbox inline">
+					  <%= f.check_box :build_share_zhiliao_present %>治愈
+					</label>
+					<label class="checkbox inline">
+					  <%= f.check_box :build_share_xiongmao_present %>熊猫
+					</label>
+					<label class="checkbox inline">
+					  <%= f.check_box :build_share_zhaohuan_present %>唤兽
+					</label>
+					<label class="checkbox inline">
+					  <%= f.check_box :build_share_gongjian_present %>弓箭
+					</label>
+					<label class="checkbox inline">
+					  <%= f.check_box :build_share_zhiwu_present %>植物
+					</label>
+					<label class="checkbox inline">
+					  <%= f.check_box :build_share_shijian_present %>时间法师
+					</label>
+					<label class="checkbox inline">
+					  <%= f.check_box :build_share_baozang_present %>宝藏猎人
+					</label>
+					<label class="checkbox inline">
+					  <%= f.check_box :build_share_luckycat_present %>幸运猫
+					</label>
+		    </div>
+		  </div>
+		 <div class="control-group">
+		    <label class="control-label" for="inputEmail">位置标签</label>
+		    <div class="controls">
+		     	<label class="checkbox inline">
+					  <%= f.check_box :build_share_tank_present %>坦克
+					</label>
+					<label class="checkbox inline">
+					  <%= f.check_box :build_share_dps_present %>输出
+					</label>
+					<label class="checkbox inline">
+					  <%= f.check_box :build_share_heal_present %>治疗
+					</label>
+					<label class="checkbox inline">
+					  <%= f.check_box :build_share_ect_present %>其他(辅助)
+					</label>
+
+		    </div>
+		  </div>
+		  <%= f.submit "查询",:class=>"btn btn-info btn-block" %>
+		
+	<%end%>
+			</div>
+		</div>
+	</div>
+</div>

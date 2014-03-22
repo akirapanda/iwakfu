@@ -1,0 +1,143 @@
+<h3>共享你的配装<h3>
+
+	<%=simple_form_for(@build_share,:html=>{:class=>"form-horizontal"}) do |f|%>
+		<%=f.input :item_build_id,:as=>:hidden,:input_html=>{:value=>@build_share.item_build_id}%>
+	
+		<fieldset>
+			<div class="row-fluid">
+				<div class="span6">
+					<div class="control-group">
+				    <label class="control-label" for="name">配装的名字</label>
+				    <div class="controls">
+							<%=f.input :name,:label=>false,:placeholder=>"必填项"%>
+						</div>
+					</div>
+
+					<div class="control-group">
+				    <label class="control-label" for="inputEmail">您的称呼</label>
+				    <div class="controls">
+							<%=f.input :author,:label=>false%>
+						</div>
+					</div>
+
+					<div class="control-group">
+				    <label class="control-label" for="inputEmail">简单的介绍</label>
+				    <div class="controls">
+							<%=f.input :content,:rows=>5,:as=>:text,:label=>false%>
+						</div>
+					</div>
+					
+					<div class="control-group">
+				    <label class="control-label" for="inputEmail">编辑密码<br/></label>
+				    <div class="controls">
+							<%=f.input :edit_token,:label=>false,:input_html=>{:class=>"input-xlarge"},:placeholder=>"将来再次编辑该密码,请不和游戏密码相同"%>
+						</div>
+					</div>
+				</div>
+
+				<div class="span6">
+					<div class="control-group">
+				    <label class="control-label" for="inputEmail">套装属性标签</label>
+				    <div class="controls">
+					   	<label class="checkbox inline">
+				  			<%=f.check_box :earth%>地系
+							</label>
+							<label class="checkbox inline">
+								<%=f.check_box :fire%>火系
+								
+							</label>
+								
+				   	 	<label class="checkbox inline">
+								<%=f.check_box :air%>风系
+					
+				     	</label>
+							
+							<label class="checkbox inline">
+								<%=f.check_box :water%>水系
+								
+							</label>
+
+							
+						</div>
+					</div>
+					
+					
+					<div class="control-group">
+				    <label class="control-label" for="inputEmail">职业标签</label>
+				    <div class="controls">
+							<label class="checkbox inline">
+								<%=f.check_box :qishi%>骑士
+							</label>
+							<label class="checkbox inline">
+								<%=f.check_box :kuangzhan%>狂战
+							</label>
+								
+							<label class="checkbox inline">
+								<%=f.check_box :cike%>刺客
+								
+							</label>
+							
+							<label class="checkbox inline">
+								<%=f.check_box :xiongmao%>熊猫
+								
+							</label>
+							
+							<label class="checkbox inline">
+								<%=f.check_box :zhaohuan%>唤兽
+								
+							</label>
+							
+							<label class="checkbox inline">
+								<%=f.check_box :gongjian%>弓箭
+								
+							</label>
+							
+							<label class="checkbox inline">
+								<%=f.check_box :zhiwu%>植物
+								
+							</label>
+							
+							<label class="checkbox inline">
+								<%=f.check_box :baozang%>宝藏猎人
+								
+							</label>
+							<label class="checkbox inline">
+								<%=f.check_box :shijian%>时间法师
+
+							</label>
+							<label class="checkbox inline">
+								<%=f.check_box :luckycat%>幸运猫
+
+							</label>
+							
+						</div>
+					</div>
+					
+					<div class="control-group">
+				    <label class="control-label" for="inputEmail">位置标签</label>
+				    <div class="controls">
+							<label class="checkbox inline">
+								<%=f.check_box :tank%>坦克
+								
+							</label>
+							<label class="checkbox inline">
+								<%=f.check_box :dps%>输出
+								
+							</label>
+							<label class="checkbox inline">
+								<%=f.check_box :heal%>治疗
+								
+							</label>
+							<label class="checkbox inline">
+								<%=f.check_box :ect%>其他（辅助）
+								
+							</label>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+			
+		  <div class="form-actions">
+				<%=f.submit "发布",:class=>"btn btn-info btn-large btn-block"%>
+			</div>
+	<%end%>

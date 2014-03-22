@@ -153,30 +153,7 @@
 			<%=render 'item_set_bonus',:item_detail=>@item_build%>
 		</div>
 		<div class="well">
-		<%=simple_form_for(@item_build ) do |f|%>
-		<legend>共享你的配装<legend>
-			 <div class="control-group">
-			    <label class="control-label" for="name">配装的名字</label>
-			    <div class="controls">
-						<%=f.input :name,:label=>false%>
-					</div>
-				</div>
-				<div class="control-group">
-			    <label class="control-label" for="inputEmail">您的称呼</label>
-			    <div class="controls">
-						<%=f.input :author,:label=>false%>
-					</div>
-				</div>
-				<div class="control-group">
-			    <label class="control-label" for="inputEmail">简单的介绍</label>
-			    <div class="controls">
-						<%=f.input :content,:rows=>5,:as=>:text,:label=>false%>
-					</div>
-				</div>
-
-
-			<%=f.submit "发布",:class=>"btn btn-primary"%>
-		<%end%>
+			<%=link_to "分享配装列表", new_build_share_path(:build_id=>@item_build),:class=>"btn btn-info btn-block"%>
 		</div>
 	</div>
 </div>

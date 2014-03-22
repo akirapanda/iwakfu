@@ -18,7 +18,7 @@ class ItemBuild < ActiveRecord::Base
   
   has_many :item_build_bonus_items
   has_many :item_set_details, through: :item_build_bonus_items
-  
+  has_one :build_share
 
   def add_set_bouns
     set_zero
@@ -167,6 +167,8 @@ class ItemBuild < ActiveRecord::Base
   
   def cal_stats
     set_zero
+    
+    
     self.add_item_stats(self.header)
     self.add_item_stats(self.body)
     self.add_item_stats(self.neck)
@@ -190,8 +192,15 @@ class ItemBuild < ActiveRecord::Base
   end
   
   def add_item_stats(item)    
+    if item
+      puts "#{item.level},#{self.min_level}"
+      self.min_level = item.level if item.level < self.min_level || min_level==0
+      self.max_level = item.level if item.level > self.max_level
+    end
+    
     if item && item.item_detail
       item_detail = item.item_detail
+            
       self.add_stat(item_detail)
     end
   end
@@ -246,6 +255,8 @@ class ItemBuild < ActiveRecord::Base
   end
   
   def set_zero
+    self.min_level=0
+    self.max_level=0
     self.hp = 0
     self.ap = 0
     self.mp = 0
