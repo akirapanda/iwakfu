@@ -1,13 +1,14 @@
 class BuildSharesController < ApplicationController
   def create
     @build_share = BuildShare.new(share_param)
-    
     if @build_share.save
       @build_share.item_build.publish=true
       @build_share.item_build.name = @build_share.name
       @build_share.item_build.content = @build_share.content
       @build_share.item_build.author = @build_share.author
       @build_share.item_build.save
+      session[:build_id]=nil
+      
       redirect_to @build_share.item_build, notice: '谢谢您的分享'
     else
       render action: 'new'
