@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140324094150) do
+ActiveRecord::Schema.define(version: 20140324122237) do
 
   create_table "build_shares", force: true do |t|
     t.integer  "item_build_id"
@@ -49,6 +49,19 @@ ActiveRecord::Schema.define(version: 20140324094150) do
     t.integer "item_id"
     t.decimal "rate",    precision: 10, scale: 2, default: 0.0
     t.integer "lock",                             default: 0
+  end
+
+  create_table "guilds", force: true do |t|
+    t.string   "name"
+    t.string   "leader"
+    t.string   "country"
+    t.integer  "number"
+    t.string   "field_1"
+    t.string   "field_2"
+    t.string   "field_3"
+    t.string   "field_4"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "item_build_bonus_items", force: true do |t|

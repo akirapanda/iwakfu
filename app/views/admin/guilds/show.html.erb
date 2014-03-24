@@ -1,0 +1,9 @@
+<h4>你发现一面墙</h4>
+
+<div class="row-fluid">
+		<%=@guild.name%><%=@guild.leader%><%=@guild.nation%><%=@guild.number%><br/>
+		<%=@guild.field_1%><%=@guild.field_2%><%=@guild.field_3%><%=@guild.field_4%>
+</div>
+
+<%=link_to "滚回去",admin_guilds_path,:class=>"btn btn-primary btn-block"%>
+<%=link_to "铲掉它",admin_guild_path(@guild),:method=>:delete,:class=>"btn btn-danger btn-block"%>

@@ -1,0 +1,21 @@
+<h4>你站在一面墙前</h4>
+<%=simple_form_for([:admin,@guild]	,:html=>{:class=>"form-horizontal"}) do |f|%>
+<div class="row-fluid">
+	<div class="span6">
+		<%=f.input :name%>
+		<%=f.input :leader%>
+		<%=f.input :nation%>
+		<%=f.input :number%>
+	</div>
+	
+	<div class="span6">
+		<%=f.input :field_1%>
+		<%=f.input :field_2%>
+		<%=f.input :field_3%>
+		<%=f.input :field_4%>
+	</div>
+</div>
+
+
+	<%=f.submit "刻上去",:class=>"btn btn-info btn-block"%>
+<%end%>

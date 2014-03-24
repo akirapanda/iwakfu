@@ -1,0 +1,13 @@
+<div class="row">
+	<%=link_to "再刮一次墙！",new_admin_guild_path,:class=>"btn btn-info pull-right"%>
+</div>
+<%= grid(@guild_grid, show_filters: :false, hide_csv_button: true) do |g|
+  g.column :name => 'ID', :attribute => 'id'
+  g.column :name => '暗号', :attribute => 'name'
+  g.column :name => '暗号', :attribute => 'leader'
+  g.column :name => '暗号', :attribute => 'nation'
+
+	 g.column do |guild|
+		link_to "编辑",edit_admin_guild_path(guild)
+	 end
+end -%>
