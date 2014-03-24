@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140321154149) do
+ActiveRecord::Schema.define(version: 20140324094150) do
 
   create_table "build_shares", force: true do |t|
     t.integer  "item_build_id"
@@ -34,10 +34,14 @@ ActiveRecord::Schema.define(version: 20140321154149) do
     t.boolean  "gongjian"
     t.boolean  "cike"
     t.boolean  "shijian"
+    t.integer  "baozang",       limit: 1
+    t.integer  "luckycat"
     t.integer  "min_level"
     t.integer  "max_level"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "author"
+    t.string   "edit_token"
   end
 
   create_table "drop_items", force: true do |t|
@@ -118,6 +122,8 @@ ActiveRecord::Schema.define(version: 20140321154149) do
     t.integer  "mp_resist"
     t.integer  "back_resist",   default: 0
     t.integer  "heals_resist",  default: 0
+    t.integer  "max_level",     default: 0
+    t.integer  "min_level",     default: 140
   end
 
   create_table "item_details", force: true do |t|
@@ -288,6 +294,9 @@ ActiveRecord::Schema.define(version: 20140321154149) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "item_set_id"
+    t.boolean  "main_hand"
+    t.boolean  "second_hand"
+    t.boolean  "double_hand"
   end
 
   create_table "mob_families", force: true do |t|

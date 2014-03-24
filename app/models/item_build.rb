@@ -95,8 +95,11 @@ class ItemBuild < ActiveRecord::Base
       if side
         if side =="left"
           self.left_hand = item
+        elsif side =="right"
+          self.right_hand = item          
         else
-          self.right_hand = item
+          self.right_hand = item          
+          self.left_hand = nil
         end
       else
         self.right_hand = item
