@@ -1,4 +1,5 @@
 class ItemsController < ApplicationController
+  
   def index
     @q = Item.search(params[:q])
     
@@ -6,7 +7,16 @@ class ItemsController < ApplicationController
     if params[:item_type].present?
       @items = @items.where(:item_type=>params[:item_type])
     end
-    @items_grid = initialize_grid(@items,:per_page => 20)
+    if params[:hand].present?
+      if params[:hand].include?"副手"
+        @items = @items.where(:second_hand=>true)
+      else
+        @items = @items.where("double_hand=? or main_hand =?",true,true)
+        
+      end
+    end
+    
+    @items_grid = initialize_grid(@items,:include=>[:item_stats],:per_page => 20)
   end
     
 

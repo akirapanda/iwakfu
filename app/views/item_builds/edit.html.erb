@@ -20,8 +20,11 @@
 				<td><%=@item_build.header.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.header%></td>
 				<td><%=@item_build.header.try(:item_set).try(:name)%></td>
+				<%if @item_build.header%>
 				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:header)%></td>
-				
+				<%else%>
+				<td><%=link_to "添加",items_path(:item_type=>"头盔")%></td>
+				<%end%>
 			</tr>
 			<tr>
 				<td>颈部</td>
@@ -31,7 +34,11 @@
 				<td><%=@item_build.neck.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.neck%></td>
 				<td><%=@item_build.neck.try(:item_set).try(:name)%></td>
+				<%if @item_build.neck%>
 				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:neck)%></td>
+				<%else%>
+				<td><%=link_to "添加",items_path(:item_type=>"项链")%></td>
+				<%end%>
 				
 			</tr>
 			<tr>
@@ -42,7 +49,11 @@
 				<td><%=@item_build.shoulder.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.shoulder%></td>
 				<td><%=@item_build.shoulder.try(:item_set).try(:name)%></td>
+				<%if @item_build.shoulder%>
 				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:shoulder)%></td>
+				<%else%>
+				<td><%=link_to "添加",items_path(:item_type=>"肩甲")%></td>
+				<%end%>
 				
 			</tr>
 			<tr>
@@ -53,7 +64,11 @@
 				<td><%=@item_build.body.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.body%></td>
 				<td><%=@item_build.body.try(:item_set).try(:name)%></td>
+				<%if @item_build.body%>
 				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:body)%></td>
+				<%else%>
+				<td><%=link_to "添加",items_path(:item_type=>"胸甲")%></td>
+				<%end%>
 				
 			</tr>
 			<tr>
@@ -64,7 +79,11 @@
 				<td><%=@item_build.belt.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.belt%></td>
 				<td><%=@item_build.belt.try(:item_set).try(:name)%></td>
+				<%if @item_build.belt%>
 				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:belt)%></td>
+				<%else%>
+				<td><%=link_to "添加",items_path(:item_type=>"腰带")%></td>
+				<%end%>
 				
 			</tr>
 			<tr>
@@ -75,7 +94,11 @@
 				<td><%=@item_build.foot.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.foot%></td>
 				<td><%=@item_build.foot.try(:item_set).try(:name)%></td>
+				<%if @item_build.foot%>
 				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:foot)%></td>
+				<%else%>
+				<td><%=link_to "添加",items_path(:item_type=>"靴子")%></td>
+				<%end%>
 				
 			</tr>
 			<tr>
@@ -86,7 +109,11 @@
 				<td><%=@item_build.cloak.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.cloak%></td>
 				<td><%=@item_build.cloak.try(:item_set).try(:name)%></td>
+				<%if @item_build.cloak%>
 				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:cloak)%></td>
+				<%else%>
+				<td><%=link_to "添加",items_path(:item_type=>"披风")%></td>
+				<%end%>
 				
 			</tr>
 			<tr>
@@ -97,8 +124,12 @@
 				<td><%=@item_build.left_ring.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.left_ring%></td>
 				<td><%=@item_build.left_ring.try(:item_set).try(:name)%></td>
+				<%if @item_build.left_ring%>
+
 				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:left_ring)%></td>
-				
+				<%else%>
+				<td><%=link_to "添加",items_path(:item_type=>"戒指")%></td>
+				<%end%>
 			</tr>
 			<tr>
 				<td>右手戒指</td>
@@ -108,7 +139,12 @@
 				<td><%=@item_build.right_ring.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.right_ring%></td>
 				<td><%=@item_build.right_ring.try(:item_set).try(:name)%></td>
+				<%if @item_build.right_ring%>
+				
 				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:right_ring)%></td>
+				<%else%>
+				<td><%=link_to "添加",items_path(:item_type=>"戒指")%></td>
+				<%end%>
 				
 			</tr>
 			<tr>
@@ -119,7 +155,11 @@
 				<td><%=@item_build.left_hand.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.left_hand%></td>
 				<td><%=@item_build.left_hand.try(:item_set).try(:name)%></td>
+				<%if @item_build.left_hand%>
 				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:left_hand)%></td>
+				<%else%>
+				<td><%=link_to "添加",items_path(:hand=>"副手武器")%></td>
+				<%end%>
 				
 			</tr>
 			<tr>
@@ -130,8 +170,11 @@
 				<td><%=@item_build.right_hand.try(:level)%></td>
 				<td><%=render 'item_stat',:@item=>@item_build.right_hand%></td>
 				<td><%=@item_build.right_hand.try(:item_set).try(:name)%></td>
+				<%if @item_build.right_hand%>
 				<td><%=link_to "删除",remove_item_item_build_path(@item_build,:part=>:right_hand)%></td>
-				
+				<%else%>
+				<td><%=link_to "添加",items_path(:hand=>"主手武器")%></td>
+				<%end%>
 			</tr>
 		</table>
 	</div>

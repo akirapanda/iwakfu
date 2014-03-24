@@ -94,6 +94,10 @@ class ItemBuild < ActiveRecord::Base
     if Item::WEAPONS.include?(item.item_type.chinese_name)
       if side
         if side =="left"
+          if  self.right_hand &&  self.right_hand.double_hand
+            self.right_hand = nil
+          end
+          
           self.left_hand = item
         elsif side =="right"
           self.right_hand = item          

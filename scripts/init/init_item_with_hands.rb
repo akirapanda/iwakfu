@@ -19,6 +19,8 @@
   elsif item.info.include?"Second"
     if item.item_type_id == 6
       item.main_hand = true
+    else
+      item.main_hand = false
     end
     item.second_hand = true
     item.double_hand = false

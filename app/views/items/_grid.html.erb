@@ -16,9 +16,12 @@
 	end
 
   g.column :name => '介绍', :attribute => 'content' do |item|
-			render 'items/grid_item_stat',:@item=>item
+			render :partial=>'items/grid_item_stat',:locals => { :@item=>item}
   end
 
-
+  g.column do |item|
+		render "items/equip_button",:@item=>item
+	
+	end
 
 end -%>

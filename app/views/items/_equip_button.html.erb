@@ -1,0 +1,21 @@
+<%if ["装备","武器"].include?@item.item_type.try(:cate_name)%>
+	<%if @item.item_type.try(:chinese_name) == "戒指" %>
+		<%= link_to '装备:左手戒指',add_item_item_build_path(current_build,:item_id =>@item,:side=>:left),:remote=>true,:class=>"btn btn-info"%>
+		<%= link_to '装备:右手戒指',add_item_item_build_path(current_build,:item_id =>@item,:side=>:right),:remote=>true,:class=>"btn btn-info"%>
+	<%elsif Item::WEAPONS.include?@item.item_type.try(:chinese_name)%>
+		<%if @item.main_hand%>
+			<%= link_to '装备:右手武器',add_item_item_build_path(current_build,:item_id =>@item,:side=>:right),:remote=>true,:class=>"btn btn-info"%>
+		<%end%>
+
+		<%if @item.second_hand%>
+			<%= link_to '装备:左手武器',add_item_item_build_path(current_build,:item_id =>@item,:side=>:left),:remote=>true,:class=>"btn btn-info"%>
+		<%end%>
+
+		<%if @item.double_hand%>
+			<%= link_to '装备:双手武器',add_item_item_build_path(current_build,:item_id =>@item,:side=>:double),:remote=>true,:class=>"btn btn-info"%>
+		<%end%>
+
+	<%else%>
+	<%= link_to '装备:装备',add_item_item_build_path(current_build,:item_id =>@item),:remote=>true,:class=>"btn btn-info"%>
+	<%end%>
+<%end%>

@@ -26,7 +26,7 @@
 					    <label class="control-label" for="inputEmail">物品种类</label>
 					    <div class="controls">
 					     	<label class="checkbox inline">
-								  <%= f.select :item_type_id_eq,options_from_collection_for_select(ItemType.all,"id","chinese_name") %>
+								  <%= f.select :item_type_id_eq,options_from_collection_for_select(ItemType.all,"id","chinese_name"),:include_blank=>true %>
 								</label>
 							</div>
 					</div>
