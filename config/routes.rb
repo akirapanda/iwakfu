@@ -31,7 +31,7 @@ Iwakfu::Application.routes.draw do
   namespace :admin do
     resources :items
     resources :item_types
-    resources :guild
+    resources :guilds
     
   end
 end
