@@ -22,5 +22,10 @@ class ItemsController < ApplicationController
 
   def show
     @item = Item.find(params[:id])
+    
+    
+    set_meta_tags :title =>@item.name,
+                  :description => @item.content,
+                  :keywords => @item.name
   end
 end

@@ -1,4 +1,4 @@
-class Item < ActiveRecord::Base
+class Item < ActiveRecord::Base  
   has_many :item_stats,:dependent => :destroy
   has_many :item_stats_effect,->{ where "stat_type = 'effect' "}, class_name:"ItemStat"
   has_many :item_stats_critical,->{ where "stat_type = 'critical' "}, class_name:"ItemStat"

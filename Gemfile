@@ -13,6 +13,11 @@ gem 'mysql2'
 gem 'simple_form'
 gem 'bootstrap_helper', github: 'akirapanda/bootstrap-helper'
 
+#seo
+
+gem 'meta-tags', :require => 'meta_tags'
+gem 'sitemap_generator'
+
 #分页
 gem "wice_grid", '3.4.0'
 gem 'kaminari'
