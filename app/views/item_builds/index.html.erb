@@ -14,6 +14,10 @@
 		item.author
 	end
 
+
+	g.column :name =>"标签" , filter: false  do |item|
+		item.build_share.try(:show_tags)
+	end
   g.column :name => '更新日期', :attribute => 'updated_at', filter: false 
 
 
