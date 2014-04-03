@@ -1,7 +1,9 @@
 require "iwakfu/entities"
+require 'rack/contrib'
 
 module Iwakfu
   class API < Grape::API
+    use Rack::JSONP
     
     prefix "api"
     format :json
