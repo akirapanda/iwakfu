@@ -21,6 +21,10 @@ module Iwakfu
             @items = @items.joins(:item_type).where(:hidden => false).where("item_types.chinese_name = ?",params[:type_name])
          end
          
+         if params[:name].present?
+           @items = @items.joins(:item_type).where(:hidden => false).where("items.name like ?","%"+params[:name]+"%")
+         end
+         
          present @items.includes(:item_type).order("level asc")
          
        end
@@ -35,6 +39,10 @@ module Iwakfu
          
          if params[:type_name].present?
             @items = @items.joins(:item_type).where(:hidden => false).where("item_types.chinese_name = ?",params[:type_name])
+         end
+         
+         if params[:name].present?
+           @items = @items.joins(:item_type).where(:hidden => false).where("items.name like ?","%"+params[:name]+"%")
          end
          
          present @items.includes(:item_type).order("level asc")
