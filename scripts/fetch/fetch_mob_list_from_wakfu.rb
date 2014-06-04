@@ -8,11 +8,7 @@ require 'mechanize'
 
 @url = "http://www.wakfu.com/en/mmorpg/game-guide/bestiary?page="
 
-
-
-
-
-(1..1).each do |i|
+(1..34).each do |i|
 
 agent = Mechanize.new
 @html = agent.get @url+i.to_s
@@ -36,5 +32,5 @@ trs.each do |row|
   
   puts "#{no},#{name},#{famliy},#{level},#{url}"
 end
-
+ sleep(1)
 end
